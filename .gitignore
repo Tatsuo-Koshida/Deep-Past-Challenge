@@ -1,0 +1,38 @@
+# --- Codex workspace state (keep docs tracked) ---
+.codex/*
+!.codex/docs/
+!.codex/docs/**
+
+# --- OS / Editor ---
+.DS_Store
+.idea/
+.vscode/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- Virtualenv / env files ---
+.env
+.env.*
+.venv/
+venv/
+
+# --- Credentials ---
+kaggle.json
+
+# --- Common outputs ---
+*.log
+wandb/
+mlruns/
+lightning_logs/
+outputs/
+checkpoints/
