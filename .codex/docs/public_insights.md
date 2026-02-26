@@ -11,32 +11,6 @@
 
 ---
 
-## Kaggle MCP 認証トラブルの切り分けメモ（2026-02-26）
-
-観測できたこと（この repo 内のログ/設定から）:
-
-- `.codex/config.toml` では Kaggle MCP 起動時に `BEARER_TOKEN` を渡す想定（`env_vars = ["BEARER_TOKEN"]`、かつ `shell_environment_policy.ignore_default_excludes = true` / `inherit = "all"`）。
-- それにも関わらず、認証が必要そうな API（例: `search_notebooks`, `list_competition_data_files`）は `Unauthenticated` になる。
-- セッション開始時に作成された shell snapshot（`.codex/shell_snapshots/*.sh`）には、`BEARER_TOKEN` の export が見当たらない（= 少なくとも snapshot 作成時点では親環境に無かった可能性）。
-- `npx -y @pyroprompts/mcp-stdio-to-streamable-http-adapter@0.1.0` の実装をローカルキャッシュから確認すると、Authorization ヘッダが **`Bearer: <token>`（コロン付き）**になっている（本来は `Bearer <token>`）。このままだと **トークンが正しくても `Unauthenticated` になり得る**。
-
-次に確認したいポイント（親環境→MCP起動→リクエストのどこで落ちるか）:
-
-1) **MCP 起動時点**で `BEARER_TOKEN` が渡っているか（= 親環境→MCP起動の問題か）
-2) 渡っているのに `Unauthenticated` なら、**トークンの失効/権限不足**または **アダプタ側の仕様変更**（未ピン留め）を疑う
-
-この repo では、MCP 起動時点の環境をログできるようにラッパーを追加した:
-
-- `.codex/config.toml` は `bash .codex/scripts/kaggle_mcp_wrapper.sh` 経由で Kaggle MCP を起動するよう変更
-- `.codex/scripts/kaggle_mcp_wrapper.sh` は `BEARER_TOKEN` の「存在有無/長さ/sha256先頭8桁（値は出さない）」を `.codex/log/kaggle-mcp-env.log` に追記してから、従来通り `npx -y @pyroprompts/mcp-stdio-to-streamable-http-adapter` を起動する
-- 追加対応: 上記アダプタの **`Bearer:` バグ**を避けるため、`.codex/scripts/kaggle_mcp_wrapper.sh` 側で **キャッシュ内の `build/index.js` を一時ファイルにコピーして `Bearer: `→`Bearer ` に置換**してから起動する（キャッシュ自体は改変しない）。
-
-運用メモ:
-- 変更を反映するには Codex の再起動（= MCP サーバの再起動）が必要。
-- 再起動後に `.codex/log/kaggle-mcp-env.log` の `token_present=1` なのに `Unauthenticated` のままなら、**トークン失効/権限不足の可能性が高い**（= トークン再発行を優先）。
-
----
-
 ## 1. これまでのコンペの「流れ」（公開物から推測できる範囲）
 
 ### フェーズA: まずは動くベースライン
