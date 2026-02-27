@@ -1,9 +1,6 @@
 # Deep Past Challenge（Translate Akkadian to English）コンペコンテキスト
 
-<!--
-コンペの前提知識をまとめ、実験設計・ノート要約の基準に使う。
-注意: 本来はKaggle MCPから取得したいが、現状この環境ではKaggle MCPが未認証（Unauthenticated）かつ authorize がエラーのため、Kaggle公式ページのアーカイブ情報を一次ソースとして整理している。
--->
+<!-- コンペの前提知識をまとめ、実験設計・ノート要約の基準に使う。 -->
 
 ## 基本情報
 
@@ -12,10 +9,10 @@
 - **Kaggle URL**: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation
 - **開始日**: 2025-12-16
 - **重要日程（UTC 23:59）**:
-  - **Entry/Team Merger 締切**: 2026-03-16
+  - **Entry/Team Merger 締切**: 2026-03-09
   - **最終提出締切**: 2026-03-23
 - **賞金**: 総額 $50,000（上位6位まで: 15k/10k/8k/7k/5k/5k）
-- **目的**: 旧アッシリア語（アッカド語の方言）の**転写（transliteration）→英訳**の機械翻訳モデルを作る（約8,000件の楔形文字資料を利用）
+- **目的**: 旧アッシリア語（アッカド語の方言）の**転写（transliteration）→英訳**の機械翻訳モデルを作る（`train.csv` は 1,561 ペア。追加で公開テキスト/辞書/OCR資源が同梱）
 
 ## 評価指標（要点）
 
@@ -44,6 +41,81 @@
   - **リセット**: 日本時間（JST）**毎週土曜日 09:00** に枠がリセット
 
 上記の制約を前提に、**ローカル/CVでの検証を主戦場にして提出は絞る**、**GPUジョブはまとめて回して待ち時間と再実行を減らす**など、効果的・効率的に実験を設計する必要がある。
+
+## 公式データ（Data タブで配布されるCSVの意味）
+
+この節は Kaggle MCP と、ローカルに保存した公式データ（`data/kaggle/deep-past-initiative-machine-translation/`、スナップショット: 2026-02-27 時点）を一次情報として整理した。
+
+> 注意: このコンペは **Code Competition** のため、提出時の評価に使われるテストデータは Notebook 実行環境内の「Hidden data」で処理される。`test.csv` / `sample_submission.csv` はフォーマット確認用のサンプルに過ぎない（行数が極端に少ない）。
+
+### 提出に直接関係するファイル
+
+- `train.csv`（1561行 + header）
+  - **目的**: 監督学習用（転写→英訳）
+  - **列**:
+    - `oare_id`: 文/資料単位のID（UUID）
+    - `transliteration`: 旧アッシリア語の転写（モデル入力）
+    - `translation`: 英訳（教師ラベル）
+- `test.csv`（4行 + header）
+  - **目的**: 提出フォーマット検証用のサンプル入力（※評価本体は hidden）
+  - **列**:
+    - `id`: 提出用の行ID（整数）
+    - `text_id`: 参照する資料ID（短いID文字列）
+    - `line_start`, `line_end`: 該当行範囲
+    - `transliteration`: 入力となる転写（抜粋）
+- `sample_submission.csv`（4行 + header）
+  - **目的**: 提出CSVの雛形
+  - **列**: `id,translation`
+
+### 追加データ（辞書・レキシコン・メタデータ）
+
+- `published_texts.csv`（7991行 + header）
+  - **目的**: 公開テキスト（楔形文字資料）のメタデータと転写（追加学習/参照用）
+  - **主な列**:
+    - `oare_id`: OARE上の資料ID（`train.csv` の `oare_id` と同系統）
+    - `online transcript`: OARE上のトランスクリプトURL
+    - `cdli_id`: CDLI ID（例: `P361099`）
+    - `aliases`, `label`, `publication_catalog`, `description`, `genre_label` など（資料説明）
+    - `AICC_translation`: AICC（aicuneiform）側の参照URL
+    - `transliteration_orig`: 原転写（ギャップなどの表記が生）
+    - `transliteration`: 正規化済みらしき転写（モデル入力候補）
+- `eBL_Dictionary.csv`（19215行 + header）
+  - **目的**: eBL（electronic Babylonian Library）由来の辞書（語→定義）
+  - **列**: `word,definition,derived_from`
+- `OA_Lexicon_eBL.csv`（39331行 + header）
+  - **目的**: Old Assyrian lexicon（語形・正規化・辞書リンク等）
+  - **列**:
+    - `type`: エントリ種別（例: `word`）
+    - `form`: 表層形（転写表記）
+    - `norm`: 正規化形
+    - `lexeme`: レキシーム
+    - `eBL`: eBL辞書へのURL
+    - `I_IV`, `A_D`, `Female(f)`, `Alt_lex`: 追加属性（語形分類/派生等）
+- `Sentences_Oare_FirstWord_LinNum.csv`（9782行 + header）
+  - **目的**: OAREの文分割・行位置・先頭語（索引/特徴量づくり用）
+  - **列**:
+    - `display_name`: 資料表示名
+    - `text_uuid`, `sentence_uuid`: UUID
+    - `sentence_obj_in_text`, `first_word_obj_in_text`: テキスト内オブジェクト番号
+    - `translation`: 当該文の英訳（ある場合）
+    - `first_word_transcription`, `first_word_spelling`, `first_word_number`
+    - `line_number`, `side`, `column`: 行番号/面/列
+
+### 出版物/OCRテキスト（追加学習・参照用）
+
+- `bibliography.csv`（907行 + header）
+  - **目的**: `publications.csv` に対応するPDFの書誌情報
+  - **列**: `pdf_name,title,author,author_place,journal,volume,year,pages`
+- `publications.csv`（216602行 + header）
+  - **目的**: 出版物PDFの OCR テキストを「ページ単位」で保持（追加学習/検索用）
+  - **列**:
+    - `pdf_name`: PDFファイル名（`bibliography.csv` とキーで対応）
+    - `page`: ページ番号
+    - `page_text`: OCR結果（長文）
+    - `has_akkadian`: アッカド語っぽい文字列を含むかのフラグ（`true/false`）
+- `resources.csv`（291行 + header）
+  - **目的**: 研究資源（論文/データ/プロジェクト等）一覧（メタデータ）
+  - **列**: `Authors ...`, `Year`, `Title`, `Topics`, `Language/dialect`, `Methods`, `URL`, `Peer-reviewed`, `Type` など（全16列）
 
 ## データの性質（このコンペで効く前処理の論点）
 
@@ -84,6 +156,5 @@ Kaggleの「Dataset Instructions」には、翻刻・編集由来の記号につ
 
 ## TODO（データ入手後に追記）
 
-- train/test の**ファイル名・列定義・件数**（Kaggle Data タブの確認）
-- レキシコンの**スキーマ**（列名、カバレッジ、適用方法）
+- （必要に応じて）`published_texts.csv` の `transliteration` がどの程度「正規化済み」かを定量確認（例: 記号除去率、語彙サイズ差分）
 - Kaggle公式のメトリクス実装ノート（BLEU/chrF++のtokenization設定やchrF++の詳細）を手元コードに反映
