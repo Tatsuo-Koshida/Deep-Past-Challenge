@@ -8,7 +8,371 @@
   - すぐ試す実験: `.codex/docs/experiments_log.md`
 
 前提："Entry"は一つのディスカッションのトピックを表します。"Comments"は"Entry"で投稿されたコメントを意味します。
-また、ディスカッションでよく登場する@deeppastはこのコンペティションのホストの1人です。
+また、ディスカッションに登場する@deeppastと@ryanholbrookはこのコンペティションのホストです。
+
+---
+
+## Entry: `674136`
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/674136
+- タイトル: Dataset Update - Mind the Gaps
+- 投稿者: @ryanholbrook
+- 投稿日時: 2026-02-19
+- upvote: 20
+- 本文: Hi everyone,
+
+I just posted an update to the dataset that regularizes <gap> conventions. The train.csv, published.csv, the (hidden) test.csv, and the test set labels have all been updated. The competition host will follow up soon with more details.
+
+I will also be initiating a rescore of all current submissions tomorrow. I will keep you updated as this progresses. All new submissions will be scored against the updated labels.
+
+UPDATE 02/20/2026: We are working on another (hopefully final) update that should address some of the issues raised here. I hope to have it out soon, likely Monday. We will delay the rescore until then.
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/674136#3408209
+- 投稿者: @deeppast
+- 投稿日時: 2026-02-20
+- upvote: 7
+- 本文: Thank you all for your quick observations in the updates, especially of the training data. I made a second update which should resolve most of the issues. I'll provide a complete list here of updates for the training data:
+
+parentheses ( )= removed
+quotations " “= removed
+scare quotes ’ ‘= removed
+fem. = removed
+sing. = removed
+pl. = removed
+grammatical term plural = removed
+PN = <gap>
+added space around <gap> in translations (not transliterations)
+added some of the missing words before hyphens (i.e. -gold —> pašallu-gold & -tax —> šaddutu-tax & -textile --> kutānu-textile)
+removed some stray ?, but not able to do so completely (feel free to continue this on your own)
+returned fractions to decimals, for alignment purposes
+added missing transliterations, and some of the missing translations (but not all, so feel free to continue this on your own as well)
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/674136#3408248
+- 投稿者: @steubk
+- 投稿日時: 2026-02-20
+- upvote: 5
+- 本文: @deeppast Thanks for clarifying the updates to the train set translations. I have a few questions:
+
+Were the same updates applied to the test set?
+How are fractions represented in the test set—decimals (e.g., 0.5) or Unicode characters (e.g., ½)?
+What does PN = <gap> mean? Was the literal string “PN” replaced with <gap>, or were all personal names replaced with <gap>?
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/674136#3408317
+- 投稿者: @kishorevishal
+- 投稿日時: 2026-02-20
+- upvote: 1
+- 本文: Just checking, is the data section updated? I can still see fem. sing. pl. in translations
+
+Edit - I noticed the apostrophe was removed, but I think it’s important for translation quality. ref- The current train.csv has "Šāt-Annas representative", but the previous version had "Šāt-Anna's representative".
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/674136#3408858
+- 投稿者: @mpware
+- 投稿日時: 2026-02-21
+- upvote: 6
+- 本文: While waiting the update of update, I've reviewed the update and I'm getting lost now:
+
+What is the final policy for fraction? I see some fractions in translation and also just float numbers (rounded or not rounded): 2 minas 13.5, 1.8333300000000001, @deeppast You was saying in another post that we should convert all floating number to fraction, right? Why it's not normalized now?
+Some transliteration in english: 9a208f3b-1cbb-43a6-b870-566abe5ea9a1 (noticed by @yaroshevskiy)
+ד still here (009fb838-8038-42bc-ad34-5f795b3840ee)
+Many x that shoud be < gap >: 04dd324f-120e-44fd-9dbd-93a144906902 (Um-x took), 1b89399d-d4f8-4347-b88b-94f5eec0886f (shekels for x shekels; 15 grain), 476e6eef-f0a4-44fd-b3f8-65e6337a9a51 (When Ana-xs son and Ili-pi-usurs)
+Random possessive usage: 054fdba4-0cff-4153-969d-c77e42413e1c (to our own Amur-Ištar's sons)
+What should we do with /: 1252b18d-4b89-4af9-b6b9-199b40c13848 (qí-bi-ma um-ma SIG5-pí-/i-a-/šur-ma). Why it's not normalized now?
+brackets: 19052127-2c2e-479d-b666-f1ea0ed27cb2, their right on a share < by giving them > a house-plot. Is that normal we still have them in the cleaned translation?
+A lot of not allowed chars in translation (according to the previous list that was provided)
+fem. pl. sing. a44f089e-2645-4aa2-b5e4-ba75e70fdf78, 7e525e12-c226-4c00-9c6e-de303e676771 (I shall return your grain to you fem. pl.. Send me), b64a5273-3e7c-4fe9-9824-bc5cd5e67586 (the cannot give in! As soon as youpl. have heard), 26ebe582-a312-4b63-8138-b7a19b12f277 (I have written to you fem. sing. five times)
+Orphans curly bracket: 8c1f39b5-5b71-4171-b0ef-d4db031a5802 (as follows: Of the 57 skekels of silver} that are available)
+Roman numbers: c84fb0b6-45c9-4e6d-8923-51eddf50c2d7 (dated to the IVth month of the eponymy), Do we have to convert them to just number?
+Parenthesis removed: e76705fe-094c-4fa3-8506-2bca4d4e7b7c ==> to your representatives (with) Aluwa, then I shall act in
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/674136#3408859
+- 投稿者: @samson8 (tg @pansh1n)
+- 投稿日時: 2026-02-21
+- upvote: 1
+- 本文: @mpware by fractions he meant 1 / 3 or 1 / 6. stuff like this. So these fractions are substituted with floats now. I have already lost a sub thinking about unicode fractions. Policy for fractions is unchanged
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/674136#3408872
+- 投稿者: @mpware
+- 投稿日時: 2026-02-21
+- upvote: 2
+- 本文: Hi @samson8 , so we should not try to convert 0.3333 to ⅓ and but only for 1 / 3 ? Look at the 2 examples below, sometimes we've to convert, sometimes not. It makes no sense to me. The instructions and the examples are not going in the same direction.
+
+Look at this one:
+
+0b84671a-8753-49d9-859d-b42c3d8944ae
+
+Transliteration: 2 né-pí-šu 15 ma-na.TA ú iš-tí-in né-pí-šu-um 10 ma-na ni-is-ha-sú DIRI ša-du-a-sú ša-bu-ú ŠU.NÍGIN 42.3333 ma-na KÙ.BABBAR ṣa-ru-pá-am ku-nu-ki-a a-na a-lu-wa ù e-ni-ša-ri-im áp-qí-id-ma a-na a-lim{ki} a ma-lá tí-ir-tí-šu a-ṣé-er ša-lim-a-šùr ú-šé-bi-il5-šu-nu a-ha-ma 13.3333 ma-na URUDU SIG5 a-na ga-am-ri-šu-nu ù 5 GÍN KÙ.BABBAR a-na ú-ku-ul-tí-šu-nu a-dí-in IGI ili5-ba-ni DUMU ba-ší-lam IGI a-hu-qar DUMU zu-ur-zu-ur IGI tù-ra-am-ì-lí DUMU e-dí-na-a-šùr a-ha-ma 10.3333 ma-na 3.5 GÍN KÙ.BABBAR ṣa-ru-pá-am tum ni 0.5 GÍN ṣí-ba-tim ša i-na ṣé-ri-a il5-qé-ú-ni a-na hu-bu-li-šu a-na kà-ri-im wa-ah-šu-ša-na áš-qúl ṣí-ba-at KÙ.GI ša ší-ip-kà-at a-šur-bé-el-a-wa-tim i-ší-tù
+
+Translation: "2 packages of 15 minas each plus a single package of 10 minas, its import duty added, its transport tariff paid - in all 42 ⅓ minas of refined silver under my seal, I entrusted to Aluwa and Enišārum, and I sent them to the City to Šalim-Aššur in accordance with his orders. Furthermore, I paid 13 ⅓ minas of good copper for their expenses and 5 shekels of silver for their food. Witnessed by Ilī-bāni son of Baši-ilum, by Ahu-qar son of Zurzur, by Tūram-ilī son of Eddin-Aššur. Furthermore, 10 ⅓ minas 3 ½ shekels of refined silver ½ shekel interest that they took on my account, I paid for his debt to the Wahšušana colony. The interest on the gold that remained of Aššur-bēl-awātims investment.
+
+And then this one: Some are kept as floating number, some are fraction. 0.3333 ==> 0.3333, 0.16666 ==> ⅙, 0.5 ==> 0.5,
+
+0faa50f7-b86c-466c-a8ab-3a6f48fcb00a:
+
+Transliteration: 4 GÍN a-na ší-iṭ-ri-im ša pu-ki-im 1.3333 GÍN a-na e-re-qí-im qá-nu-e áš-qúl 1.6666 GÍN a sú-ba-ri-im áš-qúl 0.3333 ma-na KÙ.BABBAR a-na a-bar-ni-im áš-qúl 0.16666 GÍN a-na um-ṣí-im 0.25 GÍN a šu-um-ki na-ru-uq GIG GÍN a-na ha-áš-lá-tim a-wa-ar-nu-a-lim 0.6666 GÍN a-na e-ṣé áš-qúl 0.6666 GÍN a pá-e ú-ša-qí-il5 1 bi-il5-té-en 0.5 GÍN áš-qúl 0.25 GÍN a-na na-pá-hi-im 95 ki-ra-tim a-na 0.25 GÍN.TA ù 7.5 ŠE.TA 0.5 GÍN a-na 0.16666 GÍN a-na a-na
+
+Translation: "I paid 4 shekels for a scarf of -weave, 1.3333 shekel for a wagonload of reed; I paid 1.6666 shekel for ; I paid 0.3333 mina of silver for an Abarnian textile, ⅙ shekel for a piece of dried meat, ¼ shekel for onions, x shekels for bags of wheat ;I paid shekels for ? , for a ; I paid 0.6666 shekel for firewood; 0.6666 shekels I paid for chaff, for a double load I paid 0.5 shekel; ¼ shekel for the blacksmith. I supplied 95 drinks to at 52.5 grains of silver each, 0.5 shekel for ⅙ shekel for for
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/674136#3408878
+- 投稿者: @vinprofessionalapps
+- 投稿日時: 2026-02-21
+- upvote: 1
+- 本文: Have the same question: submission must use ½ or 0.5? Reading above: "returned fractions to decimals, for alignment purposes" seems to indicate using 0.5, but scoring doesn't seem to be aware :)
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/674136#3408879
+- 投稿者: @samson8 (tg @pansh1n)
+- 投稿日時: 2026-02-21
+- upvote: 1
+- 本文: Hidden test translations use ⅓ instead of 0.3333 and 1 / 3. And that holds for all the other numbers
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/674136#3408886
+- 投稿者: @mpware
+- 投稿日時: 2026-02-21
+- upvote: 4
+- 本文: Thanks @samson8 , I've just spent a sub too to double check on transliterations, no 0.3333 in hidden test for transliterations. You've checked that's the same for translations so I think I'm good now as it was my initial understanding.
+
+I don't understand why the cleaned train data does not reflect that behavior and reflects other important normalization rules.
+
+Update: All should be fixed on the next data update next week. Wait and see …
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/674136#3408959
+- 投稿者: @angantyr
+- 投稿日時: 2026-02-21
+- upvote: 3
+- 本文: My advice would be to leave the normalization replacements for current cases. It won't hurt and there is no single guideline on what the fractions, signs, gaps, months, broken sections etc. should look like. There are many but I've lost count and I'm sorry too say, but a silent update of the existing "stumbling blocks" thread without a clear "EDIT/UPDATE" section makes everything all the more confusing.
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/674136#3410865
+- 投稿者: @skathaitrooney
+- 投稿日時: 2026-02-24
+- upvote: 1
+- 本文: Have the same question. Does the private test set now have decimals (0.333 for example) versus fractions ? @deeppast
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/674136#3408408
+- 投稿者: @tarekziad
+- 投稿日時: 2026-02-20
+- upvote: 11
+- 本文: Honestly ,am really frustrated. I’ve been working on many patterns (like […-Suffix] and several others). Now with every dataset update, these patterns are gone or changed. My work on them is basically useless ,it feels like all my time was wasted.
+
+This cannot keep happening. If the dataset isn’t stable, the competition should start only when it’s ready. Also, are you planning to update the data one day before the competition ends? We need a stable dataset so our work actually counts.
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/674136#3408114
+- 投稿者: @mpware
+- 投稿日時: 2026-02-20
+- upvote: 15
+- 本文: First, thank you for providing the updated, cleaner dataset - it’s clear that a lot of effort went into improving data quality, and it will ultimately benefit the challenge.
+
+I do have a couple of concerns I’d like to share:
+
+Mid-competition changes: Updating the data and rules partway through the competition can be challenging for participants who have been working since the start of the Deep Past Challenge. Many of us invested significant time normalizing and adapting to the original data, and these efforts may no longer be applicable. While I understand the intent to improve the dataset, this kind of change can feel discouraging from a fairness standpoint.
+
+Information consistency across platforms: Some important clarifications appear to be shared on Discord but not reflected in the official Kaggle discussion or data description. For participants who rely solely on the Kaggle platform, this creates an uneven playing field. It would be very helpful if all critical information were consolidated in the official documentation.
+
+That said, I’m still enjoying the challenge and plan to continue participating.
+
+To help avoid further rework, especially for normalizing re-OCR data such as Larsen, could you please provide a detailed list of the normalization changes that were applied? A quick diff of train.csv suggests that, beyond replacing with , there were also changes such as quote removal, number fractions, Hh, subscripts, and possibly other text adjustments. Having a clear summary would help participants align their preprocessing steps with the updated data. Could you provide the updated list of characters allowed in transliteration and translation?
+
+Finally:
+
+"Dataset instructions" had not been updated and still ask us to use big_gap.
+fem. plur. are still here but you recommended to remove them
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/674136#3408383
+- 投稿者: @samson8 (tg @pansh1n)
+- 投稿日時: 2026-02-20
+- upvote: 4
+- 本文: The thing is. This is obviously a good change that eliminates 2-token preprocessing gamble and should have been done in the first week. I'm sure Adam is a professional and knows his domain perfectly. Just sometimes people are unfamiliar with how many GPU/human hours could be burnt by solving a problem within a particular setting and that changing this setting could be a bit painful.
+
+Nevertheless, I'm sure that 'transitivity' of a translation quality still holds (in general) for the new test. Let's just hope that it is the last change~~
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/674136#3408391
+- 投稿者: @jackvd
+- 投稿日時: 2026-02-20
+- upvote: 4
+- 本文: Yes, it's a good change, but wowee I spent a lot of time on stuff that is now useless 🫠
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/674136#3408390
+- 投稿者: @fabiendaniel
+- 投稿日時: 2026-02-20
+- upvote: 1
+- 本文: Concerning the removal of the quotes in translations, (many, all ?) possessive english structures as brother's, father's, Šalim-Aššur's …became brothers, fathers, Šalim-Aššurs … Was it intended and will we have the same in the hiddent test set ?
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/674136#3408017
+- 投稿者: @takuji
+- 投稿日時: 2026-02-20
+- upvote: 3
+- 本文: It looks like there are still some -x left.
+
+Also, although the translation of c97bb594-a5a1-4674-9496-48496e91c2ee was originally correct, it has now been completely incorrect.
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/674136#3408070
+- 投稿者: @deeppast
+- 投稿日時: 2026-02-20
+- upvote: 3
+- 本文: Thanks for pointing this out. I'll fix it and share a new update shortly.
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/674136#3407809
+- 投稿者: @yaroshevskiy
+- 投稿日時: 2026-02-19
+- upvote: 4
+- 本文: I've spent just a few minutes on this:
+
+1) Why is that you fem. plur. have written me, saying this one is confusing, same that I acquired for myself(?) -> that I acquired for myself? etc
+
+2) (ki) -> {ki}
+
+3) is in Iddin-Aššur's possession -> is in Iddin-Aššurs possession
+
+4) subscripts
+
+5) ḫ
+
+6) some texts were extended (?)
+
+7) quotations dropped
+
+8) many digits normalized (?)
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/674136#3407831
+- 投稿者: @yaroshevskiy
+- 投稿日時: 2026-02-19
+- upvote: 3
+- 本文: 9a208f3b-1cbb-43a6-b870-566abe5ea9a1," <gap> talents of wool, <gap> 5 hides, <gap> 22 sacks, 4 black donkeys, 3 saddle-rugs for each, plus their harness - all this I gave to Ewarimuša.","From Ikūn-pīya to Ali-ahum: Earlier I gave a slave-girl to Buziya son of Asaya and he brought her to you. He did not give you the slave-girl, but returned and here I wrote his tablet about the price of the slave-girl, 0.5 mina 5 shekels of silver. My dear brother, there <gap> "
+both english
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/674136#3407967
+- 投稿者: @deeppast
+- 投稿日時: 2026-02-19
+- upvote: 0
+- 本文: That's correct, these tablets are copies, so they are different objects with almost the same text on them.
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/674136#3407967
+- 投稿者: @deeppast
+- 投稿日時: 2026-02-20
+- upvote: 1
+- 本文: Thanks Oleg, yes your observations are correct. Thanks for catching that, I will make the update for the training data this week and post another update shortly.
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/674136#3407800
+- 投稿者: @anaphase21
+- 投稿日時: 2026-02-20
+- upvote: 1
+- 本文: Does this mean <big_gap> will no longer be part of the hidden test.csv? I can see that they are not in the updated train.csv.
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/674136#3407970
+- 投稿者: @deeppast 
+- 投稿日時: 2026-02-19
+- upvote: 3
+- 本文: Yes, exactly, the test set was updated as well, no longer <big_gap>. You can see an updated post about that here: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/665209
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/674136#3407901
+- 投稿者: @shreyasadhari123
+- 投稿日時: 2026-02-19
+- upvote: 2
+- 本文: @ryanholbrook certain questions regarding new data:
+
+are <big_gap> eliminated.
+should we merge multiple <gap> into one <big_gap> just in case they appear
+are …(epilses) also removed.
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/674136#3408068
+- 投稿者: @deeppast
+- 投稿日時: 2026-02-20
+- upvote: 1
+- 本文: Yes, that's right. <big_gap> has been replaced with <gap> and then deduplicated, so you should merge multiples. All ellipses should be removed as well and replaced with <gap. I updated the guidance for that here: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/665209
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/674136#3408258
+- 投稿者: @steubk
+- 投稿日時: 2026-02-20
+- upvote: 5
+- 本文: @deeppast Perhaps the new guidance would be clearer if presented in a new post rather than updating a month-old thread whose replies are no longer valid.
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/674136#3408392
+- 投稿者: @jackvd
+- 投稿日時: 2026-02-20
+- upvote: 0
+- 本文: @ryanholbrook any update on rescoring? Also, will this wipe the leaderboard as well?
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/674136#3408416
+- 投稿者: @ryanholbrook
+- 投稿日時: 2026-02-21
+- upvote: 5
+- 本文: There's another update incoming to address a couple other things pointed out here. I'll start the rescore once it's up. All of the submissions will be rescored, and the new scores will be reflected on the leaderboard. The new scores are posted as they are available, so while the rescore is ongoing the leaderboard will be a mix of old and new -- I don't think it should take more than an hour or two to complete, though.
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/674136#3408435
+- 投稿者: @aman1391 
+- 投稿日時: 2026-02-21
+- upvote: 0
+- 本文: @ryanholbrook : is there a possiblity for extension or a possiblity of increasing the submssion per day , given the data is updated after 2 months of running ..
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/674136#3408439
+- 投稿者: @samson8 (tg @pansh1n)
+- 投稿日時: 2026-02-21
+- upvote: 2
+- 本文: Data is basically not updated, It's just a clear 2-token related change~~ And still there is one more month left. It's not worth it
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/674136#3408441
+- 投稿者: @aman1391 
+- 投稿日時: 2026-02-21
+- upvote: 0
+- 本文: Yes, you are right .. :)
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/674136#3408831
+- 投稿者: @samson8 (tg @pansh1n)
+- 投稿日時: 2026-02-21
+- upvote: 1
+- 本文: @ryanholbrook I'm pretty sure that another update only adresses train issues and test will be unchanged. May be delay is not a necessity
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/674136#3409126
+- 投稿者: @steubk
+- 投稿日時: 2026-02-22
+- upvote: 1
+- 本文: I'm not so sure test will be unchanged 😀
+
+if so why @ryanholbrook said
+
+I'll start the rescore once it's up. ?
+
+I think that at least 's issue must be address on test test.
+
+Hopefully @deeppast will be clear in the changes that were made to the final test set compared to the initial test set.
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/674136#3413233
+- 投稿者: @cody11null
+- 投稿日時: 2026-02-24
+- upvote: 1
+- 本文: Yeah still looking forward to this to ensure that all of the work I am doing actually translates.
 
 ---
 
