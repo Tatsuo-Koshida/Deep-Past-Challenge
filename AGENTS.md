@@ -62,6 +62,13 @@
 - 新規ドキュメントは基本 `.codex/docs/` 配下に追加する
 - 追加する場合は **目的が伝わるファイル名**にし、既存ファイルにリンクを張る（孤立ドキュメントを作らない）
 
+## 公式データ（Kaggle）
+
+- 公式データの配置先: `data/kaggle/deep-past-initiative-machine-translation/`（コンペslug: `deep-past-initiative-machine-translation`）
+- データ本体は大きいので git 管理しない（`.gitignore` で `data/**` を無視。`data/**/README.md` は追跡してメモだけ残す）
+- 収録ファイル/メモ: `data/kaggle/deep-past-initiative-machine-translation/README.md`
+- 再ダウンロード手順・詰まりどころ: `.codex/docs/ops_log.md`
+
 ## コード変更時の注意
 
 - 目的に直結しないリファクタは避ける（台帳運用が主目的の repo）

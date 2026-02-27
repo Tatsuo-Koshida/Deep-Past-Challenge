@@ -29,6 +29,11 @@ venv/
 # --- Credentials ---
 kaggle.json
 
+# --- Downloaded data (keep README tracked) ---
+data/**
+!data/README.md
+!data/**/README.md
+
 # --- Common outputs ---
 *.log
 wandb/
