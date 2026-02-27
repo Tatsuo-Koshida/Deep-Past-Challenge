@@ -4,6 +4,8 @@
 
 > 注意: 本来は Kaggle MCP で公開ノートブック/ディスカッション/コメントを収集したいが、この環境では Kaggle MCP が `Unauthenticated` になり、`authorize` もエラーで進められない。  
 > そのため本メモは、Kaggleページのアーカイブ（archive.ph 等）と外部の公開記事を一次ソースとして、現時点で再現性のある範囲だけを整理している。
+>
+> 手動で採集した Discussions/コメントの一次メモは `.codex/docs/discussion_comments.md` に蓄積する（ここには横断的な学びを要約する）。
 
 追記（2026-02-26）:
 - Kaggle MCP の `mcp__kaggle__search_notebooks` は `Unauthenticated` を返し、公開ノートブックのランキング/一覧を取得できない。

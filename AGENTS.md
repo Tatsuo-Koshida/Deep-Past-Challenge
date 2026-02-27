@@ -29,6 +29,9 @@
 - `.codex/docs/public_insights.md`  
   公開Notebook/コメント（または代替ソース）から得た**横断的な学び**の要約。  
   「コンペの流れ」「精度改善の方向性」「参照元リンク」「取得できなかった場合の理由/代替策」をここに集約する。
+- `.codex/docs/discussion_comments.md`  
+  Kaggle Discussions/コメントを**手動採集**した一次メモ（スレ/コメントのURL、要点、検証プラン、起票先）。  
+  参照性のため **Entry** を付け、派生の要約からも ID で参照する。
 
 ### 追記する時の書式（推奨）
 
@@ -39,6 +42,7 @@
 ## キャッチアップ（公開Notebook/コメント）方針
 
 - まず **「何が新規性か」** を抽出し、`.codex/docs/notebook_digest.md` に要点化する
+- Discussions/コメントは、本文やスレッド構造が散逸しやすいので、手動採集した一次情報はまず `.codex/docs/discussion_comments.md` に記録する
 - その後、**自分のパイプラインに入れるとしたらどこか**（前処理/モデル/学習/推論/後処理/評価）に紐付けて仮説を書く
 - すぐ試せる「精度改善のための施策」は `.codex/docs/experiments_log.md` に “次の実験候補” として起票する
 - MCP/認証/環境などの検証メモは `.codex/docs/ops_log.md` に残す（実験ログに混ぜない）
