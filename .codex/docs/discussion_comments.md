@@ -12,6 +12,668 @@
 
 ---
 
+## Entry: `678899`
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899
+- タイトル: A Stitch in Time Saves Nine
+- 投稿者: @deeppast
+- 投稿日時: 2026-02-26
+- upvote: 19
+- 本文: If only the ancients who wrote these texts could imagine how difficult it would be to train computers to translate their work! Working with data from 1950-1750 BCE is not for the faint of heart. From 1927 CE until today, modern scholars have been working with the editing and publication of these ca. 8,000 documents in many different languages, and despite (or because of) almost 100 years of scholarly scrutiny, the datasets are more complicated and in a more convoluted format, than what the ancients originally wrote. These editions were migrated into a database, which became the foundation of the data we used for the training and supplemental data for this challenge. Unbeknownst to them, we are now re-purposing their editions for training ML models, and the messiness of the data is palpable for all to see. That said, this is the first benchmark for a significant ML application with the Old Assyrian data, so with great struggle comes greater pioneering outcomes.
+
+The purpose of this final update is to level the number of markers for gaps from two to one. The hope is that by making some small, but significant adjustments, this will improve the scores for everyone. What we refrained from doing was making any additional changes which could introduce new inconsistencies if not done uniformly. So for the final month of the competition, we will include a clear and concise list of recommendations for the training dataset for alignment with the test data.
+
+Gap Change: Replaced all the following with a single <gap>
+
+x —> <gap>
+[x] —> <gap>
+… —> <gap>
+(break) —> <gap>
+(large break) —> <gap>
+(n broken lines) —> <gap>
+<gap> <gap> —> <gap>
+Results of these changes: no more <big_gap> and no more duplicates for <gap> Before the change took place, these types of gaps were found in the test and training data. This recent change reduced all these duplicates to a single <gap>.
+
+Gap	Count
+<gap> <gap>	30
+-<gap> <gap>	9
+-<gap>-<gap>	1
+<gap> <gap>-	15
+<gap> <big_gap>	6
+<gap> <gap> <gap>	2
+<gap> <big_gap> <gap>	1
+-<big_gap> <gap>-	4
+-<big_gap> <big_gap>	13
+<big_gap> <big_gap>	15
+<big_gap> <big_gap>-	12
+<big_gap> <gap> <big_gap>	2
+<big_gap> <big_gap> <big_gap> <big_gap>-	3
+<big_gap> <big_gap> <big_gap> <gap> <gap>	1
+-<big_gap> <big_gap> <gap> <big_gap> <big_gap>-	1
+Alignment of Determinatives to match test data:
+
+(d) —> {d}
+(ki) —> {ki}
+(TÚG) —> TÚG
+Shortening of long floats to four places after the decimal
+
+1.3333300000000001 —> 1.3333
+2.6666600000000003 —> 2.6666
+The rest is up to you. Here are some recommendations, but there's no guarantee that these will improve your score on the leader board:
+
+Some of the transliteration text in the training data is missing, which is unfortunate, but fixable. You can find what is missing from the training data by matching the unique OARE_Text_ID with the equivalent OARE IDs in the published_texts.csv dataset. Do this by matching the unique IDs in the training data to the OARE IDs and find the publication (e.g. AKT 8, 130 = AKT volume 8, text number 130). The PDFs have also been provided, if you find there are missing elements in the translations (https://www.kaggle.com/datasets/deeppast/old-assyrian-kltepe-tablets-in-pdf/data).
+
+Here are some recommended options for changes to the training data:
+
+Remove from translations:
+
+fem.
+sing.
+pl.
+plural
+(?)
+any stray marks you find (e.g., .., ?, x, xx, << >>, < > except around <gap> of course)
+some of the translations equivocate two optional translations using /, it might be better to choose one or the other options provided, rather than including both with a / (e.g. "you / she brought" —> "you brought" ).
+Do not remove from translations (as these are in the test too):
+
+quotation marks " "
+apostrophes '
+meaningful question marks ? or exclamation marks !
+Replace in translations:
+
+PN —> <gap>
+-gold —> pašallum gold
+-tax —> šadduātum tax
+-textiles —> kutānum textiles
+1 / 12 (shekel) —> 15 grains
+5 / 12 shekel —> ⅔ shekel 15 grains
+5 11 / 12 shekels —> 6 shekels less 15 grains
+7 / 12 shekel —> ½ shekel 15 grains
+Decimals to Fractions:
+
+0.5 —> ½
+0.25 —> ¼
+0.3333 —> ⅓
+0.8333 —> ⅚
+0.625 —> ⅝
+0.6666 —> ⅔
+0.75 —> ¾
+0.1666 —> ⅙
+Change Roman numerals to integer numbers for months: e.g., month V —> month 5
+
+Month	Roman	MN	forms	AKA
+Month 2	III	ša-sarratim	ša sá-ra-tim	
+Month 3	III	Kenātim	ke-na-tim	ša kēnātim
+Month 4	IV	Mahur-ilī	Ma-hu-ur-DINGIR; ma-ḫu-ur-ì-lí	
+Month 5	V	Abšarrani	áb-ša-ra-ni; áb ša-ra-ni; áb-ša-ra-nu	ab šarrāni; abšarrani
+Month 6	VI	Hubur	Hu-bu-ur	
+Month 7	VII	Ṣip'um	ṣí-ip-im	ṣipum
+Month 8	VIII	Qarrātum	qá-ra-a-tí; qá-ra-a-tim	
+Month 9	IX	Kanwarta	kán-bar-ta; Kà-an-ma-ar-ta	Kanmarta
+Month 10	X	Te’inātum	té-i-na-tim	
+Month 11	XI	Kuzallum	ku-zal-li; ku-zal-lu	
+Month 12	XII	Allanātum	a-lá-na-tum; a-lá-na-tim	
+Optional changes in transliterations:
+
+Ḫ → H
+ḫ → h
+KÙ.B. —> KÙ.BABBAR
+Change unicode subscript numbers to normal integers in transliterations:
+
+₀ → 0
+₁ → 1
+₂ → 2
+₃ → 3
+₄ → 4
+₅ → 5
+₆ → 6
+₇ → 7
+₈ → 8
+₉ → 9
+Decimals to Fractions for transliterations:
+
+0.5 —> ½
+0.25 —> ¼
+0.3333 —> ⅓
+0.8333 —> ⅚
+0.625 —> ⅝
+0.6666 —> ⅔
+0.75 —> ¾
+0.1666 —> ⅙
+Examples of the Outcomes for Test
+
+Transliteration	Translation
+1 e-ma-ar-šu <gap>	1 donkey of his <gap>
+<gap> a-na Ú-<gap> a-dí-in	<gap> I gave it to U-<gap>.
+<gap> ⅓ ma-na a-na En-na-nim DUMU Am-ri-a áš-qúl	I paid <gap> ⅓ mina (silver) to Ennānum, son of Amriya.
+Examples of the Optimal Outcomes for Train
+
+Transliteration	Translation
+<gap> ma-na KÙ.BABBAR ṣa-ru-pá-am <gap> GÍN KÙ.GI pá-ša-lam	<gap> minas of refined silver, <gap> shekels of pašallum gold
+<gap> GÚ SÍG.HI.A <gap> 5 maš-ku <gap> 22 na-ru-qá-tum 4 ANŠE ṣa-la-mu	<gap> talents of wool, <gap> 5 hides, <gap> 22 sacks, 4 black donkeys
+⅓ ma-na 2 ½ GÍN KÙ.BABBAR 20 NINDA i-ṣé-er tù-wa-ra-a-ah-šu a-lá-hu-um i-šu	Tuwar-ahšu owes ⅓ mina 2 ½ shekels of silver (and) 20 loaves of bread to Ali-ahum.
+
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3414058
+- 投稿者: @ryanholbrook
+- 投稿日時: 2026-02-26
+- upvote: 2
+- 本文: The updated data is now live on the site. I will commence the rescore of existing submissions shortly.
+
+UPDATE 02/26/2026: The rescore is now complete. Please let us know if you have any questions or concerns.
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3414351
+- 投稿者: @nlztrk
+- 投稿日時: 2026-02-27
+- upvote: 1
+- 本文: Our score on LB is 34.1 but the best scoring sub in our sub history seems to be 33.5. I don't understand. 😅
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3414411
+- 投稿者: @ryanholbrook
+- 投稿日時: 2026-02-27
+- upvote: 4
+- 本文: Hi @nlztrk,
+
+Something seems to have gone wrong with the LB update. We are investigating.
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3414443
+- 投稿者: @mattiaangeli
+- 投稿日時: 2026-02-27
+- upvote: 0
+- 本文: Also the scores of some public NBs have not been updated
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3414524
+- 投稿者: @guoqingu
+- 投稿日時: 2026-02-27
+- upvote: 0
+- 本文: Hi, my LB rank changed again (40+->30+) after rerun, is there new update?
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3414535
+- 投稿者: @chenwenqiang001
+- 投稿日時: 2026-02-27
+- upvote: 0
+- 本文: transliteration:2- translation: 2+ or 2- translation of test is 2- or 2+ or 2(+gap) ??? please let me know.thank you
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3414925
+- 投稿者: @tennogh
+- 投稿日時: 2026-02-28
+- upvote: 1
+- 本文: Regarding the terms "pašallum gold", "šadduātum tax", "kutānum textiles", those appear in different forms in the texts. Are those the forms that are expected from the test data (e.g. "kutanum-textile", "kutanu textile" -> "kutānum textiles")?
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3414939
+- 投稿者: @qifeihhh666
+- 投稿日時: 2026-02-28
+- upvote: 0
+- 本文: I don’t think that’s the case.
+
+First, words like pašallum, šadduātum, and kutānum do not exist in train.csv at all.
+
+Second, submissions that do not include words such as pašallum, šadduātum, and kutānum have achieved higher scores.
+
+The host only seemed to suggest that we do this. :)
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3414946
+- 投稿者: @chenwenqiang001
+- 投稿日時: 2026-02-28
+- upvote: 0
+- 本文: when i drop the '[', ['] in the train, my scores would drop. Normally, if dropping the "[" and "]" , the scores would have been improved. I don't know why it is like this.
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3415026
+- 投稿者: @jackvd
+- 投稿日時: 2026-02-28
+- upvote: 0
+- 本文: In your transliterations or translations?
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3414479
+- 投稿者: @steveroberts
+- 投稿日時: 2026-02-28
+- upvote: 3
+- 本文: The new update seems to have truncated the longer transliteration strings. The previous training data had the following long training entries:
+
+index	oare_id	transliteration_length	translation_length
+177	1c428f5b-15b5-463a-8e27-f9b2f0d858fc	592	746
+647	64f3382c-cb81-41af-99c9-36854585b747	338	588
+927	937e71fb-57c8-46c0-afbc-48f9429886e4	343	537
+968	991eef40-f139-4206-90ed-7fb45648b197	408	593
+1090	adb0573b-20fb-469d-8343-0ace8e2489e0	357	626
+1260	c97bb594-a5a1-4674-9496-48496e91c2ee	29	602
+1378	dff850c8-ccd4-44a9-9994-2834ca832a6d	379	603
+
+The new data has truncated these to be:
+
+index	oare_id	transliteration_length	translation_length
+177	1c428f5b-15b5-463a-8e27-f9b2f0d858fc	138	739
+647	64f3382c-cb81-41af-99c9-36854585b747	107	587
+927	937e71fb-57c8-46c0-afbc-48f9429886e4	114	537
+968	991eef40-f139-4206-90ed-7fb45648b197	108	593
+1090	adb0573b-20fb-469d-8343-0ace8e2489e0	107	625
+1377	dff850c8-ccd4-44a9-9994-2834ca832a6d	120	585
+
+I'm not sure if this applies to the other rows too, but it certainly seems to have lost a lot of data.
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3414484
+- 投稿者: @mpware
+- 投稿日時: 2026-02-27
+- upvote: 1
+- 本文: Around 10% of transliterations are truncated. We've to fix that ourself according to the instructions.
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3414560
+- 投稿者: @steubk
+- 投稿日時: 2026-02-27
+- upvote: 1
+- 本文: which instructions?
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3414580
+- 投稿者: @mpware
+- 投稿日時: 2026-02-27
+- upvote: 1
+- 本文: Some of the transliteration text in the training data is missing, which is unfortunate, but fixable. You can find what is missing from the training data by matching the unique OARE_Text_ID with the equivalent OARE IDs in the published_texts.csv dataset. Do this by matching the unique IDs in the training data to the OARE IDs and find the publication (e.g. AKT 8, 130 = AKT volume 8, text number 130). The PDFs have also been provided, if you find there are missing elements in the translations (https://www.kaggle.com/datasets/deeppast/old-assyrian-kltepe-tablets-in-pdf/data).
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3414593
+- 投稿者: @steveroberts
+- 投稿日時: 2026-02-27
+- upvote: 3
+- 本文: 
+It's a bit bad though that data that was there, and which I spent a large amount of time working out how to split, has now suddenly disappeared from the data set.
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3415110
+- 投稿者: @edwardxiao01
+- 投稿日時: 2026-02-28
+- upvote: 0
+- 本文: 
+A large number of data where the ratio between the lengths of transliteration and translation seem weird have wrong/truncated transliteration/translation, e.g. 8376cbda-b423-42d4-abb5-188d04896392. Can follow the instruction to find the raw pdf and amend these data case by case.
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3414364
+- 投稿者: @yaroshevskiy
+- 投稿日時: 2026-02-27
+- upvote: 1
+- 本文: 
+Can't describe an amount of confusion when comparing a new train dropped last week and a new train from yesterday and now I'm trying do understand how to merge those two
+
+upd: sorry, my humble verdict is that these updates last week made things worse…
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3414370
+- 投稿者: @yaroshevskiy
+- 投稿日時: 2026-02-27
+- upvote: 0
+- 本文: 
+how to understand this:
+
+before: 31 kutānu-textiles of Iddin-Suen, 30 kutānu-textiles of Ah-šalim, 46 kutānu-textiles of hinnāya and Uṣurānum, 21 kutānu-textiles of Aššur-rēī, 36 kutānu-textiles of Šu-Ištar, 28 kutānu-textiles of Ennam-Suen, 24 kutānu-textiles of Lā-qēp, 18 kutānu-textiles of the merchant, 7 kutānu-textiles without seals, 14 textiles import-tax, 17 textiles as pre-emption.
+after:  31 -textiles of Iddin-Suen, 30 -textiles of Ah-šalim, 46 -textiles of hinnāya and Uṣurānum, 21 -textiles of Aššur-rē'ī, 36 -textiles of Šu-Ištar, 28 -textiles of Ennam-Suen, 24 -textiles of Lā-qēp, 18 -textiles of the merchant, 7 -textiles without seals, 14 textiles import-tax, 17 textiles as pre-emption.
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3414465
+- 投稿者: @deeppast
+- 投稿日時: 2026-02-27
+- upvote: 0
+- 本文: 
+Yes, you can see in the post above, I recommend making some small changes, egg. -textiles --> kutānum textiles, but this should be checked with the AKT volumes in PDF to be certain. The interum data (v2) update did this, but it introduced new errors because of a simple search / replace. Those changes were rolled back in the lates update (v3), and instructions were provided how to deal with those (above).
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3414732
+- 投稿者: @yaroshevskiy
+- 投稿日時: 2026-02-27
+- upvote: 0
+- 本文: 
+do you recommend to take V3 and manually update it based on the tutorial or to take V2 and just fix 's and quotes?
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3414898
+- 投稿者: @tennogh
+- 投稿日時: 2026-02-28
+- upvote: 1
+- 本文: 
+Maybe even v1 is the least flawed, especially if you have already done the work to fix the gaps on it.
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3414927
+- 投稿者: @deeppast
+- 投稿日時: 2026-02-28
+- upvote: 0
+- 本文: 
+v3 = v1 with the gaps fixed.
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3414169
+- 投稿者: @edwardxiao01
+- 投稿日時: 2026-02-26
+- upvote: 5
+- 本文: 
+@deeppast hihi,
+
+Regarding the unit conversions that you mentioned below, I suspect that the right-hand-side of the first two rows should be interchanged
+
+1 / 12 (shekel) —> ⅔ shekel 15 grains
+5 / 12 shekel —> 15 grains
+5 11 / 12 shekels —> 6 shekels less 15 grains
+7 / 12 shekel —> ½ shekel 15 grains
+Is it that 1/12 shekel == 15 grains ?
+
+if so, then the conversions should instead be
+
+1 / 12 (shekel) —> 15 grains
+5 / 12 shekel —> ⅔ shekel 15 grains
+5 11 / 12 shekels —> 6 shekels less 15 grains
+7 / 12 shekel —> ½ shekel 15 grains
+is it?
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3414891
+- 投稿者: @deeppast
+- 投稿日時: 2026-02-28
+- upvote: 2
+- 本文: 
+yes that's right
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3414997
+- 投稿者: @takuji
+- 投稿日時: 2026-02-28
+- upvote: 0
+- 本文: 
+Isn't it 5 / 12 shekel —> ⅓ shekel 15 grains instead of 5 / 12 shekel —> ⅔ shekel 15 grains?
+
+There are probably many similar mistakes in the test data.
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3414172
+- 投稿者: @chenwenqiang001
+- 投稿日時: 2026-02-26
+- upvote: 6
+- 本文: 
+I think you should update these data from the beginning.Some samples from train.csv were aligned by hand. To revise these one more is really a challenging work.
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3414894
+- 投稿者: @deeppast
+- 投稿日時: 2026-02-28
+- upvote: 1
+- 本文: 
+There will be no further updates, I'm sorry.
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3414072
+- 投稿者: @mpware
+- 投稿日時: 2026-02-26
+- upvote: 11
+- 本文: 
+@deeppast Thanks for the update. Some clarification to be 101% sure:
+
+About double quotes:
+
+Do not remove from translations (as these are in the test too):
+
+quotation marks " "
+
+In the previous update:
+
+quotations " “= removed
+
+The final rule is keep all quotation marks, correct? And for curly double quotes, we have to convert them to plain double quotes or not?
+
+About parentheses:
+
+In the previous update:
+
+parentheses ( )= removed
+
+Now, we need to keep parenthesis as for the examples outcomes you've provided, right?
+
+For instance: 0faa50f7-b86c-466c-a8ab-3a6f48fcb00a
+
+"at 52.5 grains (of silver) each, 0.5 shekel" we must keep the parenthesis around of silver, right?
+
+We must not do: "at 52.5 grains of silver each, 0.5 shekel"
+
+About replacements:
+
+-tax —> šadduātum tax
+
+-gold —> pašallum gold
+
+textiles —> kutānum textiles (are you sure it's not -textiles —> kutānum textiles )?
+
+And it's textiles and -tax and -gold surrounded by spaces? If not then in 198e428d-f51b-40d1-96d8-aee4bfa60d8d:
+
+"of Ennam-Suen, 8 textiles as import-tax, 10 textiles are pre-emption"
+
+would become:
+
+"of Ennam-Suen, 8 kutānum textiles as importšadduātum tax, 10 kutānum textiles are pre-emption".
+
+and it 229be03b-c772-4a6c-8792-c3f80948a97d:
+
+"received 28 kutānu-textiles and 1 black donkey"
+
+would become:
+
+"received 28 kutānu-kutānum textiles and 1 black donkey"
+
+Which would look weird, please confirm.
+
+About <gap>:
+
+In previous update:
+
+added space around gap in translations (not transliterations)
+
+Is it still true? Do we need to add space around <gap> except if glued with a dash?
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3414734
+- 投稿者: @deeppast
+- 投稿日時: 2026-02-27
+- upvote: 2
+- 本文: 
+the questions about quotes and parentheses are extremely important
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3414893
+- 投稿者: @yaroshevskiy
+- 投稿日時: 2026-02-28
+- upvote: 1
+- 本文: 
+Yes, keep parentheses and quotations should be dead quotes, no curl, same for apostrophes / scare quotes.
+
+Do not remove from translations (as these are in the test too): quotation marks " " apostrophes ' meaningful question marks ? or exclamation marks !
+
+As for the words which begin with -: words which appear with an initial hyphen have a space before them, rather than those words which are joined to another word with a hyphen. These suggestions are meant to provide some context for the missing words, but the only way to know for sure is to check in the PDFs, which is why they were not replaced in v3. These missing parts were removed in the OARE database, and should be replaced in an ideal situation by checking the PDFs.
+
+-gold —> pašallum gold
+-tax —> šadduātum tax
+-textiles —> kutānum textiles
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3414139
+- 投稿者: @epiktistes
+- 投稿日時: 2026-02-26
+- upvote: 6
+- 本文: 
+I am a bit confused about the table that follows 'Results of these changes: no more <big_gap>'. That table still says <gap> <gap>: 30, <gap> <big_gap>: 6, etc. Does this mean that there's till 30 occurrences of <gap> <gap>, 6 occurrences of <gap> <big_gap>, etc. in the test set?
+
+I thought I had understood that all of the <big_gap> had been replaced by <gap> and neighboring gaps had been merged together, but I'm less certain I understand right now.
+
+Edit: it seems that some time since this post Results of these changes: no more <big_gap> was changed to Results of these changes: no more <big_gap> and no more duplicates for <gap> Before the change took place, these types of gaps were found in the test and training data. This recent change reduced all these duplicates to a single <gap>. so it's now clearer. Thank you for the clarification!
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3414148
+- 投稿者: @epiktistes
+- 投稿日時: 2026-02-26
+- upvote: 0
+- 本文: 
+In this very post, i can't find any info about merging gap…
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3414146
+- 投稿者: @honganzhu
+- 投稿日時: 2026-02-26
+- upvote: 0
+- 本文: 
+That's what had been mentioned in last week's update:
+
+Gaps, damage markers, and parallel alignment [update: 2/18/26]
+
+Another recurring source of confusion concerns damaged text and gap markers in the data:
+
+    x represents a single broken sign,
+    sequences like x x x x or ... represent a larger lacuna.
+
+For modeling purposes we reduced all breaks to a single marker: <gap>
+
+ we removed the tag for <big_gap> from the train and test (and other transliterations). We also deduplicated instances multiple sequential gaps (e.g. <gap> <gap, <gap>-<gap>, <gap> <gap>, <gap>. <gap>, etc.
+Source: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/665209
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3414149
+- 投稿者: @epiktistes
+- 投稿日時: 2026-02-26
+- upvote: 2
+- 本文: 
+thanks, i'm aware, just thought this post is a comprehensive summary of all the changes, which apparently is not…
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3414179
+- 投稿者: @steubk
+- 投稿日時: 2026-02-26
+- upvote: 1
+- 本文: 
+just for the record, this update does not include all the changes made in the previous update
+For example unicode subscript numbers are now present in the train transliteration:
+0064939c-59b9-4448-a63d-34612af0a1b5 -> 1 TÚG ša qá-tim i-tur₄-DINGIR il₅-qé ...
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3414173
+- 投稿者: @rejk11
+- 投稿日時: 2026-02-26
+- upvote: 2
+- 本文: 
+Remove from translations:
+
+    fem.
+    sing.
+    pl.
+    plural
+    (?)
+    any stray marks you find (e.g., .., ?, x, xx, << >>, < > except around <gap> of course)
+You recommend removing these words but would these words be included in the test set?
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3414001
+- 投稿者: @deeppast
+- 投稿日時: 2026-02-26
+- upvote: 0
+- 本文: 
+Yes, both test and train will be updated shortly.
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3415113
+- 投稿者: @fx6300
+- 投稿日時: 2026-02-26
+- upvote: 0
+- 本文: 
+It looks like the “Change Roman numerals to integer numbers for months” table is misaligned/broken: Month 2 is labeled as Roman III, and III appears twice.
+
+According to Kouwenberg (Introduction to Old Assyrian, p. 182), the Old Assyrian calendar starts with Month 1 = I (Bēlat ekallem/Bēltekallem), followed by Month 2 = II (ša sarrātim) and Month 3 = III (ša kēnātim). Could you add Month 1 and shift/correct the Roman numerals accordingly?
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3414239
+- 投稿者: @alturutin
+- 投稿日時: 2026-02-26
+- upvote: 0
+- 本文: 
+Hi! Can you clarify these examples in translation:
+
+I paid <gap> ⅓ mina (silver) to Ennānum, son of Amriya.
+Tuwar-ahšu owes ⅓ mina 2 ½ shekels of silver (and) 20 loaves of bread to Ali-ahum.
+Why are we using curved parenthesis? I looked at train.csv on datasets page and there are no examples of "(silver)". Or examples of parenthesis usage.
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3414462
+- 投稿者: @deeppast
+- 投稿日時: 2026-02-27
+- upvote: 2
+- 本文: 
+The parentheses are used by translators to fill in words that are missing in the Akkadian transliteration, but which provides sometimes necessary context.
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3414137
+- 投稿者: @edwardxiao01
+- 投稿日時: 2026-02-26
+- upvote: 0
+- 本文: 
+Thanks for the update!
+
+May I ask about a specific case: 33773ec0-e74f-41bf-b985-f3e35b0f26c9
+
+From what Amur-Aššur (owes?)
+will such case of (some word?) appear in the test set?
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3414460
+- 投稿者: @deeppast
+- 投稿日時: 2026-02-27
+- upvote: 0
+- 本文: 
+yes, unfortunately, that does exist.
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3413999
+- 投稿者: @alejopaullier
+- 投稿日時: 2026-02-26
+- upvote: 0
+- 本文: 
+Thanks @deeppast for your ongoing efforts. What does this exactly mean?
+
+PN —> < gap >
+
+Does this mean that every personal name to be found must be replaced by a gap tag? Or just the literal PN?
+
+Also,
+
+Shortening of long floats to four places after the decimal
+
+I am a bit confused by this since later you suggest converting them to unicode fractions. Does the hidden test set (both translations and transliterations) contain floating point numbers or only unicode fractions?
+
+Thanks in advance
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3414000
+- 投稿者: @deeppast 
+- 投稿日時: 2026-02-26
+- upvote: 3
+- 本文: 
+That's a literal PN token, there are some of these in Veenhof's translations from AKT 8.
+
+I already shortened the floats, so that the conversion to fractions will be easier for you, if you choose to do so. As seen in the example at the end, the test contains only unicode fractions (no decimals at all).
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3414003
+- 投稿者: @alejopaullier
+- 投稿日時: 2026-02-26
+- upvote: 0
+- 本文: 
+Perfect, thanks a lot!
+
+---
+
 ## Entry: `674136`
 - URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/674136
 - タイトル: Dataset Update - Mind the Gaps
