@@ -1,0 +1,5 @@
+interface:
+  display_name: "Kaggle Official Primary Reader"
+  short_description: "Answer from repo-captured Kaggle originals"
+  default_prompt: "Use $kaggle-official-primary-reader to retrieve/verify official competition info from the repo-captured Kaggle Overview/Data/Dataset Instructions markdown files, quoting key requirements verbatim when needed."
+
