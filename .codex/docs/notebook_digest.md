@@ -6,7 +6,7 @@
 
 | 日付 | 追加したノート数 | 追加したコメント数 | メモ |
 |------|------------------|--------------------|------|
-| 2026-03-01 | 0 | 0 | `notebooks/002/dpc-starter-train-cv5.ipynb` と `notebooks/004/dpc-baseline-train-infer.ipynb` を比較して、評価が極端に低い主因として **ByT5 での生成長の未指定（`generation_max_length` / `max_new_tokens`）** が濃厚だと判明。Baseline側は `generation_max_length=512` を明示しており `eval_geo_mean` が “数十” になり得る。一方CV5側はデフォルト生成長（短い）に依存し、BLEU/chrF がほぼ 0 になって `geo_mean≈0` に落ちる可能性が高い。加えて Baseline は expanded sentence をランダム split しており、同一ドキュメント由来サンプルが train/val に跨る **リーク**で評価が過大になり得る。 |
+| 2026-03-01 | 0 | 0 | `notebooks/002/dpc-starter-train-cv5.ipynb` と `notebooks/004/dpc-baseline-train-infer.ipynb` を比較して、評価が極端に低い主因として **ByT5 での生成長の未指定（`generation_max_length` / `max_new_tokens`）** が濃厚だと判明。Baseline側は `generation_max_length=512` を明示しており `eval_geo_mean` が “数十” になり得る。一方CV5側はデフォルト生成長（短い）に依存し、BLEU/chrF がほぼ 0 になって `geo_mean≈0` に落ちる可能性が高い。加えて Baseline は expanded sentence をランダム split しており、同一ドキュメント由来サンプルが train/val に跨る **リーク**で評価が過大になり得る。追記: 公開ノート側では「サブワード tokenization を自前で作る（BPE/SentencePiece）」の言及はあるが、ByT5 vs サブワードの体系的な比較（ablation）は少なく、上位ノートの主眼は前処理/推論最適化に寄っている印象。 |
 | 2026-02-28 | 0 | 0 | 公開ノートで頻出の MBR（Minimum Bayes Risk）デコードを「モデルを変えずに」取り込む方針を採用。`mattiaangeli/deep-pasta-mbr` の実装（候補プール + BLEU系での rerank）を参考に、ローカル提出ノート `notebooks/003/deep-09-mbr-v1.ipynb` に decoding-only で反映（アイデアは1つに限定）。`sacrebleu` がある場合は sentence BLEU、無い場合は文字n-gram F1 で MBR スコア計算にフォールバック。 |
 | 2026-02-27 | 0 | 0 | 「主に使われているモデル」観点で上位ノートを追加確認（`get_notebook_info` でソースを確認）。ByT5 系が主流で、mBART50/LLM 後処理/LLM LoRA も一部。 |
 | 2026-02-26 | 2 | 0 | Kaggle MCP が未認証/authorize エラーのため、Kaggleページのアーカイブから要約 |
@@ -67,6 +67,7 @@
 （複数ノートに共通するテーマ: リーク指摘・評価指標の実装・よく使われる特徴量など）
 
 - 主流モデルは **ByT5（`AutoModelForSeq2SeqLM`）の finetune / 推論最適化 / アンサンブル**。例: `takamichitoda/dpc-starter-train`, `qifeihhh666/dpc-starter-infer-add-sentencealign`, `anthonytherrien/byt-ensemble-script`（いずれも ByT5 系モデルをロードして推論）。
+- サブワード分割（BPE/SentencePiece）については、mT5/NLLB/mBART のような **サブワード系の既存翻訳モデルをそのまま使う**ノートや、「Akkadian 用に SentencePiece を自前学習する」方向性の言及がある。一方で、LB 上位で「サブワード化が効いた」を主張する決定的な公開比較は（少なくとも上位ノートの文脈では）見当たりにくい。
 - 推論側の代表的なスコア押し上げアイデアとして **MBR（Minimum Bayes Risk）デコード**が見られる（候補を複数生成し、候補同士の類似度（BLEU/chrF など）で rerank）。例: `mattiaangeli/deep-pasta-mbr`, `mattiaangeli/deep-pasta-mbr-v2`。
 - よく参照される ByT5 チェックポイント（fine-tune 済み配布物）の例:
   - `"/kaggle/input/byt5-akkadian-model"`（Starter 系の出力として頻出）

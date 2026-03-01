@@ -29,6 +29,18 @@
 - **ByT5 以外の seq2seq も一部で検証**  
   - 例: `rifat963/offline-competition-deep-past-challenge-mbart50`（mBART50 + LoRA、オフライン前提）
 
+### 0.2 サブワード分割（BPE/SentencePiece）に関する “公開物での扱い”
+
+公開ノートの観測範囲では、次の 2 パターンが見られる。
+
+1) **サブワード前提の既存翻訳モデルを使う**（= tokenizer はモデル付属の SentencePiece/BPE をそのまま使う）  
+   - 例: `kayamui/starter-baseline-with-google-mt5-small`（mT5）、`kageyama/starter-t5-base-nmt-baseline(-infer)`（T5）、`riti0208/deep-past-nllb-200`（NLLB）、`rifat963/offline-competition-deep-past-challenge-mbart50`（mBART50）。
+2) **Akkadian 用の subword tokenizer を自前学習/差し替えする発想**  
+   - 例: `kayamui/starter-baseline-with-google-mt5-small` は “Ideas for Improvement” に **「Subword tokenization: custom BPE/SentencePiece」** を明示。  
+   - 例: `zhangyue199/dpc-byt5-retrain-tokenizer` は **tokenizer 再学習**をテーマにしている（要: 内容精読）。
+
+ただし、LB 上位（ByT5 系）文脈の公開物では、**ByT5（byte-level） vs サブワード分割の体系的比較（同条件 ablation）**は前面に出ていない印象で、実務的には前処理と推論最適化（生成長・ビーム・MBR 等）に議論が集中している。
+
 ### 0.1 よく出てくる “ByT5 のチェックポイント名/パス” 例（=実際にロードされているもの）
 
 公開ノートでは、Hugging Face の “素の ByT5” というより、**fine-tune 済み重みを Kaggle Dataset / Kaggle Model として配布**し、`from_pretrained("/kaggle/input/...")` で読むケースが多い。
