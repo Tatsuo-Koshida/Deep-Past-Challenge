@@ -12,6 +12,16 @@
 
 ---
 
+## Entry: `679497`
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/679497
+- タイトル: Lora on ByT5 large
+- 投稿者: @pshikk
+- 投稿日時: 2026-03-01
+- upvote: 2
+- 本文: Just wanted to try out lora on a model bigger than ByT5-small, didn't really work well, the best submission caps out at 18.0 . Notebook - https://www.kaggle.com/code/pshikk/ffn-lora-deep-past Outputs - https://www.kaggle.com/datasets/pshikk/lora-5-byte
+
+---
+
 ## Entry: `678899`
 - URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899
 - タイトル: A Stitch in Time Saves Nine
@@ -198,6 +208,101 @@ Something seems to have gone wrong with the LB update. We are investigating.
 - 投稿日時: 2026-02-27
 - upvote: 0
 - 本文: transliteration:2- translation: 2+ or 2- translation of test is 2- or 2+ or 2(+gap) ??? please let me know.thank you
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3416050
+- 投稿者: @cengricardoperez
+- 投稿日時: 2026-03-02
+- upvote: 2
+- 本文: Thanks for the comprehensive update and all the clarifications in the comments. After applying the v3 changes, a few things that helped on my end:
+
+Recovering truncated transliterations: Confirmed that ~10% are affected. Matching oare_id against published_texts.csv and cross-referencing with the AKT PDFs recovered most of them. Be careful, though, some entries aren't just truncated; the translation doesn't match the transliteration at all (as MPWARE pointed out for AKT 8, 55), so it's worth doing a length-ratio sanity check before blindly patching.
+
+The -textiles / -gold / -tax replacements: Based on the host's clarification, these only apply when preceded by a space (i.e., -textiles to kutānum textiles), not in the middle of a word, like import-tax or kutānu-textiles. A naive str.replace will break things, regex with word boundaries or explicit space matching is safer here.
+
+Straight quotes: Curly quotes to straight quotes for both " and '. Small thing, but easy to miss if your text editor or PDF extraction reintroduces curly ones.
+
+Still working through the fraction conversions and subscript normalization. Good luck to everyone in the final stretch!
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3415275
+- 投稿者: @mpware
+- 投稿日時: 2026-03-01
+- upvote: 1
+- 本文: I'm trying to identify the mapping between oare_id in train.csv and the AKT PDF in order to complete broken sections, I've found 1561 matches:
+
+AKT 5 = 77 oare_id
+AKT 6a = 304 oare_id
+AKT 6b = 222 oare_id
+AKT 6c = 201 oare_id
+AKT 6d = 139 oare_id
+AKT 6e = 255 oare_id
+AKT 8 = 363 oare_id (e.g. 0123a9b9-e81e-4d7a-a79b-10e7c0aacbb9 Kt 91/k 471, page 213)
+Someone with similar results? @jackvd You was saying around 400 items was broken?
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3415360
+- 投稿者: @angantyr
+- 投稿日時: 2026-03-01
+- upvote: 4
+- 本文: I have similar results with regard to AKT 5 and AKT 6a. I still have to verify a few ids to be sure but when I do I can post it in the updated train.csv dataset to make everyone lives a bit easier.
+
+Edit: The dataset with sources included should be up and running.
+
+Publication	page
+AKT 5	76
+AKT 6a	295
+AKT 6b	218
+AKT 6c	196
+AKT 6d	137
+AKT 6e	233
+AKT 8	355
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3415774
+- 投稿者: @mpware
+- 投稿日時: 2026-03-01
+- upvote: 4
+- 本文: I've updated my list:
+
+pub_pd = pd.read_csv("data/published_texts.csv")
+
+train_df = pd.read_csv("data/train.csv")
+
+akt_pd = pub_pd[(pub_pd['oare_id'].isin(train_df["oare_id"].unique()))][["oare_id", "label", "excavation_no", "transliteration"]]
+akt_pd["pdf"] = akt_pd["label"].str.extract(
+    r"\bAKT\s+(\d+[a-zA-Z]?)",
+    expand=False
+)
+pdf
+5      77
+6a    304
+6b    222
+6c    201
+6d    139
+6e    255
+8     363
+Some rows in train.csv are more than broken, the translation just does not match the transliteration at all. For instance: AKT8, 55. Kt 91/k 304 (1-161-91) oare_id: 5f088d12-ed99-434a-a113-65deab7e1426
+
+In the PDF: 
+
+In train.csv: whatever v1,v2 or v3 
+
+After RE-OCR: 
+
+oare_ids from AKT 6e are one of the most broken.
+
+This competition is about normalization and cleaning.
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3416194
+- 投稿者: @angantyr
+- 投稿日時: 2026-03-02
+- upvote: 0
+- 本文: I wonder for how many of such cases we could employ a set match filtering, e.g., 'a-na'/'from', 'ku.babbar'/'silver', etc.
+
+It would not be a guarantee but a first stage flag to have a manual check and there are many words that have a 1:1 equivalent with English.
+
 
 ### Comments
 - URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3414925
