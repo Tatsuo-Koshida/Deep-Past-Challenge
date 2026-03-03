@@ -137,6 +137,40 @@
 
 - **関連コーパス（ORACC 等）で追加事前学習**し、DPC train で finetune。
 - **翻訳の style を揃える**（句読点・固有名詞の表記揺れ）ため、英語側の正規化や簡易な再整形を検討。
+- **`published_texts.csv`（転写のみ）を “強い翻訳器” で擬似ラベル化して蒸留（teacher→student）**する案は有望だが、運用/規約の注意が多い。
+  - 規約面: Overview の “Freely & publicly available external data is allowed” に厳密に合わせるなら、擬似ラベル（翻訳結果）も **第三者が自由に入手できる形**（例: 公開 Kaggle Dataset 等）で用意するのが安全。個人環境で生成して私有のまま持ち込むのは解釈が割れ得る。
+  - 実装面: サブミット用ノート内で外部API（GPT等）は呼べない（Internet disabled）。**事前生成→ノートで読み込み**が前提。
+  - 品質面: “確度の高いものだけ” を選ぶなら、単発の自己申告 confidence より **自己一貫性/合意**（例: 低温度で複数回翻訳して一致度が高い、別プロンプトでも安定、別モデルでも近い）でフィルタするのが堅い。長さ比/禁止文字/記号崩れ/固有名詞の扱いなどの簡易ヒューリスティックも併用する。
+  - 学習面: 擬似データはラベルノイズを含むため、(a) 本物 `train.csv` を常に高比率で混ぜる、(b) 擬似データの loss weight を下げる、(c) curriculum（擬似→本物の順）を比較する、等で “悪化” を避ける。
+  - 代替（低リスク）: 翻訳を作らずに `published_texts.csv` で **転写側の追加事前学習（DAPT / continued pretraining）→ supervised finetune**は、規約・品質・再現性の観点で取り回しが良い（公開ノートにも例あり）。
+
+#### 参考: 公開ノートでの `published_texts.csv` の使われ方（2026-03-03 時点の観測）
+
+Kaggle公開ノートのソース確認（Kaggle MCP）で、`published_texts.csv` は主に次の用途で使われていた。
+
+- **(A) 転写コーパスとしての DAPT / continued pretraining**  
+  - 例: `kageyama/akkadian-language-modeling-continued-pre-training`（`published_texts.csv` の転写をサンプルして self-supervised 学習）。
+- **(B) `AICC_translation` を起点に “追加の並列データ” を作る**  
+  - 例: `zhangyue199/dpc-ai-translation-dataset`（aicuneiform.com から英訳を抽出して CSV 化）。  
+  - 例: `akkmit/allcaps`（ノート内で “AICC_translation由来のペア” を収集して学習に利用する意図が見える）。
+- **(C) 既存の翻訳ソース（PDF/OCR等）と突合して train を拡張**  
+  - 例: `seraquevence/dpc-increase-the-train-data-v02`（`published_texts` の転写と翻訳を `excavation_no` などで突合して `train_plus.csv` を作る）。
+- **(D) EDA / retrieval の参照コーパス**  
+  - 例: `leiwong/deep-past-challenge-eda-extended-dataset`（統計・品質指標・拡張データの提案）。  
+  - 例: `hanifnoerrofiq/machine-translation-starter-notebook`（翻訳メモリ/retrieval に `published_texts` を混ぜる設計がある）。
+
+#### 参考: 公開ノートでの `publications.csv` の使われ方（2026-03-03 時点の観測）
+
+`publications.csv` は「PDF を OCR/LLM 補正したページ単位テキスト（`pdf_name,page,page_text,has_akkadian`）」で、**そのままでは転写↔英訳が整列していない**。公開ノートでは主に次の方向で使われていた。
+
+- **(A) 追加の並列データ（転写↔英訳）を“抽出して増やす”発想**  
+  - 例: `rohanrk1813/translator-comp-0-30` は「Extract additional training data from publications.csv」を明記し、`publications.csv` と `published_texts.csv` を読み込んで `extract_parallel_texts_from_publications(...)` を呼ぶ構成を含む。  
+  - 例: `seraquevence/dpc-increase-the-train-data-v02` は `publications.csv` を読み込み、`published_texts.csv` の転写と、別途用意した翻訳（PDF確認）を突合して `train_plus.csv` を作る方針を示す。
+  - 注意: いずれも “突合キー（`pdf_name` / `excavation_no` / 各種ID）” と “ノイズ除去（OCR崩れ/改行/多言語/脚注）” が肝で、雑に混ぜるとラベルノイズで悪化しやすい。
+- **(B) EDA/品質把握（どのPDFにどれだけテキストがあるか）**  
+  - 例: `angantyr/deep-past-2025-data-analysis-and-cleaning`, `gpreda/akkadian-for-accountants`, `mpwolke/akkadian-by-the-river-of-babylon` は `publications.csv` を読み込み、分布や欠損・重複等を確認する文脈がある。
+- **(C) “将来的に抽出できるかも” の提案止まり**  
+  - 例: `eunicetu/dataset-overview-starter-baselines` は `publications.csv` からの抽出・アラインを “High impact” として推奨するが、ノート内で実装しているわけではない（紹介/方針提示）。
 
 補足（2026-02-27 / ローカルに保存した公開ノートより）:
 - `notebooks/001/akkadian-language-modeling-continued-pre-training.ipynb` は、**翻訳の前に T5-base をアッカド語転写でドメイン適応**させる発想（continued pre-training）。determinatives（`{d}` 等）や `<gap>` を special token にして “分割されにくくする” のは再現しやすい。
