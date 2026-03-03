@@ -681,6 +681,14 @@ Remove from translations:
 You recommend removing these words but would these words be included in the test set?
 
 ### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3416494
+- 投稿者: @deeppast
+- 投稿日時: 2026-03-03
+- upvote: 0
+- 本文: 
+no, they are not included in the test set
+
+### Comments
 - URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/678899#3414001
 - 投稿者: @deeppast
 - 投稿日時: 2026-02-26
