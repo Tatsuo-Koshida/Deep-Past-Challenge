@@ -17,8 +17,15 @@
 - タイトル: Lora on ByT5 large
 - 投稿者: @pshikk
 - 投稿日時: 2026-03-01
-- upvote: 2
+- upvote: 4
 - 本文: Just wanted to try out lora on a model bigger than ByT5-small, didn't really work well, the best submission caps out at 18.0 . Notebook - https://www.kaggle.com/code/pshikk/ffn-lora-deep-past Outputs - https://www.kaggle.com/datasets/pshikk/lora-5-byte
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/679497#3417009
+- 投稿者: @adarsh2626
+- 投稿日時: 2026-03-04
+- upvote: 0
+- 本文: LoRA is best for adapting or specializing a pretrained model. It can learn new behaviors, but teaching completely new knowledge or capabilities is much harder than with full fine tuning
 
 ---
 
