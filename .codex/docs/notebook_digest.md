@@ -17,6 +17,36 @@
 | 2026-02-26 | 0 | 0 | Kaggle MCP で `search_notebooks` を試したが `Unauthenticated`（=公開ノートの一覧取得ができず）。アダプタ側の `Authorization: Bearer:` バグで失敗している可能性が高い（`public_insights.md` 参照） |
 | 2026-02-26 | 20 | 0 | Kaggle MCP で `search_notebooks` / `get_notebook_info` が成功。upvote（主）+新しさ（従）で重要ノートをランキングして追記（後述）。 |
 
+## 実験計画メモ: `v5 → v6` の ablation（2026-03-04）
+
+対象（実験ログの状況）:
+- `notebooks/002/[3]dpc-starter-train-cv5-v5-colab.ipynb` → `notebooks/002/[3]dpc-starter-train-cv5-v6-colab.ipynb`
+- CV: `mean=18.4611, std=0.6222` → `mean=17.7535, std=0.5035`（平均↓だが安定性↑）
+- Entry: `678899`（ホストの “最新データセット更新” に関する推奨）を取り込んだが、複数アイデア同時投入のため寄与が分離できない。
+
+目的:
+- **“CV が下がった要因”** と **“効いている正規化”** を切り分けて、以後は 1 観点ずつ積み上げる。
+
+小分け観点（toggle 単位）:
+- 観点A（評価だけ）: `compute_metrics()` での `normalize_translation()` 適用 **のみ**（学習データの入出力は v5 のまま）
+- 観点B（alignmentだけ）: sentence align の前に translation の軽い掃除（`fem.` 等の `.` を含む注釈が sentence split を壊すのを防ぐ）**のみ**
+- 観点C（transliteration 正規化）: 入力側だけ（推奨: 小→大）
+  - C1: gap 表現統一（`[x]` / `(break)` 系→`<gap>`、`<gap>` 連続の dedup）
+  - C2: 決定詞の整合（`(d)->{d}`, `(ki)->{ki}`, `(TÚG)->TÚG`）
+  - C3: `<gap>` 周辺の記号掃除（例: `-<gap>` / `<gap>-`）※誤変換リスクがあるので後回し
+- 観点D（translation 正規化）: 目的変数（英訳）だけ（推奨: 小→大）
+  - D1: `fem./sing./pl./plural/(?)` 除去（ホストが “test に無い” と明言）
+  - D2: literal `PN -> <gap>`
+  - D3: 小数→Unicode分数、`month V -> month 5`（表記ゆれ吸収）
+  - D4: 辞書的置換（`-gold/-tax/-textiles` や shekel 定型変換）※分布を変えるので後回し
+  - D5: スラッシュ代替の片寄せ（`you / she`→片方）※最も事故りやすいので最後
+- 観点E（reverse 方向の影響）: `en→akk` 側で translation 正規化を input に使う/使わない（multi-task の入力分布が変わる）
+
+推奨の実施順（最短で原因切り分け）:
+1) **A 単独**（“学習が悪化” か “評価の数え方が変わっただけ” かを切る）
+2) **D1 → C1 → C2**（Entry: `678899` の趣旨に直結し、比較的低リスク）
+3) それでも平均が下がる場合は **E** と **D4** を単独で ON/OFF（影響が大きい可能性）
+
 ## メモ: `notebooks/002/[3]dpc-starter-train-cv5-v5-colab.ipynb` の前処理/後処理
 
 ### 前処理（データ）
