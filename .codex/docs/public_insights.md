@@ -1,6 +1,6 @@
 # Deep Past Challenge（Translate Akkadian to English）公開ノート/コメントからの学び（暫定）
 
-最終更新: 2026-03-03
+最終更新: 2026-03-04
 
 > 注意: 本来は Kaggle MCP で公開ノートブック/ディスカッション/コメントを収集したいが、この環境では Kaggle MCP が `Unauthenticated` になり、`authorize` もエラーで進められない。  
 > そのため本メモは、Kaggleページのアーカイブ（archive.ph 等）と外部の公開記事を一次ソースとして、現時点で再現性のある範囲だけを整理している。
@@ -186,6 +186,7 @@ Kaggle公開ノートのソース確認（Kaggle MCP）で、`published_texts.cs
 ### Priority 5: 推論チューニング（スコア最適化）
 
 - `num_beams`, `length_penalty`, `max_new_tokens` をメトリクス（BLEU/chrF++）で最適化。
+- 公開ノートの観測レンジ（ByT5）: `num_beams=2/4/5/8` が使われている（例: `pheezzyy/byt5-genreprocess-2beams-512`, `llkh0a/dpc-baseline-train-infer`, `kiza123123/trinity-akkadian-sota-v2-0-beam-search-upgrade`, `prayagp1/adaptive-beams-test-v1`）。まずは **4（標準）→ 5（微増）**、計算制約が強ければ **2**、長文で伸びるなら **短文4/長文8** のような適応も候補。
 - n-best を保存して、**chrF++ 寄りの rerank**（文字一致が効きやすい）を試す価値がある。
 - 公開ノートの実装例では、候補を「beam + sampling」でプールし、**候補同士の sentence-level BLEU（`sacrebleu`）で MBR rerank**する構成がある（例: `mattiaangeli/deep-pasta-mbr`）。モデルを固定したまま取り込める改善として、ローカル提出ノート `notebooks/003/deep-09-mbr-v1.ipynb` に decoding-only で反映（`sacrebleu` が無い場合は文字n-gram F1 にフォールバック）。
 
