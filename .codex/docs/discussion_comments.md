@@ -12,6 +12,27 @@
 
 ---
 
+## Entry: `679766`
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/679766
+- タイトル: Old Assyrian Tokens
+- 投稿者: @davidochoacorrales
+- 投稿日時: 2026-03-03
+- upvote: 3
+- 本文: I made this short list: it contains all the syllables that appear in the OARE database. This can be useful in token problems; I use it with the unicodedata library in Python, simply normalizing it.
+
+https://www.kaggle.com/datasets/davidochoacorrales/oare-tokens
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/679766#3416735
+- 投稿者: @davidochoacorrales
+- 投稿日時: 2026-03-03
+- upvote: 0
+- 本文: Unicode Normalization
+def canonical(text):
+    return unicodedata.normalize("NFC", text)
+
+---
+
 ## Entry: `679497`
 - URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/679497
 - タイトル: Lora on ByT5 large
