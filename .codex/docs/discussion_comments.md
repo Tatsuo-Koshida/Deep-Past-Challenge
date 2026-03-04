@@ -800,6 +800,34 @@ Perfect, thanks a lot!
 
 ---
 
+## Entry: `673352`
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/673352
+- タイトル: Why does everyone use the “final-byt5” model?
+- 投稿者: @yuanyuan98
+- 投稿日時: 2026-02-14
+- upvote: 2
+- 本文: I’ve just started this competition recently. Could someone please explain how “final-byt5” became the mainstream approach?
+
+final-byt5
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/673352#3406118
+- 投稿者: @tonylica
+- 投稿日時: 2026-02-14
+- upvote: 5
+- 本文: My guess : final-byt5 became mainstream in this comp because it’s the first strong, public, reproducible baseline: easy to run, stable LB, and ByT5 is robust to messy characters.
+
+Once it worked, everyone copied it and stacked small improvements (normalization/decoding/ensembles) on top.
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/673352#3406703
+- 投稿者: @yuanyuan98
+- 投稿日時: 2026-02-14
+- upvote: 0
+- 本文: Thank you for the response! I was curious about how the approach shifted from an ensemble of multiple models to a single final-byt5 model.
+
+---
+
 ## Entry: `674136`
 - URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/674136
 - タイトル: Dataset Update - Mind the Gaps
