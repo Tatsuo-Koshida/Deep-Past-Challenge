@@ -6,6 +6,7 @@
 
 | 日付 | 追加したノート数 | 追加したコメント数 | メモ |
 |------|------------------|--------------------|------|
+| 2026-03-06 | 0 | 0 | `notebooks/002/[3]dpc-starter-train-cv5-v5-colab.ipynb` から枝分かれして `notebooks/002/[3-5]dpc-starter-train-cv5-v1-colab.ipynb` を作成。差分は **観点D1のみ**（英訳 target / CV metric で `fem.` / `sing.` / `pl.` / `plural` / `(?)` を除去）で、`en→akk` 側の English input は未変更（= 観点Eは混ぜない）。あわせて実行不能だった `traitner` タイポを `trainer` に修正。 |
 | 2026-03-06 | 0 | 0 | `notebooks/002/[2]dpc-starter-train-v1.ipynb` をコピーして `notebooks/002/[2]dpc-starter-train-v2.ipynb` を作成。`v5 → v6` の ablation メモから **観点D1のみ**を抽出し、ByT5-base の full-train notebook に実装。差分は **英訳 target の注釈除去（`fem.` / `sing.` / `pl.` / `plural` / `(?)`）**だけで、`en→akk` 側の English input は未変更（= 観点Eは切り分け）。 |
 | 2026-03-05 | 0 | 0 | `notebooks/002/[3-6]dpc-starter-train-cv5-v3-colab.ipynb` をコピーして `notebooks/002/[3-6]dpc-starter-train-cv5-v4-colab.ipynb` を作成。差分は **CV評価の DataLoader を入力長でソート**して padding を減らす変更（`AdaptiveBeamSeq2SeqTrainer.get_eval_dataloader()` を上書き）。v3の **adaptive beams（`<100 -> 4`, `>=100 -> 8`）**は維持。 |
 | 2026-03-05 | 0 | 0 | `notebooks/002/[3-6]dpc-starter-train-cv5-v2-colab.ipynb` をコピーして `notebooks/002/[3-6]dpc-starter-train-cv5-v3-colab.ipynb` を作成。差分は **CV評価時の生成を adaptive beams（`<100 tokens -> 4 beams`, `>=100 -> 8 beams`）に切替**する変更のみ（`Seq2SeqTrainer.prediction_step()` をサブクラスで上書き）。 |
