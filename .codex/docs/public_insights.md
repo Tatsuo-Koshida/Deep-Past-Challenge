@@ -1,6 +1,6 @@
 # Deep Past Challenge（Translate Akkadian to English）公開ノート/コメントからの学び（暫定）
 
-最終更新: 2026-03-04
+最終更新: 2026-03-06
 
 > 注意: 本来は Kaggle MCP で公開ノートブック/ディスカッション/コメントを収集したいが、この環境では Kaggle MCP が `Unauthenticated` になり、`authorize` もエラーで進められない。  
 > そのため本メモは、Kaggleページのアーカイブ（archive.ph 等）と外部の公開記事を一次ソースとして、現時点で再現性のある範囲だけを整理している。
@@ -116,6 +116,12 @@
 ---
 
 ## 2. 精度改善の方向性（優先度つきの実験アイデア）
+
+### Priority 0: public LB への “最適化” を疑う/避ける
+
+- 公開モデルや公開ノートの上振れは、public LB に対する **多数試行→ベスト選抜**（いわゆる leaderboard overfitting / probing）で起きる可能性がある。
+- 例: `assiaben/akkadian-english-inference-byt5-optimized-34x` のコメント欄で、`@samson8 (tg @pansh1n)` が「1日5 submissions で ~33.6LB のモデル群の重みを tuning し続ければ、運が良ければ public LB に overfit できる」と示唆（学習レシピの公開は無し）。
+- 対策: **CV の安定性**（GroupKFold、時代/出版物/ジャンルでの分割など）を優先し、public LB だけを見た微調整は最小化する（`.codex/docs/discussion_comments.md` の “Public LB ≠ Private LB” 系メモも参照）。
 
 ### Priority 1: 正規化を「固定」してからモデル比較
 
