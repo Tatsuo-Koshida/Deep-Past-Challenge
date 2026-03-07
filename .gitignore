@@ -33,6 +33,7 @@ kaggle.json
 data/**
 !data/README.md
 !data/**/README.md
+!data/expand_train.csv
 
 # --- Common outputs ---
 *.log
