@@ -43,6 +43,9 @@
 - `.codex/docs/discussion_comments.md`  
   Kaggle Discussions/コメントを**手動採集**した一次メモ（スレ/コメントのURL、要点、検証プラン、起票先）。  
   参照性のため **Entry** を付け、派生の要約からも ID で参照する。
+- `.codex/docs/eda_notebooks.md`  
+  `notebooks/EDA/` 配下の**データ点検・探索用ノートブックの索引**。  
+  目的、検出対象、運用メモをまとめ、Codex が既存の EDA ノートブックを再利用・拡張しやすいようにする。
 
 ### 追記する時の書式（推奨）
 
