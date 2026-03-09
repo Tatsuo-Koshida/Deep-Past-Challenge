@@ -57,9 +57,64 @@ CSV:
 
 If you ask Gemini for this example, it will report that PDF is accurate but CSV is not wrong.
 
+---
 
+## Entry: `680256`
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/680256
+- タイトル: eBL text divergence
+- 投稿者: @davidochoacorrales
+- 投稿日時: 2026-03-07
+- upvote: 1
+- 本文: It's a little script for the eBL text divergence, it is not perfect - it may be seen as a brutal force attack to the eBL dictionary, but it works.
 
+the tool
 
+I build this readme as explanation for the code with Google Gemini - can have errors.
+
+eBL to OARE Mimation Restorer
+This script provides an automated solution for converting Standard Babylonian (eBL) lexemes into Old Assyrian (OARE) lexemes by restoring historical mimation.
+
+Overview
+In the context of Assyriology, Old Assyrian (OA) preserves the proto-semitic mimation, whereas Standard Babylonian (SB) lost it during the post-Old Babylonian period. This tool helps bridge the gap between these two linguistic conventions:
+
+eBL format: Uses SB conventions, often including Roman numeral suffixes (e.g., "šakānu I").
+OARE format: Adheres to OA conventions, which include the characteristic final "-m" (e.g., "šakānum").
+This converter was developed based on an empirical analysis of 585 verified pairs with a 92.8% precision rate regarding the consonant skeleton.
+
+Conversion Logic
+The script employs a three-tier priority system to handle various grammatical patterns:
+
+Tier	Strategy	Description
+Tier 1	Simple Addition	Appends "-m" to standard endings (covers ~87% of cases).
+Tier 2	III-weak Reversal	Reverses contractions in verbs (e.g., -û → -ā'um).
+Tier 3	Passthrough	Retains words that already possess mimation.
+Normalization
+To ensure high-fidelity matching, the script includes a normalize_for_matching utility. This function handles diacritic mapping (e.g., ḫ → h, š → sz) and removes parenthetical data or alternative formatting, creating a uniform basis for comparison.
+
+Usage Example
+The script is designed to process individual strings. It produces candidate forms that can then be validated against the OARE dataset.
+
+from mimationRestorer import ebl_to_oare
+
+# Simple conversion
+print(ebl_to_oare("šakānu I"))
+# Output: [('šakānum', 'nominative mimation -u→-um', 1)]
+
+# Verb III-weak conversion
+print(ebl_to_oare("qabû II"))
+# Output: [("qabā'um", 'III-weak: -û → -āʾum (inf) or -ium (adj)', 2), ...]
+Credits
+Author: David ok.
+Date: 2026-02-26.
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/680256#3418149
+- 投稿者: @angantyr
+- 投稿日時: 2026-03-07
+- upvote: 2
+- 本文: š → sz
+
+If this is not a typo, I'd advise to reverse the direction to "sz → š" as a standard ASCII fallback to DPC format substitution and leave it be otherwise.
 
 
 ---
