@@ -12,6 +12,58 @@
 
 ---
 
+## Entry: `680446`
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/680446
+- タイトル: (pdf)-Translation sometimes different from train.csv translation
+- 投稿者: @mariusheuser
+- 投稿日時: 2026-03-08
+- upvote: 2
+- 本文: Hi, this might have already been answere in one of the many topics, but I didn't find it. There is so much to catch up on… I noticed that sometimes the translation in the provided pdfs is very different from the translation in the train.csv. And I dont mean missing pieces or wrong alignment. It is clearly a translation about the same thing, but very different. Here two examples I found:
+
+1."4ff5b1df-abae-4b3c-a1eb-2a0e3db160ab":
+
+train_csv:
+
+you sent to me and I shall not meet with the man while he is (still) alive. I shall sell your goods at any price and then I shall come (with) what silver I receive from your outstanding claims, and I shall see your eye there, with you and serve you. Although I did not reach that realisation(?), my dear father, do not be angry. Since they bring šikku-copper and washed copper, one package after another, you owe him favours for me
+
+Akt 6e (kt 94/k 1486):
+
+… you did not send to me and I shall not meet with the man any more as long as he is alive. I shall sell your goods, cheap or dear, and then I shall come (with) what silver I receive from your outstanding claims, and I shall see your eye there, … with you and serve you.
+
+Notice that not only it is formulated differently, in the first part it says "you sent to me" and in the pdf "you did NOT send to me"
+
+2."6e1f457c-74c0-4e35-8d9b-64dcde103453":
+
+train_csv:
+
+why, someone from among my sons bought the house. Lamassī lives in it.
+
+Akt 6e (kt 94/k 1325):
+
+… Indeed, if someone from among my sons should buy the house, Lamassī will live in it.
+
+Which one is more accurate?
+
+### Comments
+- URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/680446#3418512
+- 投稿者: @mpware
+- 投稿日時: 2026-03-02
+- upvote: 3
+- 本文: It happens in even in small translation, for instance:
+
+PDF: 
+
+CSV: 
+
+If you ask Gemini for this example, it will report that PDF is accurate but CSV is not wrong.
+
+
+
+
+
+
+---
+
 ## Entry: `679766`
 - URL: https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/discussion/679766
 - タイトル: Old Assyrian Tokens
