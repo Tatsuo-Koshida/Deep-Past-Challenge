@@ -35,6 +35,7 @@ data/**
 !data/**/README.md
 !data/expand_train.csv
 !data/expand_train2.csv
+PDF/*
 
 # --- Common outputs ---
 *.log
