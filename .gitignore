@@ -33,6 +33,8 @@ kaggle.json
 data/**
 !data/README.md
 !data/**/README.md
+!data/curated/
+!data/curated/**
 !data/expand_train.csv
 !data/expand_train2.csv
 PDF/*
