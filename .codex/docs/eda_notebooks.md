@@ -1,6 +1,17 @@
 # EDA notebooks
 
-最終更新: 2026-03-11
+最終更新: 2026-03-15
+
+## `notebooks/EDA/train.curated.v002_バイト長分布.ipynb`
+
+- 目的: `train.curated.v002.xlsx` の `transliteration(+prefix)` と `translation` の **UTF-8 バイト長分布**を可視化し、ByT5 の `max_source_length/max_target_length` の候補を決める。
+- 対象データ: `data/curated/deep-past-initiative-machine-translation/train/train.curated.v002.xlsx`
+- 出力:
+  - 分位点（p50/p90/p95/p98/p99/max）
+  - ヒストグラム（線形/対数）
+  - ECDF（累積分布）
+  - `max_length` 候補ごとの truncation 率
+  - 最長サンプルのプレビュー（先頭/末尾）
 
 ## `notebooks/EDA/英訳冒頭脱落点検.ipynb`
 

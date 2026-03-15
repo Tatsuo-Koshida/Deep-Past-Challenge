@@ -13,6 +13,37 @@
 
 これらは学習のラベルノイズとしてスコアに直撃しやすい一方、1561件すべてを手作業で直すのは重い。ここでは「AI + システム化」で **“怪しいところから優先的に”** 直すフローを定義する。
 
+## 重要: “データの欠落” と “学習時の truncation” は別問題
+
+英訳が欠落しているケース（データ品質）は当然あるが、ByT5 学習ではそれに加えて **tokenization 時の `max_length` による切り捨て**が起きる。
+
+- ByT5 は（概ね）UTF-8 の **バイト列**を token として扱うため、`max_length=512` は「文字数」ではなく **512 bytes（≒512 tokens）**の上限。
+- さらに `translate ...: ` の prefix を付ける場合、prefix の byte 長（例: `translate Akkadian to English: ` は 31 bytes）が上限を食う。
+
+### 2026-03-15 時点の `train.csv`（生データ）の長さ概況（byte 長）
+
+（厳密な token 数は tokenizer 依存だが、ByT5 では byte 長がほぼ近似になる）
+
+- `transliteration`（+ prefix 31 bytes）
+  - max は概ね `~1100 bytes` 程度（= 1024 を少し超える行がある）
+- `translation`
+  - p50 は `~400 bytes` 程度だが、長い tail があり max は `~4000 bytes`
+
+`max_length=512` のままだと、`train.csv` のかなりの割合が tokenization で切り落とされ、**教師ラベルが部分欠落した状態で学習**してしまう。
+
+推奨（現実的な落としどころ）:
+
+- `max_source_length` と `max_target_length` を分けて考える（同一値に固定しない）
+- source は `1024〜1280` 付近（prefix も含めて “切らない” を優先）
+- target は `1408`（p95 目安）〜 `1792`（p98 目安）あたりから検討し、**極端に長い外れ値は除外**も候補にする（丸め単位を 128/256 に揃える前提）
+- 学習を安定させるため、**長さ bucketing（同程度の長さでまとめる）**を入れて padding を減らす（OOM/遅延対策）
+
+長さ分布と truncation 率は、依存最小の集計スクリプトで再現できる:
+
+- `scripts/byt5_length_stats.py`
+  - 実行例: `python scripts/byt5_length_stats.py`
+  - prefix/候補長の変更: `python scripts/byt5_length_stats.py --source-prefix \"translate Akkadian to English: \" --candidates 512,768,1024,1280,1536,2048`
+
 ## 大枠の考え方（やる順番）
 
 1. **自動スキャンで疑わしい行を順位付け**（まずはレビューキューを作る）
