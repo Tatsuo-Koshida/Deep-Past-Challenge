@@ -32,7 +32,9 @@
 | 学習ID | ノートブック名 | ノートブックのバージョン | loss | エポック数 | 学習バッチサイズ | GradientAccumulationSteps | 備考 |
 |---|---|---|---|---|---|---|---|
 | 2-3-1 | [2-3]dpc-starter-train-v1 | 3 | 0.3392 | 20 | 4 | 2 | LB:27.5([4-3]submit-notebook-v1 ver3) |
-| 2-3-1 | [2-3]dpc-starter-train-v2 | 2 | 0.3341 | 20 | 4 | 2 | LB:29.1([4-3]submit-notebook-v2 ver1) |
+| 2-3-2 | [2-3]dpc-starter-train-v2 | 2 | 0.3341 | 20 | 4 | 2 | LB:29.1([4-3]submit-notebook-v2 ver1) |
+| 2-3-3 | [2-3]dpc-starter-train-v3 | 2 | 0.3317 | 20 | 4 | 2 | LB:29.2([4-3]submit-notebook-v3 ver2) |
+| 2-3-3-1 | [2-3-3]dpc-starter-train-v1 | 1 | 0.3343 | 20 | 4 | 2 | LB:28.7([4-3-3]submit-notebook-v1 ver2) |
 
 
 ### ByT5-base
