@@ -36,6 +36,7 @@
 | 2-3-2 | [2-3]dpc-starter-train-v2 | 2 | 0.3341 | 20 | 4 | 2 | LB:29.1([4-3]submit-notebook-v2 ver1) |
 | 2-3-3 | [2-3]dpc-starter-train-v3 | 2 | 0.3317 | 20 | 4 | 2 | LB:29.2([4-3]submit-notebook-v3 ver2) |
 | 2-3-3-1 | [2-3-3]dpc-starter-train-v1 | 1 | 0.3343 | 20 | 4 | 2 | LB:28.7([4-3-3]submit-notebook-v1 ver2) |
+| 2-5-3 | [2-5]dpc-starter-train-v3 | 1 | 0.335 | 20 | 4 | 2 | LB:29.0([4-5]submit-notebook-v3 ver1) |
 
 
 ### ByT5-base
