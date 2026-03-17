@@ -99,6 +99,12 @@
 - 主要ハイパラ（抜粋）: `MAX_LENGTH=512`、`epochs=10`、`lr=2e-4`、`weight_decay=0.01`、`per_device_{train,eval}_batch_size=16`、`grad_accum=2`、`bf16=True`（A100想定）、`tf32=True`、`generation_max_length=512`、`generation_num_beams=4`。
 - 再現メモ: Colab 上で `transformers==4.57.1` を明示インストール。出力先は Colab の notebook path を拾って timestamp 付き `OUTPUT_DIR` を作り、`{OUTPUT_DIR}/cv5/fold_k/model` と `cv_results.csv` を保存。
 
+### `[4-3-4]submit-notebook-v3.ipynb`（`notebooks/002/[4-3-4]submit-notebook-v3.ipynb`）
+
+- 目的: `notebooks/002/[2-3-4]dpc-starter-train-v3.ipynb` で学習した **ByT5-small**（`fulltrain_byt5-small_multitask`）で推論し、`submission.csv` を作る。
+- 元: `notebooks/002/[4-3]submit-notebook-v3.ipynb`（`MODEL_DIR` 既定パスの系統差し替え + 前処理/後処理を train-v3（2-3-4）に一致させる）。
+- 入出力: `test.csv`（`/kaggle/input/.../test.csv`）→ `submission.csv`（`/kaggle/working/submission.csv`）。
+
 ## ノート一覧
 
 | タイトル | URL | 作者 | アップ投票 | 日付 | 手法の一言 | 要点・使えそうなアイデア | 自分用メモ |
