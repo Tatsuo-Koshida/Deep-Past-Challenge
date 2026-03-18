@@ -12,6 +12,9 @@
   - ECDF（累積分布）
   - `max_length` 候補ごとの truncation 率
   - 最長サンプルのプレビュー（先頭/末尾）
+- 運用メモ:
+  - 2026-03-19 時点で `transliteration(+prefix)` 1024 byte 超は 206/1564 件、`translation` 1024 byte 超は 174/1564 件、いずれか超過は 213/1564 件。
+  - ChatGPT プロジェクトでの長文分割ブリーフは `.codex/docs/chatgpt_project_record_split.md` を参照。
 
 ## `notebooks/EDA/英訳冒頭脱落点検.ipynb`
 

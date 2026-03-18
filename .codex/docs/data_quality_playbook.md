@@ -131,3 +131,4 @@ LLMの使いどころ（ローカル実行/オフライン制約に注意）:
 - コンペの前処理/ギャップ表現の公式方針: `.codex/docs/competition_context.md`
 - “怪しい行” の自動スキャン: `scripts/scan_train_quality.py`
 - curated の置き場所/ログ運用: `.codex/docs/train_csv_curation.md`
+- 長文レコードを ChatGPT で安全に分割するための共通ブリーフ: `.codex/docs/chatgpt_project_record_split.md`
