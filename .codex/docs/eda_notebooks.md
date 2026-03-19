@@ -30,6 +30,16 @@
   - 元ノートは `notebooks/EDA/train.curated.v002_バイト長分布.ipynb`。
   - `PROCESS-DATA/train.curated.v002-3_バイト長分布.csv` と `PROCESS-DATA/train.curated.v002-3_バイト長分布縮約.csv` を出力する。
 
+## `notebooks/EDA/train.curated.v002-4-2_バイト長分布.ipynb`
+
+- 目的: `train.curated.v002-4-2.xlsx` の `transliteration(+prefix)` と `translation` の **UTF-8 バイト長分布**を可視化し、ByT5 の `max_source_length/max_target_length` の候補を決める。
+- 対象データ: `data/curated/deep-past-initiative-machine-translation/train/train.curated.v002-4-2.xlsx`
+- 出力:
+  - 上記 v002 / v002-3 と同様の可視化・集計
+  - `notebooks/EDA/PROCESS-DATA/train.curated.v002-4-2_バイト長分布.csv` / `…縮約.csv` に **`アッカド語転写_英訳文`** 列を含む（セル内は `"アッカド語転写": {transliteration}` と `"英訳文": {translation}` を改行で連結した1フィールド）。
+- 運用メモ:
+  - 元ノートは `train.curated.v002-4-2_バイト長分布.ipynb`（v002-3 系のデータ差し替え版）。
+
 ## `notebooks/EDA/英訳冒頭脱落点検.ipynb`
 
 - 目的: `train.csv` の `transliteration` と `translation` を突き合わせ、**英訳冒頭や定型句の脱落候補**を機械的に洗い出す。
