@@ -2084,3 +2084,662 @@
           "confidence": "high"
         }
       ]
+[
+  {
+    "record_id": "record_04",
+    "split_id": "record_04__01",
+    "status": "ok",
+    "transliteration_chunk": "1.5 ma-na KÙ.BABBAR ṣa-ru-pá-am iš-tí a-šùr-na-da DUMU er-nu-id iš-tù a-lim{ki} i tù-a-ri-šu i-ša-qal šu-ma lá iš-qúl 1.5 GÍN.TA i ITU.KAM a-na ma-na-im ú-ṣa-áb 0.66666 ma-na LÁ 1 GÍN KÙ.BABBAR ù me-nu-ni-a-nam KI nu-a-im a-na ITU.1.KAM i-ša-qal",
+    "translation_chunk": "1.5 mina of refined silver due from Aššur-nādā, son of Ernu''id; when he returns from the City he will pay; if he does not pay he will add 1.5 shekel per month per mina (as interest). 39 shekels of silver and a -textile due from the native; he will pay within one month.",
+    "boundary_reason": "最初の債務（Aššur-nādā）と別件の短期支払義務までが一まとまりの債務条件の記述のため",
+    "confidence": "high"
+  },
+  {
+    "record_id": "record_04",
+    "split_id": "record_04__02",
+    "status": "ok",
+    "transliteration_chunk": "2.5 ma-na KÙ.BABBAR ṣa-ru-pu-um i-ṣé-er a-šùr-ta-ak-lá-ku e-lá-ma i-šu iš-tù ḫa-muš-tim ša en-na-ma-nim 1.5 GÍN.TA i ITU.1.KAM a-na ma-na-im ú-ṣa-áb ṭup-pu-šu a-na-kam i-ba-ší ší-im 2 TÚG.ḪI.A 0.33333 ma-na KÙ.BABBAR ṣa-ru-pu-um iš-tí a-mur-a-šùr DUMU ili5-ba-ni 4 ma-ku-ḫu KI i-dí-a-šùr 4.5 GÍN KÙ.BABBAR KI en-na-nim",
+    "translation_chunk": "2.5 minas of refined silver Aššur-taklāku owes to Elamma; from the week of Ennamānum he will add 1.5 shekel per month per mina; his tablet is here. The price of 2 textiles, 0.3333 mina of refined silver, is with Amur-Aššur, son of Ilī-bāni. 4 -textiles with Iddin-Aššur. 4.5 shekels of silver with Ennānum, the fuller.",
+    "boundary_reason": "次の債務（Aššur-taklāku）と関連する資産・保管状況（織物・銀）の列挙が連続するため",
+    "confidence": "high"
+  },
+  {
+    "record_id": "record_04",
+    "split_id": "record_04__03",
+    "status": "ok",
+    "transliteration_chunk": "15 GÍN KÙ.BABBAR ù ku-sí-tám ma-al-ku-a-i-tám a-na ṣí-lá-{d}IŠKUR a-na TÚG.ḪI.A ša-a-mì-im a-dí-in ŠÀ.BA 1 TÚG ú-šé-bi4-lam 4.25 GÍN KÙ.BABBAR ša a-wi-il5-tim a-na da-a-a a-dí-in 0.33333 ma-na 4 GÍN KÙ.BABBAR ṣa-ru-pá-am a-na en-um-a-šur DUMU ú-zu-a a-na ta-ad-mì-iq-tim a-dí-in",
+    "translation_chunk": "15 shekels of silver and a robe in the style of Malkua I gave to Ṣilli-Adad to buy textiles; thereof he sent me 1 textile. 4 1 / 4 shekels of silver of the lady I gave to Dāya. 24 shekels of refined silver I gave to Ennam-Aššur, son of Uzua, as a free loan.",
+    "boundary_reason": "支払い・支出（Ṣilli-Adad・Dāya・Ennam-Aššurへの給付）が同一パターンで続く支出記録のため",
+    "confidence": "high"
+  },
+  {
+    "record_id": "record_04",
+    "split_id": "record_04__04",
+    "status": "ok",
+    "transliteration_chunk": "0.5 ma-na KÙ.BABBAR iš-tù bu-ru-uš-ḫa-tim i-na tù-a-ri-šu a-šùr-na-da i-ša-qal 5.33333 GÍN KÙ.BABBAR iš-tí a-mur-{d}UTU 0.33333 ma-na KÙ.BABBAR na-ki-ki <gap> ša ì-lí-a DUMU a-šur-<gap> id-na-a ú-bi4-il5 10 GÍN KÙ.BABBAR KI šu-IŠTAR 1 GÍN KI qá-qá-dí-nim 4 GÍN KI šu-be-lim 2 GÍN iš-tí id-na-a 4 GÚ SÍG.ḪI.A ù me-ga-nam i-na qé-ra-áb É-tim e-zi-ib",
+    "translation_chunk": "0.5 mina of silver Aššur-nādā will pay when the returns from Burušhattum. 5.3333 shekels silver are with Amur-Šamaš. 0.3333 mina of silver <gap> of Iliya, son of Aššur- <gap>, Idnāya brought away. 10 shekels of silver with Šu-Ištar. 1 shekel with Qaqqadānum. 4 shekels with Šu-Bēlum. 2 shekels with Idnāya. 4 talents of wool and a I left inside the house.",
+    "boundary_reason": "最後の債務回収・保管先列挙と物資（羊毛など）の締めの報告部分でまとまるため",
+    "confidence": "high"
+  }
+]
+[
+  {
+    "record_id": "record_05",
+    "split_id": "record_05__01",
+    "status": "ok",
+    "transliteration_chunk": "KÙ.BABBAR ša um-ma-ša a-na me-er-i-tí-ša i ba-áb-tim té-zi-bu a-na ḫu-bu-ul a-na a-ḫe-ša a-tù-nu ta-lá-qé-a ni-zi-iz-ma i-na a-wa-tim ni-bu-šu-nu-ma iš-tù gám-ru-um ù ša a-na bi-ki-tim ša um-mì-ki ù a-ḫi-ki iṣ-ḫe-ru ší-tí KÙ.BABBAR 0.5 ma-na 7 GÍN KÙ.BABBAR ù 2.25 GÍN KÙ.GI ku-nu-ki ša en-um-a-šùr ù šu-mì-a-bi-a a-na en-um-DINGIR DUMU ḫa-da-a i-na pu-ùḫ-ri-ni ni-ip-qí-id-ma na-áš-a-ki-im",
+    "translation_chunk": "The silver that her mother left to her daughter as part of the outstanding claims, do you (plur.) want to take it for the debt, for her brothers?\" We took action and rebutted them by our argumentation. After the expenses made for the bewailing of your mother and your brothers had been deducted, the rest of the silver, 37 shekels of silver, and 2 1 / 4 shekels of gold, under the seals of Ennam-Aššur and Šumi-abiya we together entrusted to Ennam-ilī, the son of hadāya, and he is on his way to you with it.",
+    "boundary_reason": "問いかけから反論、そして銀の再分配と委託（Ennam-ilīへの引き渡し）までが一連の主要叙述としてまとまるため",
+    "confidence": "high"
+  },
+  {
+    "record_id": "record_05",
+    "split_id": "record_05__02",
+    "status": "ok",
+    "transliteration_chunk": "i-na ŠÀ.BA KÙ.BABBAR ri-ik-sí-im 2.25 GÍN KÙ.BABBAR ša ì-lí-a ni-is-ḫa-tum ša a-šùr na-ad-a KÙ.BABBAR šu-a-tí a-na É li-mì-im dí-ni KÙ.BABBAR a-ni-um É e-lá-ma ib-ší",
+    "translation_chunk": "In the packet of silver 2 1 / 4 shekels of silver of Iliya, excise for (the city of) Aššur, have been put. Give that silver to the office of the This silver was in Elamma's house.",
+    "boundary_reason": "銀の内訳（Iliya分・税）とその処理指示（役所へ）の短い実務指示のまとまりのため",
+    "confidence": "medium"
+  },
+  {
+    "record_id": "record_05",
+    "split_id": "record_05__03",
+    "status": "ok",
+    "transliteration_chunk": "2 ṣí-il5-a-nu ša ṭup-pé-e ku-nu-ku ša a-ḫe-ki ù um-mì-ki i-ba-ší-ú pá-al-ḫa-ni-ma pá-ṭá-ra-am ú-lá ni-mu-wa lá ta-áš-ta-na-me-i ki-ma um-mì-ki iš-tù 10 ša-na-tim nu-a-um aḫ-zu-ma i-na É nu-a-im wa-áš-ba-at-ni a-na KÙ.BABBAR ma-dí-im mì-ma lá ta-da-gi5-li KÙ.BABBAR a-mì-um ù KI-kam um-mì-ki",
+    "translation_chunk": "There are still two ṣ-containers with tablets sealed by your brothers and mother. We did not dare to open them because we were afraid. Have you not heard that the Anatolian is since ten years married to your mother and that she lived in the house of the Anatolian? Do by no means expect much silver, (there are only) the afore-mentioned silver and the seal your mother.",
+    "boundary_reason": "未開封容器の説明からアナトリア人との関係、最終的な結論（銀は少ない）までが締めの段落としてまとまるため",
+    "confidence": "high"
+  }
+]
+[
+  {
+    "record_id": "record_06",
+    "split_id": "record_06__01",
+    "status": "ok",
+    "transliteration_chunk": "a-na en-um-a-šùr da-dí-a ḫi-na-a i-dí-a-bi4-im a-ku-a ù a-ta-a qí-bi4-ma um-ma e-la-ma-ma a-na lu-qú-tí-ku-nu AN.NA ú TÚG.ḪI.A ša ì-lí-a-lúm ir-de8-a-ni i-nu-mì ni-mì-ig-ru-ma AN.NA ú TÚG.ḪI.A al-qé-ú šu-ma kà-ru-um ša-du-a-tám il5-té-qé i-na KÙ.BABBAR-áp ì-lí-a i-na ša na-ru-qí-šu la-qé-ep lá-qá-am qá-bi-a-ku ṭup-pá-ak-nu ḫa-ar-ma-am ú-kà-al",
+    "translation_chunk": "To Ennam-Aššur, Dadiya, hinnāya, Iddin-abum, Akūa and Ataya, say, thus Elamma: As for your merchandise, tin and textiles, which Ilī-ālum brought here, when we had reached an agreement and I had taken the tin and textiles, I was authorized, if the colony levied the the -tax, to take it from Iliya's silver, that of his joint-stock fund (managed by?) La-qēp. I have in my possession a valid record of yours (to that effect).",
+    "boundary_reason": "書簡導入と取引経緯・権利主張（記録保持まで）が一つの前提説明としてまとまるため",
+    "confidence": "high"
+  },
+  {
+    "record_id": "record_06",
+    "split_id": "record_06__02",
+    "status": "ok",
+    "transliteration_chunk": "a-na-kam a-na kà-ri-im a-tù-ur um-ma a-na-ku-ma lu-qú-tum i-a-tum mì-šu-um ša-du-a-tám tù-ša-dí-a um-ma šu-nu-ma lu-qú-tum a-na ša ì-lí-a ša-ak-na-at-ma nu-ša-dí um-ma a-na-ku-ma lá-at-ma lu-qú-tum lu i-a-tù-ni ú a-le-ma a-na kà-ri-im ša-du-a-tám il5-té-qé-ú ú-la ig-da-am-lu-ni",
+    "translation_chunk": "Here I turned to the colony and I declared: 'The merchandise belongs to me, why have you levied -tax?' They answered: 'The merchandise has been joined to that of Iliya and therefore we levied it.' I said: 'I am ready to swear that the merchandise is truly mine!' But, wherever they collected the tax for the colony they have not obliged me.",
+    "boundary_reason": "コロニーとのやり取り（主張・応答・再主張）という対話的なまとまりのため",
+    "confidence": "high"
+  },
+  {
+    "record_id": "record_06",
+    "split_id": "record_06__03",
+    "status": "ok",
+    "transliteration_chunk": "36 ma-na AN.NA il5-qé-ú ŠÀ.BA 6 ma-na ki-iš-da-at ku-ni-lim ú-ṣa-ḫe-er a-ḫu-ú-a a-tù-nu 30 ma-na AN.NA ma-lá dá-tí-šu mu-ṭé-e-šu ú ni-is-ḫa-tí-šu i pá-ni-ma šé-bi4-lá-nim-ma a-na-kam i KÙ.BABBAR-pì-ku-nu lá a-lá-qé mì-šu-um áš-ta-na-pá-ra-ku-nu-tí-ma šé-bu-lam lá ta-mu-a",
+    "translation_chunk": "They took 36 minas of tin from which I deducted 6 minas that were for Kūn-ilum's account. Please, my brothers, send me with the first opportunity 30 minas of tin, as much as amounts to its road-tax, its underweight and the import-tax on it, so that I do not have to take it from your silver here. Why must I write you time and again, while you refuse to send it?",
+    "boundary_reason": "数量処理（36→6控除）から要求（30マナ送付）と締めの不満表明までが結論部としてまとまるため",
+    "confidence": "high"
+  }
+]
+[
+  {
+    "record_id": "record_07",
+    "split_id": "record_07__01",
+    "status": "ok",
+    "transliteration_chunk": "i-na ba-áb ḫa-ra-ni-šu ša e-lá-ma um-ma pí-lá-aḫ-a-šùr-ma a-na e-lá-ma-ma lá-qé-ep DUMU i-li-a ku-nu-im AN.NA a-na 70 ḫa-am-ša-tim ú-kà-lam um-ma e-lá-ma-ma i-a-am AN.NA-ki le-qé-ma gi5-im-lá-ni a-na 20 ḫa-am-ša-tim 8 GÍN.TA lá ta-ba-ta-qám um-ma pí-lá-aḫ-a-šur-ma 8 GÍN.TA AN.NA a-lá-qé-ma a-ta-BA mì-nam ta-da-nam um-ma e-lá-ma-ma ú a-na-ku iš-tù a-lim{ki} i-na tù-a-ri-a 15 ma-na KÙ.BABBAR a-da-na-kum a-na a-lim{ki} tù-šé-ba-al ší-a-ma-tim i-ša-ú-mu-ni-kum ta-be-el-šu IGI GÍR ša a-šur ší-bu-tí a-dí-in",
+    "translation_chunk": "When Elamma was about to set out on a journey Pilah-Aššur said to Elamma: Lā-qēp, the son of Iliya, who belongs to you(r firm), offers me tin with a credit term of 70 weeks\". Elamma answered: \"Take my own tin and do me a favor by giving me (for it) not less than 8 shekels per (shekel of silver) in 20 weeks.\" Pilah-Aššur said: \"I will take the tin at the rate of 8 shekels, but you, what will you give me?\" Elamma answered: \"And I, when I return from the City I will give you 15 minas of silver. You will send it to the City and one will make (with it) purchases for you, it will be at your disposal.\" Before Aššur's dagger I gave my testimony.",
+    "boundary_reason": "最初の対話（条件交渉から証言まで）が完全な会話単位としてまとまるため",
+    "confidence": "high"
+  },
+  {
+    "record_id": "record_07",
+    "split_id": "record_07__02",
+    "status": "ok",
+    "transliteration_chunk": "i-na ba-áb ḫa-ra-ni-šu ša e-lá-ma um-ma pí-lá-aḫ-a-šùr-ma 15 ma-na KÙ.BABBAR ṣa-ru-pá-am ni-is-ḫa-sú DIRI ša-du-a-sú ša-bu-ú a-dí-na-kum a-na a-lim{ki} i-na e-ra-bi-kà-ma 1 GÚ AN.NA ša-ma-am ú a ší-tí KÙ-pì-a TÚG.ḪI.A ša-ma-am iš-tí ANŠE-ri-kà pá-ni-im šé-bi4-lam um-ma e-lá-ma-ma ú-šé-ba-lá-kum IGI GÍR ša a-šur ší-bu-tí a-dí-in",
+    "translation_chunk": "When Elamma was about to set out on a journey Pilah-Aššur said: \"I gave you 15 minas of refined silver, its excise added, its transport fee paid for. When you enter the City you must buy for me 1 talent of tin and for the rest of my silver buy textiles for me, send them to me with your next donkey transport.\" Elamma answered: \"I will send them to you\". Before Aššur's dagger I gave my testimony.",
+    "boundary_reason": "2回目の対話（資金提供と購買指示から応答・証言まで）が独立した会話単位のため",
+    "confidence": "high"
+  }
+]
+[
+  {
+    "record_id": "record_08",
+    "split_id": "record_08__01",
+    "status": "ok",
+    "transliteration_chunk": "3 GÚ 15 ma-na AN.NA ku-nu-ku 4 TÚG šu-ru-tum li-wi-tum 17 {TÚG}ku-ta-ni 17 ma-na AN.NA-ak qá-tim 2 ANŠE ṣa-lá-mu ŠU.NÍGIN 4 GÚ 18 ma-na AN.NA a-wi-it i-li-a iš-tù a-lim{ki} a-di kà-ni-iš{ki} 1 GÚ-tám 4 ma-na 6.25 GÍN.TA da-tum ik-šu-dam 15 GÍN.TA qá-qá-da-tù-um 17.5 ma-na 4 GÍN AN.NA áš-qúl 16.66666 GÍN mu-ṭá AN.NA-ak qá-tim",
+    "translation_chunk": "3 talents 15 minas of tin under seals, 4 dark textiles, its wrapping, 17 kutānu-textiles, 16⅔ minas of loose tin, 2 black donkeys - in all 4 talents 18 minas of tin, the value of Iliya's shipment). From the City until Kanesh the toll-and-fees amounted to 4 minas 6¼ shekels per talent, the head-tax to 15 shekels per person. I paid 17 minas 54 shekels. 16⅔ shekels shortage of hand tin.",
+    "boundary_reason": "輸送品目の総量（合計4タラント18マナ）とその後の輸送費・税額計算までが一連の物流・費用報告としてまとまるため",
+    "confidence": "high"
+  },
+  {
+    "record_id": "record_08",
+    "split_id": "record_08__02",
+    "status": "ok",
+    "transliteration_chunk": "4 ša bi-lá-tim iš-tù tí-mì-il5-ki-a a-di ḫu-ra-ma 0.33333 ma-na 6 GÍN.TA 1.66666 ma-na 4 GÍN áš-qúl 3.6666600000000003 ma-na 5 GÍN AN.NA ú-kúl-ti 2 ANŠE-re ù sá-ri-dim ù na-ab-ri-ta-šu-nu ANŠE-re i sí-kà-tim it-ru-ú-ma a-na pá-ṭá-ri-šu-nu 0.83333 ma-na AN.NA áš-qúl 0.5 ma-na 6 GÍN AN.NA ša ku-ku-ú 5 GÍN AN.NA a šé-né-šu <gap>",
+    "translation_chunk": "For 4 porters from Timilkiya until Hurama at 26 shekels each I paid 1 mina 44 shekels (of tin). 3 minas 45 shekels (of tin) food for 2 donkeys and a donkey-driver and for their stay in a paddock. They took the donkeys away during the campaign and I paid 50 shekels of tin to redeem them. 36 shekels of tin for 1 textile of Kukū, 5 shekels for his sandals.",
+    "boundary_reason": "運搬人・ロバ・飼料など輸送関連費用の詳細列挙が一まとまりの支出記録のため",
+    "confidence": "high"
+  },
+  {
+    "record_id": "record_08",
+    "split_id": "record_08__03",
+    "status": "ok",
+    "transliteration_chunk": "17 {TÚG}ku-ta-ni-šu 1 TÚG a-na ni-is-ḫa-tim il5-qé-ú 2.5 GÍN KÙ.BABBAR i-na-pu-lu-šu-um 2.5 TÚG a-na ší-mì-im i-na É.GAL-lim il5-qé-ú 1.5 GÍN KÙ.BABBAR i-na-pu-lu-šum 1.5 GÍN KÙ.BABBAR ḫu-lu-qá-ú <gap> ik-šu-ud ší-im 2.5 {TÚG}ku-ta-ni 0.5 ma-na KÙ.BABBAR a-šur-ṣú-lu-li a-na ku-ni-lum i-dí-nim a-ḫa-ma 6 GÍN LÁ 15 ŠE KÙ.BABBAR ša šál-ša-tí-šu a-šur-ṣú-lu-li il5-qé",
+    "translation_chunk": "Of the 17 kutānu-textiles they took 1 as import-tax; they balanced him 2½ shekels of silver; 1½ textile and 1½ shekel of silver (balanced) are his tithe. His share in the losses amounted to 1½ shekels of silver. For the 2½ textiles which the palace took, Aššur-ṣulūlī received ½ mina of silver. Separately Aššur-ṣulūlī took 5 11/12 shekels of silver as his one-third-share.",
+    "boundary_reason": "織物に関する税・分配・損失・取り分の計算が一続きの会計処理としてまとまるため",
+    "confidence": "high"
+  },
+  {
+    "record_id": "record_08",
+    "split_id": "record_08__04",
+    "status": "ok",
+    "transliteration_chunk": "ŠÀ.BA 2 GÚ 10 ma-na AN.NA ku-nu-ki ša a-lim{ki} 4 TÚG šu-ru-tim li-wi-sú 12 {TÚG}ku-ta-ni 2 ANŠE.ḪI.A ṣa-lá-me ù a-ḫa-ma 1 ku-ta-nu-um ša ku-ú-ku mì-ma a-nim ku-ú-ku a-na ṣé-er ḫi-na-a ú-bi-il5 i-na 1 GÚ AN.NA ù it-ra-tí-šu ša a-na-kam áp-qí-dam 6 ma-na AN.NA a ni-is-ḫa-tim ša 3 GÚ AN.NA 34 ma-na ša-du-ú-tim 12.5 ma-na AN.NA ku-ni-lúm il5-qé 8.5 ma-na 1 GÍN ì-lí-a-lim il5-qé 3 ma-na LÁ 10 GÍN i-na mu-ṭá AN.NA qá-tim AN.NA a-na qá-tí ku-ú-ku ni-dí-in a-šur-ṣú-lu-li ki-ma ḫi-na-a i-zi-iz",
+    "translation_chunk": "Thereof: 2 talents 10 minas of tin under seals applied in the City, 4 dark textiles, its wrapping, 12 kutānu-textiles, 2 black donkeys, and separately one textile of Ku'uku. All this Ku'uku brought to hinnāya. Of the (remaining) 1 talent of tin with its surplus that I entrusted here and 6 minas were (paid) as import-tax, for 3 talents of tin the tax amounted to 34 minas of tin, 12½ minas of tin Kūn-ilum took, 8 minas 31 shekels Ilī-ālum took, 2⅚ minas of tin from the deficiency of the loose tin we handed over to Ku'uku. Aššur-ṣulūlī represented to hinnāya.",
+    "boundary_reason": "残余資産の内訳・再配分・最終的な引き渡し（Ku'uku→hinnāya）までが結論部としてまとまるため",
+    "confidence": "high"
+  }
+]
+[
+  {
+    "record_id": "record_09",
+    "split_id": "record_09__01",
+    "status": "ok",
+    "transliteration_chunk": "a-na ṣé-er a-šùr-UTU i-na ba-áb ḫa-ra-ni-šu né-ru-ub-ma um-ma en-na-sú-in a-na a-šùr-UTU-ma a-pu-na lá-ma kà-sà-am ni-iš-tí-ú a-wa-tí-im lá-ta-wu-kum li-ba-tim lá ta-ma-lá i-nu-mì i-na wa-áš-ḫa-ni-a ú-kà-i-lu-ni-ni 2-ma-na KÙ.BABBAR a-ḫa-ti tù-šé-bi-lá-kà um-ma a-šùr-UTU ke-na tù-šé-bi-lá-ni-ma ú-lá a-dí-na-kum",
+    "translation_chunk": "We entered with Aššur-šamšī when he was about to go on a journey and Ennam-Suen said to Aššur-šamšī: \"Please, before we drink from the cup I want to declare something to you, do not get angry! When they detained me in Wašhaniya did my sister send you to me with 2 minas of silver?\" Aššur-šamšī answered: \"Sure, she sent me, but I did not give it to you.\"",
+    "boundary_reason": "最初の対話（導入と最初の質問・応答）が一つの会話単位として完結しているため",
+    "confidence": "high"
+  },
+  {
+    "record_id": "record_09",
+    "split_id": "record_09__02",
+    "status": "ok",
+    "transliteration_chunk": "um-ma en-na-sú-in-ma u4-ma-am a-ḫa-tí ta-tù-ra-am um-ma ší-it-ma ta-al-tám-nam KÙ.BABBAR ù ṣí-ba-tí ša iš-tù 8 ša-na-tim šé-ṣí-ma dí-nam um-ma a-šùr-UTU-ma e-ni-ma-ma a-na šé-ep a-šur-i-mì-tí am-qú-ut a-ḫu-ú-a a-tù-nu a-ma KÙ.GI 15 GÍN ù 1 ma-na sà-am-tum ma-lá ta-le-a-ni É.GAL-lam ṭá-i-ba",
+    "translation_chunk": "Ennam-Suen then said: \"Today my sister has come back here and she said: 'You have done me wrong! Produce the silver and its interest due since eight years and give it to me!'\" Aššur-šamšī answered: \"I threw myself down at the feet of Aššur-imittī, saying: 'Please, my brothers, here are gold, 15 shekels, and 1 mina of carnelian, appease the palace as well as you can'\".",
+    "boundary_reason": "姉の主張提示とそれに対するAššur-šamšīの弁明（行動報告）が一続きの応答単位となるため",
+    "confidence": "high"
+  },
+  {
+    "record_id": "record_09",
+    "split_id": "record_09__03",
+    "status": "ok",
+    "transliteration_chunk": "um-ma a-šùr-UTU-ma a-na en-na-sú-in-ma šu-ma KÙ.BABBAR a-na ma-dí-im i-tù-ar al-kam-ma ší-bé-kà la-aṣ-ba-at-ma ma-lá e-pá-ší-im ep-ša-ni um-ma en-na-sú-in-ma a-na a-šùr-UTU-ma É.GAL-lúm KÙ.BABBAR ma-dam i-ṣé-ri-a i-šu",
+    "translation_chunk": "Aššur-šamšī also said to Ennam-Suen: \"If the silver (due) has increased much then come here, let me seize your witnesses and do with me what you think best!\" Ennam-Suen answered Aššur-šamšī as follows: \"The palace has a substantial silver claim on me <gap>\".",
+    "boundary_reason": "最後の応酬（条件提示と最終応答）が独立した対話ブロックとしてまとまるため",
+    "confidence": "high"
+  }
+]
+[
+  {
+    "record_id": "record_10",
+    "split_id": "record_10__01",
+    "status": "ok",
+    "transliteration_chunk": "a-na e-lá-ma qí-bi4-ma um-ma a-šùr-ma-lik-ma KÙ.BABBAR ša tù-šé-bi4-lá-ni ù ṭup-pè-kà a-na ma-lá té-er-tí-kà a-na a-lim{ki} uš-té-bi4-il5 a-šu-mì KÙ.BABBAR ša É kà-ri-im ša a-na lá-qé-pì-im tù-šé-bi4-lu KÙ.BABBAR a-na lá-li-im a-dí-in",
+    "translation_chunk": "Say to Elamma, thus Aššur-mālik: The silver you sent me and your tablets I have now sent to the City following your instruction. As for the silver of the colonial office that you sent for Lā-qēpum, I gave that silver to Lalum.",
+    "boundary_reason": "書簡冒頭の報告（送付済みの銀と処理内容）が一まとまりの導入部となるため",
+    "confidence": "high"
+  },
+  {
+    "record_id": "record_10",
+    "split_id": "record_10__02",
+    "status": "ok",
+    "transliteration_chunk": "a-ṣé-er KÙ.BABBAR ù 5 TÚG ša a-di-ú-ma i-na KÙ.BABBAR-áp lá-qé-pì-im-ma i-ší-qí-il5 KÙ.BABBAR-kà a-na lá-qé-pì-im li-li-ik-ma i-na ga-ma-ar KÙ.BABBAR šu-um-kà i-na É kà-ri-im lu ni-il5-pu-ut",
+    "translation_chunk": "In addition to that silver and the 5 textiles that I deposited, silver has been paid from Lā-qēpum's silver. Let your silver go to Lā-qēpum and then, when the silver is spent we will register it in your name in the colonial office.",
+    "boundary_reason": "銀と織物の処理および今後の会計処理方針（登録手続き）をまとめた実務指示部分のため",
+    "confidence": "high"
+  },
+  {
+    "record_id": "record_10",
+    "split_id": "record_10__03",
+    "status": "ok",
+    "transliteration_chunk": "a-šu-mì KÙ.BABBAR ša a-mur-IŠTAR ša a-na lá-qé-pì-im ù ku-a-tí ḫa-bu-lu té-er-tí lá-qé-pì-im a-ṣé-er lá-li-im ù ku-a-tí i-li-kam-ma um-ma šu-ut-ma u4-me ṣa-áb-ta-ma ma-lá e-tí-qú-ni 1 GÍN.TA a ma-na-im ší-sí-a-ma KÙ.BABBAR ù ṣí-ba-sú ša-áš-qí-lá-šu",
+    "translation_chunk": "As for the silver of Amur-Ištar, which he owes to Lā-qēpum and to you, there came a message of Lā-qēpum, addressed to Lalum and you, in which he said: 'Seize (him for) the days he is overdue and claim (an interest of) 1 shekel per mina and make him pay the silver and the interest on it.'",
+    "boundary_reason": "別件（Amur-Ištarの負債）に関する指示と引用命令が一つの独立した報告単位のため",
+    "confidence": "high"
+  },
+  {
+    "record_id": "record_10",
+    "split_id": "record_10__04",
+    "status": "ok",
+    "transliteration_chunk": "a-wa-tám a-šu-mì ni-a-tí mì-li-ik KÙ.BABBAR-pì-kà mì-li-ik TÚG.ḪI.A ma-lá be-lúm-ba-ni e-zi-ba-ku-ni ba-tí-iq ù wa-tù-ur i-na ni-a-ú-tim-ma ma-na-im URUDU <gap>-us-ma dí-in lá i-na-dí-ú KÙ.BABBAR",
+    "translation_chunk": "In his matter you must decide on behalf of us what to do with your silver. Sell all the textiles that Bēlum-bāni left behind for you at any price, <gap> for copper by our own 1-mina-weight. It must not be stocked; the silver <gap>.",
+    "boundary_reason": "最終指示（意思決定委任・売却命令・在庫禁止）が結論的命令部分としてまとまるため",
+    "confidence": "high"
+  }
+]
+[
+  {
+    "record_id": "record_11",
+    "split_id": "record_11__01",
+    "status": "ok",
+    "transliteration_chunk": "ir-ma-a-šur a-na DU10-ṣí-li-a-šur DUMU ì-lí-a-lim lá-qé-pí-im DUMU PUZUR4-a-na ù i-šu-ḫi-im DUMU šu-lí ša ki-ma šu-lí iṣ-ba-at-ni-a-tí-ma um-ma ir-ma-a-šur-ma 1.5 ma-na KÙ.BABBAR ša šu-lí DUMU bu-zu-ta-a ša en-na-sú-in DUMU ì-lí-a a-na ší-a-ma-tim i-dí-na-ni-ma qá-tí ú-kà-i-lu-ma",
+    "translation_chunk": "Ir'am-Aššur seized us against Ṭāb-ṣilli-Aššur, son of Ilī-ālum, La-qēpum, son of Puzur-Anna, and Išuhum, son of Šuli, representing Šuli, and Ir'am-Aššur said: '2½ minas of silver belonging to Šuli, son of Buzutaya, which Ennam-Suen, son of Iliya, gave me for making purchases and which I kept in my possession ...'",
+    "boundary_reason": "訴訟の導入（当事者列挙＋Ir'am-Aššurの主張の提示開始）が一つのまとまりのため",
+    "confidence": "high"
+  },
+  {
+    "record_id": "record_11",
+    "split_id": "record_11__02",
+    "status": "ok",
+    "transliteration_chunk": "a-wa-tí-a aḫ-ša-lim DUMU bu-zu-ta-a bé-lá-num DUMU šu-a-šur ù a-šur-ták-lá-ku DUMU a-lá-ḫi-im ig-mu-ru-ni KÙ.BABBAR šu-a-tí ki-ma šu-lí ša-bu-a-tí šu-lí DUMU bu-zu-ta-a lá i-tù-ra-am",
+    "translation_chunk": "and for which Ah-šalim, son of Buzutāya, Bēlānum, son of Šu-Aššur, and Aššur-taklāku, son of Ali-ahum settled my case; with that silver you have been satisfied as representative of Šuli. Šuli, son of Buzutāya, shall not raise a claim (for it) against me'.",
+    "boundary_reason": "Ir'am-Aššur側の主張の核心（和解済み・請求権否認）が完結する部分のため",
+    "confidence": "high"
+  },
+  {
+    "record_id": "record_11",
+    "split_id": "record_11__03",
+    "status": "ok",
+    "transliteration_chunk": "um-ma DU10-ṣí-li-a-šur-ma lá-qé-ep DUMU PÚZUR-a-na ù i-šu-ḫu-um DUMU šu-lí a-na ir-ma-a-šur-ma KÙ.BABBAR ša šu-lí ša a-wa-at-kà gám-ra-a-ni šu-lí ša-bu-a-ni a-na ša ṭup-pí-kà a-na KÙ.BABBAR DAM.GÀR-ru-um i-šé-e-kà",
+    "translation_chunk": "Ṭāb-ṣilli-Aššur, La-qēp, son of Puzur-Anna, and Išuhum, son of Šuli, answered Ir'am-Aššur: 'With the silver of Šuli, whose affair with you has been settled, we have satisfied Šuli. On the basis of what your record states the tamkārum will sue you for the silver'.",
+    "boundary_reason": "相手側（被告側）の反論が一つの応答単位としてまとまるため",
+    "confidence": "high"
+  },
+  {
+    "record_id": "record_11",
+    "split_id": "record_11__04",
+    "status": "ok",
+    "transliteration_chunk": "i-na ḫa-muš-tim ša a-šur-iš-tí-kál DUMU sú-kà-li-a ITU.KAM tí-i-na-tim li-mu-um ma-ṣí-ì-lí IGI ku-da-dim DUMU a-šùr-DU10 IGI DINGIR-na-da DUMU a-šur-na-da",
+    "translation_chunk": "During the week of Aššuriš-tikal, son of Sukkalliya, month X of the eponymy of Maṣi-ilī. In the presence of Kudādum, son of Aššur-ṭāb, and of Ilī-nādā, son of Aššur-nādā.",
+    "boundary_reason": "日付・証人記載という定型的な結語部分のため独立ブロックとした",
+    "confidence": "high"
+  }
+]
+[
+  {
+    "record_id": "record_12",
+    "split_id": "record_12__01",
+    "status": "ok",
+    "transliteration_chunk": "i-nu-mì ša-ap-li i ḫa-muš-tim 1.25 GÍN a-na UDU 0.66666 GÍN 15 ŠE a-na 3 bi4-il5-té-en 0.33333 GÍN 15 ŠE a-na um-zi-im 1.66666 GÍN a-na Ì.NUN 2.5 GÍN a-na UDU i-nu-mì li-ma-ni 1.5 GÍN a-na pá-šu-ri ù ḫa-ša-le 22.5 ŠE a kà-ni-im ša IGI ku-ṣí-im 1.5 GÍN a-na e-ṣé ša ni-ib-sí-im",
+    "translation_chunk": "During the bottom end of the week-eponymy 1¼ shekel for a sheep; ¾ shekel for 3 double loads of firewood; 5/12 shekel for dried meat; 1⅔ shekel for butter; 2½ shekels for a sheep at the time of our eponymy; 1½ shekel for tables and <gap>; 22½ grains for a pot-stand in front of the chair; 1½ shekel for wood of the <gap>.",
+    "boundary_reason": "週末時点の基本的な支出項目（家畜・食品・器具など）の列挙が一まとまりのため",
+    "confidence": "high"
+  },
+  {
+    "record_id": "record_12",
+    "split_id": "record_12__02",
+    "status": "ok",
+    "transliteration_chunk": "2.6666600000000003 GÍN a-na-ru-uq ŠE-im 2 GÍN a-na 2 DUG GIG i-wa-li-ba-ni-ma 0.33333 GÍN 15 ŠE a-na 3 bi4-lá-tim e-ṣí ša-qí-il5 1.5 GÍN a-na 4 ki-ra-tim áš-qúl 2 DUG GIG 2.16666 GÍN 2 DUG ŠE-um 2.33333 GÍN ša-qí-il5 i ḫa-muš-tim áš-qúl",
+    "translation_chunk": "2⅔ shekels for a sack of barley; 2 shekels for two jars of wheat also in Walibani; 5/12 shekels paid for 3 loads of firewood; 1½ shekel I paid for 4 jars of beer; (for) 2 jars of wheat 2⅙ shekels; (for) 2 jars of barley 2⅓ shekels was paid; I paid (it) during the week-eponymy.",
+    "boundary_reason": "穀物・ビール・燃料などの支払いとその合計処理が一連の会計記録としてまとまるため",
+    "confidence": "high"
+  },
+  {
+    "record_id": "record_12",
+    "split_id": "record_12__03",
+    "status": "ok",
+    "transliteration_chunk": "2.33333 GÍN a-na-ru-uq ŠE-im áš-qúl 2 DUG GIG 2.33333 GÍN áš-qúl 1.3333300000000001 GÍN 15 ŠE a-na 3 bi4-lá-tim áš-qúl 0.33333 GÍN a ni-qí ša ú-ṭí-tim e-pu-šu 0.5 GÍN a qá-nu-e i-wa-li-ba-ni áš-qúl 0.5 na-ru-uq ŠE-am 2.33333 GÍN áš-qúl",
+    "translation_chunk": "I paid 2⅓ shekels for a sack of barley; (for) 2 jars of wheat I paid 2⅓ shekels; I paid 1 shekel 75 grains for 3 loads; ⅓ shekel for the grain offering that I made; ½ shekel I paid for reed in Walibani; (for) ½ sack of barley I paid 2⅓ shekels.",
+    "boundary_reason": "追加の個別支払い（供物・葦・穀物など）が連続する支出リストとしてまとまるため",
+    "confidence": "high"
+  },
+  {
+    "record_id": "record_12",
+    "split_id": "record_12__04",
+    "status": "ok",
+    "transliteration_chunk": "3 DUG GIG 3.5 GÍN áš-qúl 1.3333300000000001 GÍN a-na UDU 1.5 GÍN e-ṣí ša ni-ib-sí-im i ša pár-kà 0.16666 GÍN a-ni-ib-ší-im",
+    "translation_chunk": "For 3 jars of wheat I paid 3½ shekels; 1⅓ shekel for a sheep; 1½ shekel for firewood of <gap> during the festival of Parka; 1/6 shekel for <gap>.",
+    "boundary_reason": "最後の支出項目（祭礼関連費用を含む）が結語的な支払い記録としてまとまるため",
+    "confidence": "high"
+  }
+]
+[
+  {
+    "record_id": "akk_record_01",
+    "split_id": "akk_record_01__01",
+    "status": "ok",
+    "transliteration_chunk": "a-na e-lá-ma qí-bi-ma um-ma a-šùr-i-mì-tí-ma 5 ma-na KÙ.BABBAR ku-nu-ki-kà bu-ur-sú-in ub-lam-ma a-na-ku ù a-šur-na-da nu-sà-ni-iq-ma 2 GÍN KÙ.BABBAR im-ṭí 3 ma-na KÙ.BABBAR a-na SÍG.ḪI A ša É kà-ri-im ni-iš-qú-ul ša ILLAT-at i-na-a ú šu-nu-nu a-na 10 TÚG.TA bi-it-qá-tum i-bi-ší-a-ma 0.33333 ma-na KÙ.BABBAR i-na É kà-ri-im lá ni-ta-dí-ma",
+    "translation_chunk": "Say to Elamma, thus Aššur-imittī: 5 minas of silver under your seal Būr-Suen delivered and I myself and Aššur-nādā we checked it and it proved to be 2 shekels too little. We paid 3 minas of silver for wool of the colonial office. As for the caravan of Innāya and Šu-Nunu, there occurred deficits amounting to 10 textiles per (trader?), so that we could not deposit 0.3333 mina of the silver in the colonial office,",
+    "boundary_reason": "導入句からキャラバンの不足と1/3 mina未納までが一つの意味まとまりとして対応しているため",
+    "confidence": "high"
+  },
+  {
+    "record_id": "akk_record_01",
+    "split_id": "akk_record_01__02",
+    "status": "ok",
+    "transliteration_chunk": "0.66666 ma-na KÙ.BABBAR i-na KÙ.BABBAR-pì-kà áš-qúl 2 ma-na 6 GÍN KÙ.BABBAR a-na 6 ANŠE <gap> ni-iš-qú-ul 12 GÍN KÙ.BABBAR ší-im KÙ.BABBAR-pí-kà i-na li-bi-a i-ba-ší i-na-NA4.GÌN-za-ku-nu ša ub-lu-ni-ni 0.83333 ma-na 3 GÍN a-na iš-ra-tim il5-qé-ú 0.5 ma-na 2 GÍN a-na ší-mì-im a-na ša-na-ú-um il5-qé-ú",
+    "translation_chunk": "but I paid 0.6666 mina of silver from your own silver. I paid 2 minas 6 shekels of silver for 6 donkeys. 12 shekels of silver, the price of your silver, is still due by me. Of your lapis lazuli, which they brought here, they took 53 shekels as tithe. 32 shekels (of lapis lazuli) they bought at a rate of 2 : 1.",
+    "boundary_reason": "不足分の補填支払いからロバ購入・未払い銀・ラピス関連処理までが連続した会計報告としてまとまるため",
+    "confidence": "high"
+  },
+  {
+    "record_id": "akk_record_01",
+    "split_id": "akk_record_01__03",
+    "status": "ok",
+    "transliteration_chunk": "ší-im ḫu-sà-ri-ku-nu ku-nu-ki-ni bu-ur-sú-in na-áš-a-ku-um i-na šál-ša-tí ša ILLAT i-na-a ú a-šùr-ta-ak-lá-ku <gap> ma-na 13 GÍN KÙ.BABBAR ta-lá-qé iš-té-en ṣú-ḫa-ra-am a-na lu-ḫu-sà-dí-a ṭur4-da-ma e-ma-ra-am i-lá-qé-ú",
+    "translation_chunk": "With the price of your lapis lazuli under our seal Būr-Suen is on his way to you. From the 'one third parts' of the caravan of Innāya and Aššur-taklāku you will receive <gap> minas 13 shekels of silver. Send one servant to Luhusaddiya and let them take the / a donkey.",
+    "boundary_reason": "ラピスの送付状況から受領予定額、最後の指示文までが結語としてまとまっているため",
+    "confidence": "high"
+  }
+]
+[
+  {
+    "record_id": "akk_record_02",
+    "split_id": "akk_record_02__01",
+    "status": "ok",
+    "transliteration_chunk": "um-ma a-la-ḫu-um a-šur-re-ṣí en-nam-a-šùr ú da-dí-a-ma a-na e-la-ma qí-bi4-ma 24.33333 ma-na 4 GÍN KÙ.BABBAR ŠÀ 1 ma-na 1 GÍN KÙ.BABBAR ni-is-ḫa-tim ni-di-in ší-tí KÙ.BABBAR-pí-kà 23.33333 ma-na 4 GÍN 0.5 ma-na 3 GÍN KÙ.GI a-šùr-DU10 ub-lam ŠÀ 1.3333300000000001 GÍN 7.5 ŠE ni-is-ḫa-tim ni-dí-in 0.33333 GÍN i-na sà-na-qí-ni im-ṭí ší-ti KÙ.GI 0.5 ma-na 1.3333300000000001 GÍN 5.25 GÍN.TA KÙ.BABBAR-áp-šu 2.6666600000000003 ma-na 5 GÍN ŠU.NÍGIN KÙ.BABBAR-áp-kà ù ší-im KÙ.GI 26 ma-na 9 GÍN KÙ.BABBAR",
+    "translation_chunk": "Thus Ali-ahum, Aššur-rēṣī, Ennam-Aššur, and Dadiya say to Elamma: 24 minas 24? shekels of silver, thereof we gave 61 shekels of silver as excise; the rest of your silver is 23! minas and 24 shekels. 33 shekels of gold Aššur-ṭāb brought us, thereof we gave as excise 1 3 / 8 shekel. It was 0.3333 shekel less when we checked it, (so) the rest of the gold is 31.3333 shekels, its equivalent in silver at 1: 5 1 / 4 is 2 3 / 4 minas. Total of your silver, including the yield of the gold: 26 minas 9 shekels of silver.",
+    "boundary_reason": "書簡導入から銀・金の計算および総計（26 minas 9 shekels）までが一続きの会計報告としてまとまるため",
+    "confidence": "high"
+  },
+  {
+    "record_id": "akk_record_02",
+    "split_id": "akk_record_02__02",
+    "status": "ok",
+    "transliteration_chunk": "4 GÚ 20 ma-na 8 GÍN AN.NA ku-nu-ku 30 ma-na AN.NA-ak qá-tim 17.25 GÍN.TA KÙ.BABBAR-áp-šu 16.66666 ma-na 9 GÍN 36 {TÚG}ku-ta-nu 5.83333 GÍN.TA 3.5 ma-na KÙ.BABBAR-šu-nu 33 šu-ru-tum qá-de8 ša li-wi-tim 1.66666 ma-na 4 GÍN KÙ.BABBAR-áp-šu-nu",
+    "translation_chunk": "4 talents 20 minas 8 shekels of tin under seals, 30 minas hand tin, at 17 1 / 4 shekels per (shekel of silver), its (price in) silver, 16 minas 49 shekels; 36 tiles at 5.8333 shekels apiece, their (price in) silver 3.5 minas; 33 dark textiles including those for wrapping, their silver 1 mina 44 shekels.",
+    "boundary_reason": "錫・タイル・織物など品目ごとの価格列挙が一まとまりの物品計算セクションとして対応しているため",
+    "confidence": "high"
+  },
+  {
+    "record_id": "akk_record_02",
+    "split_id": "akk_record_02__03",
+    "status": "ok",
+    "transliteration_chunk": "1 ma-na LÁ 5 GÍN i ma-sà-im im-ṭí 5 ANŠE.ḪI.A ṣa-lá-mu-ú 1 ma-na 17 GÍN it-bu-lu 1 ANŠE im-ra-aṣ-ma wa-at-ra-am ni-iš-a-ma i-lá-kà-kum 1 ma-na bé-ú-lá-at ú-zu-a ù šu-mì-a-bi-a 4 GÍN KÙ.BABBAR lu-bu-šu-nu 12 GÍN ṭé-ṣú-bi a-na a-šùr-DU10 né-pu-ul 3 GÍN ša sà-e-dim 9 GÍN ú-nu-ut ANŠE.ḪI.A 12.5 GÍN wa-ṣí-tum 14 GÍN ú-ku-ul-tí ANŠE.ḪI.A",
+    "translation_chunk": "The silver became 55 shekels less by washing. 5 black donkeys cost 1 mina 17 shekels; 1 donkey became ill and we bought an extra one and it is coming to you. 1 mina, the working capitals of Uzua and Šumi-abiya, 4 shekels their clothing, 12 shekels as additional amount we balanced to Aššur-ṭāb, 3 shekels for <gap>, 9 shekels donkey harness, 12.5 shekels export tax, 14 shekels donkey fodder.",
+    "boundary_reason": "洗浄による減少からロバ関連費用および最終的な支出明細までが結びの支出報告としてまとまるため",
+    "confidence": "high"
+  }
+]
+[
+  {
+    "record_id": "akk_record_03",
+    "split_id": "akk_record_03__01",
+    "status": "ok",
+    "transliteration_chunk": "1.5 GÍN AN.NA i-na a-al bu-u-na-tim a É wa-áb-ri a-dí-in 6 GÍN AN.NA i-na pá-ṭí ša ḫa-na-ak-na-ak a-šar ni-IS-GA-ru a-na É ub-ri a-dí-in 3 GÍN AN.NA i-na ḫa-ni-ga wa-ṣa-i-ni a-na É ub-ri a-dí-in 3 GÍN AN.NA i-na wa-zi-da a-na É ub-ri a-dí-in",
+    "translation_chunk": "1.5 shekel of tin in the town of Buṭnātum I gave to the inn; 6 shekels of tin in the area of hanaknak, where we<gap>, I gave to the inn; 3 shekels of tin, when we left hanigga, I gave to the inn. 3 shekels of tin I gave in Wazida to the inn.",
+    "boundary_reason": "各地で宿屋に支払った錫の列挙（Buṭnātum〜Wazidaまで）が一まとまりの行動記録として対応しているため",
+    "confidence": "high"
+  },
+  {
+    "record_id": "akk_record_03",
+    "split_id": "akk_record_03__02",
+    "status": "ok",
+    "transliteration_chunk": "6 GÍN AN.NA a-na ni-is-ḫa-tim ša TÚG.ḪI.A i-na ḫa-na-ak-na-ak a-dí-in 14 GÍN KÙ.BABBAR ší-im áš-qúl 3 GÍN AN.NA iš-tù ḫa-na-ak-na-ak i-wa-ṣa-i-a a-na É ub-ri-ni a-dí ḫu-lu-qá-e ni-iš-e-ú a-dí-in 3 GÍN AN.NA i-na a-al ku-pì-il5-ša-an a-dí-in 1.5 GÍN AN.NA i-na ta-pá-kà-áš a kà-ší-im a-dí-in ḫi-dam AN.NA a-na a-lá-ḫi-nim ša ta-e-dí-zi-na a-dí-in",
+    "translation_chunk": "6 shekels of tin I gave in hanaknak as import-tax on the textiles 14 shekels of silver as price <of<gap>> I paid. 3 shekels of tin, when I left hanaknak I gave to our inn, while we searched for goods lost; 3 shekels of tin I gave in the town of Kupilšan; 1.5 shekel of tin I gave in Tapaggaš to the chief; A -bead of tin I gave to the steward of Ta'edizina;",
+    "boundary_reason": "税・価格支払いから各地での追加支出（Kupilšan〜Tapaggaš〜Ta'edizina）までが連続した支払い列挙としてまとまるため",
+    "confidence": "high"
+  },
+  {
+    "record_id": "akk_record_03",
+    "split_id": "akk_record_03__03",
+    "status": "ok",
+    "transliteration_chunk": "0.5 ma-na URUDU a-né-bar-tim i-ša dur4-ḫu-mì-it a-dí-in 3 ma-na URUDU SIG5 ni-is-ḫa-tim i-na dur4-ḫu-mì-it a kà-ší-im a-dí-in 5 ma-na URUDU SIG5 i-nu-mì a-na wa-aḫ-šu-ša-na ur-ki TÚG.ḪI.A i-li-ku a qá-tí ì-lí-úṣ-ra-ni a-dí-in 10 ma-na URUDU ší-kam lu a É ub-ri lu gám-ri i-na wa-aḫ-šu-ša-na",
+    "translation_chunk": "0.5 mina of copper I gave for the crossing in the area of Durhumit; 3 minas of refined copper, import-tax, in Durhumit I gave to the chief; 5 minas of refined copper I put at the disposal of Ilī-uṣranni, when he went to Wahšušana in pursuit of my textiles; 10 minas of -copper for the inn and expenses inWahšušana.",
+    "boundary_reason": "銅に関する支出（Durhumitでの支払いからWahšušanaでの費用）をまとめた最終セクションとして自然に区切れるため",
+    "confidence": "high"
+  }
+]
+[
+  {
+    "record_id": "akk_record_04",
+    "split_id": "akk_record_04__01",
+    "status": "ok",
+    "transliteration_chunk": "15 ma-na KÙ.BABBAR ni-is-ḫa-sú DIRI ša-du-a-sú ša-bu kàr-wa-a a-na um-mì-a-ni-a ú-bi-il5 IGI a-ni-ni-im DUMU šu-ḫu-bur IGI a-šùr-iš-tí-kál DUMU a-šur-SIPA 15 GÍN KÙ.GI ni-is-ḫa-sú DIRI ša-du-a-sú ša-bu a-ṣé-er en-nam-a-šur a-šur-re-ṣí ú da-dí-a 0.66666 ma-na KÙ.BABBAR ni-is-ḫa-sú DIRI ša-du-a-sú ša-bu a-na a-šur-ta-ak-lá-ku DUMU lu-ra-bi4-a-ku",
+    "translation_chunk": "15 minas of silver, its excise added, his transport fee paid, Karwāya brought to my investors, witnessed by Anīnum, son of Šu-hubur, by Aššuriš-tikal, son of Aššur-rē'ī. 15 shekels of gold, its excise added, his transport fee paid, to the address of Ennam-Aššur, Aššur-rēṣì and Dadiya. 0.6666 mina of silver, its import tax added, his transport fee paid, for Aššur-taklāku, son of Lū-rabiāku.",
+    "boundary_reason": "冒頭の主要送金（銀・金・銀）とその証人・宛先情報が一連の導入的会計記録としてまとまるため",
+    "confidence": "high"
+  },
+  {
+    "record_id": "akk_record_04",
+    "split_id": "akk_record_04__02",
+    "status": "ok",
+    "transliteration_chunk": "5 GÍN KÙ.BABBAR a-na um-mì-iš-ḫa-ra šé-bu-ul-ta-ša 4 GÍN KÙ.BABBAR ša lá-ma-sà-tim a-na um-mì-iš-ḫa-ra 1 GÍN KÙ.BABBAR a-na bu-ṣú-a mì-ma a-nim a-šur-mu-ta-pì-il5 ú-bi-il5 4 GÍN KÙ.BABBAR a qá-tí-šu 3 GÍN KÙ.BABBAR sà-sí-a 3 GÍN KÙ.BABBAR lá-qé-pu-um DUMU i-tur4-DINGIR a-na um-mì-iš-ḫa-ra ub-lu <gap>-tí-am DUMU ku-na-a ú-bi-il5-ší-im",
+    "translation_chunk": "5 shekels of silver for Ummī-Išhara, her consignment; 4 shekels of silver of Lamassatum for Ummī-Išhara; 1 shekel of silver for Buṣua - all this Aššur-mūtappil brought; 4 shekels of silver for his use, 3 shekels of silver Sāsiya (and) 3 shekels of silver La-qēpum, son of Itūr-ilī, brought to Ummī-Išhara; one <gap><gap> the son of Kunnaya brought for her.",
+    "boundary_reason": "Ummī-Išhara関連の小額支払いと複数人物による持参記録が一つのまとまりとして対応しているため",
+    "confidence": "high"
+  },
+  {
+    "record_id": "akk_record_04",
+    "split_id": "akk_record_04__03",
+    "status": "ok",
+    "transliteration_chunk": "1 ma-na KÙ.BABBAR ni-is-ḫa-sú DIRI ša-du-a-sú ša-bu a-na um-mì-a-ni-a 6 ma-na KÙ.BABBAR ša-du-a-sú ša-bu a-na a-šur-i-mì-tí DUMU i-ku-a 17 ma-na 8 GÍN KÙ.BABBAR ša-du-a-sú ša-bu ša i-a-tí ú kur-ub-IŠTAR a-ṣé-er a-lá-ḫi-im ú da-dí-a mì-ma a-nim šál-ma-a-šur ú-bi-il5 IGI šu-ku-bi-im DUMU a-zu IGI PUZUR4.SA.TU",
+    "translation_chunk": "1 mina of silver, its excise added, his transport fee paid, for my investors; 6 minas of silver his transport fee paid, for Aššur-imittī, son of Ikua; 17 minas 8 shekels of silver, its transport fee paid, belonging to me and Kurub-Ištar to the address of Ali-ahum and Dadiya - all this Šalim-Aššur brought, in the presence of Šu-Kūbum, son of Azu, of Puzur-šadu'e.",
+    "boundary_reason": "追加の大口銀取引とその運搬者・証人情報が一連の報告としてまとまるため",
+    "confidence": "high"
+  },
+  {
+    "record_id": "akk_record_04",
+    "split_id": "akk_record_04__04",
+    "status": "ok",
+    "transliteration_chunk": "17.5 ma-na KÙ.BABBAR ni-is-ḫa-sú DIRI ša-du-a-sú ša-bu ša i-a-tí ú kur-ub-IŠTAR a-ṣé-er a-lá-ḫi-im ú da-dí-a a-šur-na-da ú-bi-il5 2 GÍN KÙ.BABBAR a-na um-mì-iš-ḫa-ra IGI iṣ-mì-id-DINGIR IGI šu-ma-bi-a DUMU PUZUR4-a-šur",
+    "translation_chunk": "17.5 minas of silver, its excise added, his transport fee paid, belonging me and Kurub-Ištar, Aššur-nādā brought to Ali-ahum and Dadiya. 2 shekels of silver for Ummī-Išhara, in the presence of Iṣmid-ilī, of Šumi-abiya, son of Puzur-Aššur.",
+    "boundary_reason": "最後の銀送付（17.5 minas）と締めの小額支払い・証人情報が結語としてまとまるため",
+    "confidence": "high"
+  }
+]
+[
+  {
+    "record_id": "akk_record_05",
+    "split_id": "akk_record_05__01",
+    "status": "ok",
+    "transliteration_chunk": "a-na ir-ma-a-šur ù {d}UTU-ba-ni a-na ir-ma-a-šur qí-bi-ma um-ma en-nam-a-šur-ma 3 ma-na LÁ 3 GÍN KÙ.BABBAR i pá-ni-tim iš-tù ḫa-tim iš-tí šu-sú-en6 ú-šé-bi-lá-ku-ma um-ma a-na-ku-ma a-bi šu-ut i-lá-ak-ma iš-tù a-lim{ki} AN.NA 10 ma-na ú-šé-ba-lá-ma li-ba-am i-da-nam ù KÙ.BABBAR 1 GÍN e-li-a-ma KÙ.BABBAR a-na DAM.GÀR-ri-a a-na ša ṭup-pì-a ú-šé-ba-al",
+    "translation_chunk": "To Ir'am-Aššur and Šamaš-bāni, and in particular to Ir'am-Aššur, say as follows, thus Ennam-Aššur: Previously I sent you 2 minas 57 shekels of silver from hattum with Šu-Suen and I thought: 'He is my father, he will go and send me from the City at least 10 minas of tin and thereby encourage me. And when some silver becomes available for me I will then be able to send silver to my creditor on the basis of my tablet'.",
+    "boundary_reason": "書簡導入から過去の送金と期待（銀送付→錫送付の期待）までが一つの回想としてまとまるため",
+    "confidence": "high"
+  },
+  {
+    "record_id": "akk_record_05",
+    "split_id": "akk_record_05__02",
+    "status": "ok",
+    "transliteration_chunk": "a-ta um-ma a-ta-ma KÙ.BABBAR a-ḫa-at-kà ta-aḫ-ša-aḫ-ma a-na ša ṭup-pì-kà a-tí-dí-ší-im ur-ki-tim i ba-áb ḫa-ra-ni-kà um-ma a-ta-ma KÙ.BABBAR 1 GÍN i-šu qá-tí-kà dí-na-ma AN.NA 10 ma-na lá-áš-a-ma lu-šé-bi4-lá-ku-ma KÙ.BABBAR li-li-a-ku-ma li-ba-am ri-ší um-ma a-ta-ma ù a-na TÚG.ḪI-tí-a a-na-aḫ-ma a-šar ša-la-ḫi-im šu-lu-ùḫ-šu-nu TÚG.ḪI-tù lá i-ḫa-li-qú",
+    "translation_chunk": "But you said: 'Your sister needed the silver, so I gave it to her on the basis of your tablet'. Later, when you were about to set out on a journey, you said: 'Give me every single shekel of silver you have available then I will buy for you and send you tin, 10 minas, so that you can obtain silver and gather courage!' You also said: 'You must also exert yourself for my textiles and salvage them as well as you can. The textiles must not get lost!'",
+    "boundary_reason": "相手の発言（妹への銀の使用とその後の指示）が引用としてまとまっているため",
+    "confidence": "high"
+  },
+  {
+    "record_id": "akk_record_05",
+    "split_id": "akk_record_05__03",
+    "status": "ok",
+    "transliteration_chunk": "i-nu-mì ta-tal-ku lá tí-dí-e ki-ma ḫa-ra-na-tum ù É.GAL-lu da-nu-ni a-dí TÚG.ḪI.A áš-lu-ḫu ITU.7.KAM i-na li-bi ma-tim as-ḫu-ur 3 TÚG.ḪI.A a gám-ri-im ša ḫa-ra-nim i-gi5-im-ru-ma TÚG.ḪI.A ku-nu-ki ša ku-lu-ma-a a-ṣé-er ša-zu-za-tí-kà ú-šé-li-ma TÚG.ḪI.A sà-sà-am ša-am-ru-ṣú-ma a-na 3.5 ma-na KÙ.BABBAR ta-ad-nu KÙ.BABBAR i ku-nu-uk ša-zu-uz-tí-kà kà-ni-ik-ma i-ba-ší",
+    "translation_chunk": "When you left, did you not know that the roads and the palaces were causing difficulties? Until I had salvaged the textiles I stayed seven months in the interior. Three textiles were spent for the expenses of the trip, but I managed to ship the textiles under Kulumaya's seals to your representatives. The textiles are badly affected by moth and have been sold for (only) 3.5 minas silver. The silver, under the seals of your representative, is available.",
+    "boundary_reason": "旅路の困難と織物の処理・売却結果までが一連の状況報告としてまとまるため",
+    "confidence": "high"
+  },
+  {
+    "record_id": "akk_record_05",
+    "split_id": "akk_record_05__04",
+    "status": "ok",
+    "transliteration_chunk": "a-bi4 a-ta be-lí a-ta e-lá-kà a ma-nim a-da-gal KÙ.BABBAR 1 GÍN i-šu qá-tí-a ú-pá-ḫe-er-ma 1 ma-na 14 GÍN ni-is-ḫa-sú DIRI ša-du-a-sú ša-bu a-ḫa-ma 0.5 ma-na KÙ.BABBAR ik-ri-bu ša a-šur ku-nu-ki-a IGI a-zu-ta-a IGI ni-dí-ba-ni i-na ḫu-ra-ma a-na ší-a-ma-tim IGI a-zu-ta-a IGI ni-dí-ba-ni a-dí-na-kum",
+    "translation_chunk": "Please, my father, my boss, to whom else but you can I look (for help)? I collected every single shekel I had available and 1 mina 14 shekels of silver, its excise added, its transport fee paid, and separately 0.5 mina of silver, temple funds of Aššur, I gave you in the presence of Azutāya and of Idi-bāni in hurama for making purchases <<in the presence of Azutāya and of Idī-bāni>>",
+    "boundary_reason": "懇願と実際の銀の支払い（証人付き）までが一まとまりの報告となっているため",
+    "confidence": "high"
+  },
+  {
+    "record_id": "akk_record_05",
+    "split_id": "akk_record_05__05",
+    "status": "ok",
+    "transliteration_chunk": "um-ma a-na-ku-ma a-bi4 a-ta be-lí a-ta AN.NA 10 ma-na ša-ma-ma šé-bi4-lam-ma e-en a-šur ù e-né-kà ša-mì-ra-ni mì-nam ší-lá-tám ar-ší-a-ku-ma ù a-dí-i u4-mì-im a-nim AN.NA lá tù-šé-ba-lam ší-im KÙ.BABBAR-pì-a AN.NA šé-bi-lam",
+    "translation_chunk": "and I said: 'Please my father, my boss, buy for me tin, 10 minas, and send it to me and so allow me to face Aššur and and you!' What misdeed have I committed against you that until this very day you fail to send me the tin? Send me the tin bought with my silver!",
+    "boundary_reason": "最後の直接的な要求と非難（錫を送るよう求める結論部）が明確な締めとして独立するため",
+    "confidence": "high"
+  }
+]
+[
+  {
+    "record_id": "akk_record_06",
+    "split_id": "akk_record_06__01",
+    "status": "ok",
+    "transliteration_chunk": "KIŠIB IŠTAR-pá-li-il5 DUMU šu-ku-bi4-im KIŠIB ni-mar-IŠTAR DUMU ba-la KIŠIB a-bu-ša-lim DUMU ì-lí-a-lúm 0.5 ma-na KÙ.BABBAR ṣa-ru-pá-am i-ṣé-er IŠTAR-pá-li-il5 DUMU šu-ku-bi4-im DAM.GÀR-ru-um i-šu iš-tù ḫa-muš-tim ša {d}EN.LÍL-ba-ni ITU.KAM ṭí-i-na-tim 1 GÍN.TA i-na ITU.KAM a-na KÙ.BABBAR a-nim ṣí-ib-tám ú-ṣa-áb li-mu-um ḫa-na-na-ru-um",
+    "translation_chunk": "Seal of Ištar-pālil, son of Šu-Kūbum, seal of Nimar-Ištar, son of Bala, seal of Abu-šalim, son of Ilī-ālum. 0.5 mina of refined silver Ištar-pālil, son of Šu-Kūbum, owes to the creditor. From the week-eponymy of Ellil-bāni, month X, he will add 1 shekel per month for this silver. Eponymy of hanna-nārum.",
+    "boundary_reason": "最初の封印列挙と単独債務（Ištar-pālilの債務と利息条件）が一つの契約単位としてまとまるため",
+    "confidence": "high"
+  },
+  {
+    "record_id": "akk_record_06",
+    "split_id": "akk_record_06__02",
+    "status": "ok",
+    "transliteration_chunk": "KIŠIB IŠTAR-pá-li-il5 DUMU šu-ku-bi4-im KIŠIB a-šùr-iš-ti-kál DUMU ḫi-na-a KIŠIB a-lá-ḫi-im DUMU sú-sà-a-a KIŠIB PÚZUR.IŠTAR DUMU šu-ku-bi4-im KIŠIB be-lúm-ba-ni DUMU ga-zi-a KIŠIB áb-ša-lim DAM a-lá-ḫi-im 0.5 ma-na KÙ.BABBAR ṣa-ru-pá-am i-ṣé-er IŠTAR-pá-li-il5 áb-ša-lim DAM a-lá-ḫi-im ù DUMU-e a-lá-ḫi-im DAM.GÀR i-šu iš-tù ḫa-mu-uš-tim ša ḫa-na-a ITU.KAM kán-war-ta 1.5 GÍN.TA ṣí-ib-tám i-na ITU.KAM a-na 1 ma-na-im ú-ṣú-bu KÙ.BABBAR i qá-qá-ad šál-mì-šu-nu ú ke-ni-šu-nu ra-ki-is li-mu-um ḫa-na-na-ru-um",
+    "translation_chunk": "Seal of Ištar-pālil, son of Šu-Kūbum, seal of Aššuriš-tikal, son of hinnāya, seal of Ali-ahum, son of Susāya, seal of Puzur-Ištar, son of Šu-Kūbum, seal of Bēlum-bāni, son of Gaziya, seal of Ab-šalim, the wife of Ali-ahum. 0.5 mina of refined silver Ištar-pālil, Ab-šalim, the wife of Ali-ahum, and the sons of Ali-ahum owe to the creditor. From the week-eponymy of hanāya, month IX, they will add 1.5 shekel as interest per month per mina. The silver is bound on the one of them who is solvent and reliable. Eponymy of hanna-nārum.",
+    "boundary_reason": "複数人による共同債務とその利息条件・責任規定が一つの契約セクションとしてまとまるため",
+    "confidence": "high"
+  },
+  {
+    "record_id": "akk_record_06",
+    "split_id": "akk_record_06__03",
+    "status": "ok",
+    "transliteration_chunk": "i ša-ḫa-at áb-ša-lim ú me-er-e a-lá-ḫi-im be-lúm-ba-ni DUMU ga-zi-a i-zi-iz ṭup-pá-am ša 24.5 ma-na 5 GÍN AN.NA ša šu-mì tám-kà-ri-im wa-du a ša-pár-tim na-di-ma KÙ.BABBAR a-num a šu-mì a-lá-ḫi-im lá-qé",
+    "translation_chunk": "Bēlum-bāni, son of Gaziya, assisted Ab-šalim and the sons of Ali-ahum. A tablet of 24 minas and 35 shekels of tin, on the name of 'creditor', has been deposited as pledge. This silver was taken in the name of Ali-ahum.",
+    "boundary_reason": "担保（錫のタブレット）とその取り扱いに関する記述が独立した契約行為としてまとまるため",
+    "confidence": "high"
+  },
+  {
+    "record_id": "akk_record_06",
+    "split_id": "akk_record_06__04",
+    "status": "ok",
+    "transliteration_chunk": "KIŠIB a-šùr-ta-ak-lá-ku DUMU qar-da-a-a KIŠIB DU10-ṣí-lá-a-šùr DUMU a-šùr-ba-lá-ṭí KIŠIB da-da-a DUMU ni-mar-IŠTAR 6.5 ma-na 5 GÍN AN.NA ku-uk-ru 4 TÚG.ḪI.A i-ṣé-er da-da-a-a DUMU ni-mar-IŠTAR DAM.GÀR i-šu iš-tù ḫa-mu-uš-tim ša a-šùr-ta-ak-lá-ku DUMU a-lá-ḫi-im a-na 16 ḫa-am-ša-tim i-ša-qal šu-ma i-na u4-mì-šu ma-al-ú-tim lá iš-qú-ul 1.5 GÍN.TA ṣí-ib-tám i-na ITU.KAM ú-ṣa-áb ITU.KAM ku-zal-li li-mu-um ma-ṣí-ì-li AN.NA šál-ma-am ba-lúm da-tim ú ta-ší-a-tim i-ša-qal",
+    "translation_chunk": "Seal of Aššur-taklāku, son of Qardāya, seal of Ṭāb-ṣilli-Aššur, son of Aššur-balāṭī, seal of Dadāya, son of Nimar-Ištar. 24 minas 35 shekels of -tin (and) 4 textiles Dadāya, son of Nimar-Ištar, owes to the creditor. From the week eponymy of Aššur-taklāku, son of Ali-ahum, he shall pay within 16 weeks. If, when his term is due, he has not paid, he will add an interest of 1.5 shekels per month. Month XI, year eponymy of Maṣi-ilī. He will pay the full amount of tin without (deducting) fees and transport costs.",
+    "boundary_reason": "最後の債務（Dadāyaの債務）と支払期限・利息条件・最終支払条件が一つの契約条項としてまとまるため",
+    "confidence": "high"
+  }
+]
+[
+  {
+    "record_id": "akk_record_07",
+    "split_id": "akk_record_07__01",
+    "status": "ok",
+    "transliteration_chunk": "um-ma en-nam-a-šùr ù da-dí-a-ma a-na e-lá-ma qí-bi-ma i-na 1 GÚ 5 ma-na KÙ.BABBAR-pí-kà ša ILLAT-at a-lá-ḫi-im i-li-kà-ni 10.33333 ma-na KÙ.BABBAR i-ri-ḫa-am 5.33333 ma-na KÙ.BABBAR ší-ip-kà-tí-kà iš-tí a-lá-ḫi-im ni-il5-qé ŠÀ.BA 1.3333300000000001 ma-na 8 GÍN KÙ.BABBAR lá-qé-ep il5-qé 1.5 ma-na LÁ 1 GÍN té-ṣú-bu ša 1 GÚ 5 ma-na KÙ.BABBAR-pí-kà",
+    "translation_chunk": "Thus Ennam-Aššur and Dadiya, say to Elamma: Of the 65 minas of your silver that arrived here with Ali-ahum's caravan, 10.3333 minas of silver remained. We received 5.3333 minas from what you invested with Ali-ahum. Thereof: 1.3333? mina 8 shekels Lā-qēp took; 1 mina 29 shekels additional payment for your 65 minas of silver;",
+    "boundary_reason": "導入と総額・残額・初期配分（Lā-qēpと追加支払）までが一つの会計概要としてまとまるため",
+    "confidence": "high"
+  },
+  {
+    "record_id": "akk_record_07",
+    "split_id": "akk_record_07__02",
+    "status": "ok",
+    "transliteration_chunk": "0.83333 ma-na LÁ 2 GÍN a-šùr-i-mì-tí il5-qé 0.5 ma-na 5 GÍN KÙ.BABBAR a-ta-a-a il5-qé 6 GÍN KÙ.BABBAR ṣú-ḫa-ar-tum tal-qé a-na ší-tí KÙ.BABBAR-pí-kà 96 TÚG.ḪI.A a-na 8 ma-na ni-iš-a-ma-kum 16 ma-na AN.NA qá-tim 12.5 GÍN.TA 1.5 ma-na LÁ 2 GÍN KÙ.BABBAR it-ba-al",
+    "translation_chunk": "48 shekels of silver Aššur-imittī took; 35 shekels of silver Ataya took; 6 shekels the girl took. For the rest? of your silver we bought 96? textiles for 8? minas (of silver); 16.6666 minas of loose tin at 12.5 : 1 cost 1 mina 28 shekels of silver;",
+    "boundary_reason": "個別取得（Aššur-imittī・Ataya・少女）から織物購入・錫購入までが連続した支出・再投資のまとまりのため",
+    "confidence": "high"
+  },
+  {
+    "record_id": "akk_record_07",
+    "split_id": "akk_record_07__03",
+    "status": "ok",
+    "transliteration_chunk": "4 ANŠE ṣa-lá-mu 1 ma-na 15 GÍN KÙ.BABBAR it-bu-lu 0.5 ma-na KÙ.BABBAR bé-ú-lá-at a-šùr-lá-ma-sí DUMU en-um-a-a 2 GÍN lu-bu-šu 10 GÍN KÙ.BABBAR ú-nu-ut ANŠE i-na NÍG.KA-sí 15 GÍN KÙ.BABBAR i-té-ra-ma 2 GÍN KÙ.BABBAR ú-ku-ul-tí ANŠE ni-dí-in ša 11 GÍN KÙ.BABBAR 2.5 ma-na AN.NA ni-iš-a-ma-kum",
+    "translation_chunk": "4 black donkeys cost 75 shekels of silver; 0.5 mina the working capital for Aššur-lamassī, son of Ennumāya, 2 shekels his clothing allowance; 10 shekels of silver for donkey harness. When at the accounting there was a surplus of 15 shekels of silver we paid 2 shekels of silver for food for the donkeys (and) for 11 shekels of silver we bought for you (an additional) 2.5 minas of tin.",
+    "boundary_reason": "ロバ関連費用とAššur-lamassī関連支出、さらに会計上の差額処理までが一連の費用精算としてまとまるため",
+    "confidence": "high"
+  },
+  {
+    "record_id": "akk_record_07",
+    "split_id": "akk_record_07__04",
+    "status": "ok",
+    "transliteration_chunk": "2 TÚG.ḪI.A bé-ú-lá-at a-šùr-lá-ma-sí da-ar-ku mì-ma a-nim a-šur-lá-ma-sí na-áš-a-kum 2 ma-na <gap> GÍN KÙ.BABBAR ša a-ta-a il5-qé-ú ip-qí-id-ni-a-ti <gap>",
+    "translation_chunk": "Two textiles from Aššur-lamassī's working capital are packed. With all this Aššur-lamassī is on his way to you. 2 minas <gap> shekels of silver that Atāya took he entrusted ?.",
+    "boundary_reason": "発送準備と最終的な送付・委託に関する結語部分として独立したまとまりとなるため",
+    "confidence": "high"
+  }
+]
+[
+  {
+    "record_id": "akk_record_08",
+    "split_id": "akk_record_08__01",
+    "status": "ok",
+    "transliteration_chunk": "2.5 GÚ URUDU SIG5 iš-tí ga-nu-nu 3 GÚ URUDU SIG5 iš-tí ga-nu-nu-ma 1 GÚ URUDU SIG5 iš-tí a-šur-DU10 DUMU a-mur-na-ḫu-uš 1 GÚ 30 ma-na URUDU SIG5 iš-tí a-šùr DU10 DUMU a-mur-na-ḫu-uš-ma <gap> GÚ URUDU SIG5 iš-tí a-šur <gap>",
+    "translation_chunk": "2.5 talents refined copper due by Ganunu; 3 talents of refined copper also by Ganunu; 1 talent of refined copper due by Aššur-ṭāb, son of Amur-Nahuš; 1 talent 30 minas of refined copper due by the same Aššur-ṭāb, son of Amur-Nahuš; <gap> talents of refined copper due by Aššur- <gap>;",
+    "boundary_reason": "GanunuおよびAššur-ṭāb関連の銅債務が一まとまりの債務リストとして並列列挙されているため",
+    "confidence": "high"
+  },
+  {
+    "record_id": "akk_record_08",
+    "split_id": "akk_record_08__02",
+    "status": "ok",
+    "transliteration_chunk": "3 GÚ 20 ma-na URUDU SIG5 iš-tí a-du-dum 1 GÚ URUDU SIG5 iš-tí PUZUR4-{d}MAR.TU 2 GÚ 40 ma-na URUDU la-mu-nam iš-tí en-na-sú-in DUMU i-ku-a 15 ma-na URUDU SIG5 iš-tí en-na-sú-in DUMU i-ku-a 28 ma-na URUDU SIG5 iš-tí i-ku-pì-a DUMU en-um-a-šur 3 GÚ URUDU SIG5 iš-tí PUZUR4-we-er",
+    "translation_chunk": "3 talents 20 minas of refined copper due by Adūdum; 1 talent refined copper due by Puzur-Amurrum; 2 talents 40 minas of bad copper due by Ennam-Suen, son of Ikūa; 15 minas of refined copper due by the same Ennam-Suen, son of Ikua; 28 minas of refined copper due by Ikūn-pīya, son of Ennam-Aššur; 3 talents of refined copper due by Puzur-Wēr;",
+    "boundary_reason": "複数人物（Adūdum〜Puzur-Wēr）に対する銅債務の連続列挙が一つのリスト単位を形成しているため",
+    "confidence": "high"
+  },
+  {
+    "record_id": "akk_record_08",
+    "split_id": "akk_record_08__03",
+    "status": "ok",
+    "transliteration_chunk": "1.5 ma-na KÙ.BABBAR ṣa-ru-pá-am iš-tí ur-ší-ší 1.5 ma-na KÙ.BABBAR ṣa-ru-pá-am iš-tí ur-ší-ší-ma ša qá-ta-tí-šu e-lá-ma ù a-mur-IŠTAR a-na ì-lí-<gap> li-tap-tù-ni 0.5 ma-na KÙ.BABBAR be-ú-lá-ti-šu iš-tí ur-ší-ší-ma",
+    "translation_chunk": "1.5 mina of refined silver due by Uršiši; 1.5 mina of refined silver due by the same Uršiši, as whose guarantors Elamma and Amur-Ištar were registered on behalf of Ilī-<gap>; 0.5 mina of silver, his working capital, due by the same Uršiši;",
+    "boundary_reason": "Uršišiに関する銀債務・保証人・運転資金がまとまった一つの債務セクションのため",
+    "confidence": "high"
+  },
+  {
+    "record_id": "akk_record_08",
+    "split_id": "akk_record_08__04",
+    "status": "ok",
+    "transliteration_chunk": "<gap> GÚ URUDU SIG5 iš-tí en-um-<gap> ù <gap>-ì-lí 20-<gap> ma-na URUDU SIG5 <gap> 15 ma-na KÙ.BABBAR <gap> iš-tí DINGIR-<gap> DUMU <gap>-ma <gap> KÙ.BABBAR lá i-ba-ta-aq",
+    "translation_chunk": "<gap> talents of refined copper due by Ennam-<gap> and <gap>-ilī; 20-<gap> minas of refined copper <gap> 15 minas of silver <gap> due by Ilī-<gap>, son of <gap>; <gap> below (a price of) <gap> silver he shall not go?;",
+    "boundary_reason": "欠損を含むが、複数債務と価格条件らしき条項が連続して記述されているため一括",
+    "confidence": "medium"
+  },
+  {
+    "record_id": "akk_record_08",
+    "split_id": "akk_record_08__05",
+    "status": "ok",
+    "transliteration_chunk": "10 TÚG.ḪI-tí 10.33333 ma-na URUDU SIG5 iš-tí e-ru-zi 10 mana URUDU SIG5 ù 6 GÍN KÙ.BABBAR iš-tí a-ta-aḫ-šu mì-ma a-ni-ú-tum ṭup-pu ḫa-ru-mu-tum É BI-<gap>-nim i-ba-ší-ú",
+    "translation_chunk": "10 textiles (and) 10.3333 minas of copper due by Eruzi; 10 minas of refined copper and 6 shekels of silver due by Atahšu. All these certified records records are in <gap>num's house?.",
+    "boundary_reason": "最終的な債務項目（Eruzi・Atahšu）と文書保管に関する結語が一まとまりの終結部のため",
+    "confidence": "high"
+  }
+]
+[
+  {
+    "record_id": "record_1",
+    "split_id": "record_1__01",
+    "status": "ok",
+    "transliteration_chunk": "um-ma e-la-ma-ma a-na la-qé-ep qí-bi-ma 24.33333 ma-na 5 GÍN KÙ.BABBAR ù 0.5 ma-na 3 GÍN KÙ.GI i-na pá-ni né-pí-ší-im na-dí ku-nu-ki-a šu-ku-bu-um DUMU šu-sú-in na-áš-a-kum KI a-li-ki-im pá-ni-im-ma a-na DUMU um-me-a-nim <gap> pí-qí-id-ma a-na ṣé-er um-me-a-ni-a ú a-na ša ki-ma i-a-tí a-na a-lim{ki} lu-ub-lu",
+    "translation_chunk": "Thus Elamma, say to Lā-qēpum: 24 minas 25 shekels of silver, with 33 shekels of gold placed at the top of the packet, under my seals, Šu-Kūbum, son of Šu-Suen, is on his way to you. Entrust it to an affiliated trader so that one may bring it with the next caravan to my investors and representatives to the City.",
+    "boundary_reason": "導入句と送付内容・輸送指示がまとまっており、英訳でも一連の段落として完結しているため",
+    "confidence": "high"
+  },
+  {
+    "record_id": "record_1",
+    "split_id": "record_1__02",
+    "status": "ok",
+    "transliteration_chunk": "15 GÍN KÙ.BABBAR a-na i-li-a 2.33333 ma-na a-na en-um-a-šur 0.33333 ma-na a-na da-dí-a <gap> KÙ.BABBAR <gap> áš-qúl <gap> a-<gap> i-na ḫu-ur-ší-a-nim kà-an-ku šu-ku-bu-um na-áš-a-kum a-na ṣé-er da-dí-a ú en-nam-a-šur šé-bi-il5-šu-nu",
+    "translation_chunk": "15 shekels of silver for Iliya, 2.3333 minas for Ennam-Aššur, 0.3333 mina for Dadiya <gap> of silver for / to <gap> I paid <gap> that? are under seal in a -container, Šu-Kūbum is bringing you; send them to Dadiya and Ennam-Aššur.",
+    "boundary_reason": "銀の分配リストと封印下での送付指示が一つのまとまりとして対応しているため",
+    "confidence": "high"
+  },
+  {
+    "record_id": "record_1",
+    "split_id": "record_1__03",
+    "status": "ok",
+    "transliteration_chunk": "5 ma-na ku-nu-ki-a {d}UTU-ba-ni DUMU A-ki tim ub-lá-kum ša ša-lim-a-ḫi-im KÙ.BABBAR ša-bi-ma ší-tí KÙ.BABBAR iš-tí-kà li-ib-ší šu-ma TÚG.ḪI.A-tí ší-tap-ku-um i-ba-ší ú-ul KÙ.BABBAR ší-tap-kum i-ba-ší ŠÀ.BA qá-tí i-ta-dí-a šu-ma ḫa-ra-kà a-na bu-ru-uš-ḫa-tim i-ba-ší ṣú-ḫa-ru-um iš-tí-kà-ma li-li-ik lá té-zi-ib-šu a-mur-a-šur DUMU ì-lí-ba-ni ṣa-ba-at-ma KÙ.BABBAR <gap> ša-áš-qí-il5-šu",
+    "translation_chunk": "5 minas (of silver) under my seal Šamaš-bāni, son of Akutum, brought you, satisfy with that silver the claim of Šalim-ahum and keep the rest with you. If there is a possibility to invest textiles or to invest silver, deposit my share by taking it from (this shipment). Should your trip to Burušhattum, take place, then let the boy go with you, do not leave him behind. Seize Amur-Aššur, son of Ilī-bāni, and make <him> pay the silver.",
+    "boundary_reason": "追加の銀の処理指示から投資・行動命令までが一連の後半指示としてまとまっているため",
+    "confidence": "high"
+  }
+]
+[
+  {
+    "record_id": "record_2",
+    "split_id": "record_2__01",
+    "status": "ok",
+    "transliteration_chunk": "um-ma ir-ma-a-šùr-ma a-na i-ku-pí-a-šùr lá-ma-sà-tim ù en-um-a-šùr qí-bi-ma 1 ma-na KÙ.BABBAR ku-nu-ku-a ša sú-en6-na-da a-ma-kam a-na šu-lá-ba-an ù ku-ra-ra dí-na-šu ù ší-bé šu-uk-na ki-ma KÙ.BABBAR ša sú-en6-na-da il5-qé-ú-ni",
+    "translation_chunk": "Thus Ir'am-Aššur, say to Ikūn-pī-Aššur, Lamassutum? and Ennam-Aššur: 1 mina of silver under my seals, belonging to Suen-nādā, you must give there to Šu-Labān and Kurara and you must set witnesses that they received Suen-nādā's silver.",
+    "boundary_reason": "書簡導入と最初の銀の引渡し命令が一まとまりで対応しているため",
+    "confidence": "high"
+  },
+  {
+    "record_id": "record_2",
+    "split_id": "record_2__02",
+    "status": "ok",
+    "transliteration_chunk": "3 ma-na KÙ.BABBAR ša DAM.GÀR ku-nu-ku-a a-na ṣé-er a-šur-GAL {d}EN.LÍL-ba-ni DUMU ḫa-na-nim ú-šé-bi-lam a-ša-me-ma a-dí-ni a-ma-kam wa-ša-áb šu-ma a-na pá-ni a-šur-GAL lá i-li-ik KÙ.BABBAR pu-uṭ-ra-ma AN.NA lu 9 GÍN.TA lu ma-lá ta-le-e-a-ni ša-ma-ma {d}EN.LÍL-ba-ni ù {d}UTU-e-nam KI a-li-ki-im pá-nim-ma ṭur4-da-nim",
+    "translation_chunk": "With 3 minas of silver of the trader, under my seals, I sent Ellil-bāni, son of hannānum, to Aššur-rabi. I hear that he is still staying there and if he has indeed not left to meet Aššur-rabi, then unpack the silver and buy for me tin at 9 shekels per (shekel of silver) or as favorably as you can and send Ellil-bāni and Šamaš-ennam here with the first caravan.",
+    "boundary_reason": "3ミナの銀に関する送付・状況報告・購買命令が一連の指示としてまとまっているため",
+    "confidence": "high"
+  },
+  {
+    "record_id": "record_2",
+    "split_id": "record_2__03",
+    "status": "ok",
+    "transliteration_chunk": "a-šu-mì ṭup-pé-a ša a-na i-na-a DUMU e-lá-lí en-na-sú-en6 DUMU šu-IŠTAR ù a-šur-ma-lik DUMU qá-a-tim KÙ.BABBAR a-ḫi-ib-lu KÙ.BABBAR ú-šé-bi-lá-šu-nu-tí ša-bu-ú ṭup-pé-a iš-tí lá-ma-sà-tim i-ba-ší-ú lu ma-ma-an i-na ša-zu-uz-tí-a ú-kà-al-šu-nu",
+    "translation_chunk": "As for my tablets recording that I became indebted for silver to Innāya, son of Elālī, to Ennam-Suen, son of Šu-Ištar and to Aššur-mālik, son of Qa'ātum, I have sent them the silver, they are satisfied. Are my tablets with Lamassutum or does someone from my representatives have them in his possession?",
+    "boundary_reason": "債務記録とその清算・文書所在の確認という話題が一つの段落として対応しているため",
+    "confidence": "high"
+  },
+  {
+    "record_id": "record_2",
+    "split_id": "record_2__04",
+    "status": "ok",
+    "transliteration_chunk": "a-dí ma-lá ú ší-ni-šu áš-pu-ra-ku-nu-tí mì-šu-um ma-tí-ma té-er-ta-ku-nu lá i-li-kam-ma úz-ni lá ta-pá-tí-a",
+    "translation_chunk": "I have written you several times. Why has no report of yours ever reached me and do you not keep me informed?",
+    "boundary_reason": "最後の苦情・問いかけ部分が独立した締めの段落として対応しているため",
+    "confidence": "high"
+  }
+]
