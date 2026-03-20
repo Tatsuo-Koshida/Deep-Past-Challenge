@@ -30,6 +30,7 @@
 | 6 | train.curated.v002-3.xlsx | train.curated.v002.xlsxを元にして、"[" や "]" を削除。徹底的なOCR修正でイタリックの抜け落ちを修正。LLM修正ミスと思われるものの修正。 | - |
 | 7 | train.curated.v002-4.xlsx | train.curated.v002.xlsxを元にして、"[" や "]" を削除。OCRの書き起こし忘れと思われるものの修正。LLM修正ミスと思われるものの修正。| - |
 | 8 | train.curated.v002-4-2.xlsx | train.curated.v002-4.xlsxを元にして、PDFから採用されていなかったアッカド語と英訳文の組を追加 | - |
+| 9 | train.curated.v002-6.xlsx | train.curated.v002-4-2.xlsxを元にして、1024バイトを超える長文を分割して学習データの増量。さらに低品質で学習に悪影響が出そうなデータを除外。 | - |
 
 ## モデルの学習
 ### ByT5-small
