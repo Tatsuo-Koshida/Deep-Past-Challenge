@@ -5379,3 +5379,382 @@
     "confidence": "high"
   }
 ]
+[
+  {
+    "record_id": "unknown",
+    "split_id": "unknown__01",
+    "status": "ok",
+    "transliteration_chunk": "um-ma ša-lim-a-šur-ma sà-ba-sí-a ù tám-kà-ru-um-ma a-na pì-lá-aḫ-IŠTAR ù zi-ki-ki qí-bi-ma 30 ma-na KÙ.BABBAR ṣa-ru-pá-am ni-is-ḫa-sú DIRI ša-du-a-sú ša-bu ša tám-kà-ri-im a-ḫa-ma 10 ma-na KÙ.BABBAR ṣa-ru-pu-um ni-is-ḫa-sú DIRI ša-du-a-sú ša-bu ik-ri-bu ša a-šur ša tám-kà-ri-ma ku-nu-ki-šu a-na ṣé-er ì-lí-iš-tí-kál ù pì-lá-aḫ-IŠTAR zi-ki-ki na-áš-a-ku-nu-tí",
+    "translation_chunk": "From Šalim-Aššur, Sabasiya and the merchant to Pilah-Ištar and Zikiki: 30 minas of refined silver, its import duty added, its transport tariff paid, belonging to a merchant; further, 10 minas of refined silver, its import duty added, its transport tariff paid, votive offerings for Aššur, also belonging to a merchant and sealed by him, Zikiki is bringing to you destined for Iliš-tikal and Pilah-Ištar.",
+    "boundary_reason": "書簡導入句から始まり、30マナ・10マナの精製銀の搬送報告がZikikiの運搬先（Iliš-tikal・Pilah-Ištar）の明示で締まり、英訳も「Zikiki is bringing to you destined for Iliš-tikal and Pilah-Ištar.」でピリオドが付き明確に節が終わる。",
+    "confidence": "high"
+  },
+  {
+    "record_id": "unknown",
+    "split_id": "unknown__02",
+    "status": "ok",
+    "transliteration_chunk": "a-na zi-ki-ki qí-bi-ma a-ni-am a-na pì-lá-aḫ-IŠTAR pì-qí-id-ma iš-tí a-wi-tí-šu e-ta-wu ù a-ta i-na re-ší-šu i-zi-iz-ma KÙ.BABBAR 1 GÍN lu ṭá-ba-tí a-na pì-lá-aḫ-IŠTAR qí-bi-ma a-ḫu-ni a-ta li-bi4 zi-ki-ki lá tù-lá-ma-an",
+    "translation_chunk": "To Zikiki: Entrust this to Pilah-Ištar and join it to his consignment and then you personally may serve him and be positive over every shekel of silver. To Pilah-Ištar: Our dear brother, do not make Zikiki angry.",
+    "boundary_reason": "「a-na zi-ki-ki qí-bi-ma」でZikikiへの個別呼びかけが始まり、Pilah-Ištar委託命令・次に「a-na pì-lá-aḫ-IŠTAR qí-bi-ma / To Pilah-Ištar:」でPilah-Ištarへの呼びかけに切り替わり「lá tù-lá-ma-an / do not make Zikiki angry.」で短い節が締まる。",
+    "confidence": "high"
+  },
+  {
+    "record_id": "unknown",
+    "split_id": "unknown__03",
+    "status": "ok",
+    "transliteration_chunk": "ṭup-pè-en6 ší-na ša a-ṣé-er ì-lí-iš-tí-kál ù pì-lá-aḫ-IŠTAR lá-pu-tù ša šé-ep zi-ki-ki iš-tí KÙ.BABBAR-ni <gap>-ba-šu-ni iš-tí pá-né-e-ma šé-bi4-lá-ni-šu-nu i-na ṭup-pè-en6 a-me-e-en6 qá-tum ša-kà-nu-um wa-du tí-ir-tí a-lim{ki} da-nu-tù-um i-li-kam qá-tum ša-kà-nu-um lá-šu we-da-ku ṭup-pè-en6 a-me-e-en6 šé-bi4-lá-ni-šu-nu ṭup-pu-um ša šé-ep DUMU ma-ṣí-li ša a-ṣé-er ì-lí-iš-tí-kál ù pì-lá-aḫ-IŠTAR lá-pu-tù i-na a-lim{ki} ì-lí-iš-tí-kál ù pì-lá-aḫ-IŠTAR li-iš-me-ú-šu-ma a ma-lá tí-ir-tí tám-kà-ri-im ší-ma-am li-iš-ú-mu",
+    "translation_chunk": "There are two tablets that were written to Iliš-tikal and Pilah-Ištar and that have been transported by Zikiki - send them together with our silver <gap> as soon as possible. Laying claim was indicated on those two tablets. A strongly worded message from the City arrived. There is no way to lay claim. I am alone. Send those two tablets. As to the tablet transported by Maṣi-ilī's son, that was written for Iliš-tikal and Pilah-Ištar, let Iliš-tikal and Pilah-Ištar hear that in the City, and have them buy what was in the merchant's instructions.",
+    "boundary_reason": "2枚のタブレット送付命令・都市からの強硬書簡・請求権放棄・Maṣi-ilīの息子が運んだタブレットに基づく購入命令まで残りテキスト全体をひとまとまりとして収める。英訳も「have them buy what was in the merchant's instructions.」で完結する。",
+    "confidence": "high"
+  }
+]
+[
+  {
+    "record_id": "unknown",
+    "split_id": "unknown__01",
+    "status": "ok",
+    "transliteration_chunk": "<gap> zi <gap> a-na al <gap> a-na u4-mu e-ṭá-ri-im iṭ-ra-ni i-na 11 ma-na KÙ.BABBAR ša ṭup-pí-kà 5 ma-na KÙ.BABBAR <gap> 2 ma-na-e-en KÙ.BABBAR ša i-na ḫa-ra-nim ša-qá-lam qá-bi4-a-tí-ni-ma lá ta-áš-qú-lá-ni KÙ.BABBAR šé-bi-lam ku-ta-ni SIG5 ú ḫu-sà-ra-am lá-áš-a-ma-kum-ma ki-ma i-na e-lá-i-a KÙ.BABBAR 10 ma-na ni-lá-qé-ú ú-ša-bi-ru ta-ma-ar i-<gap>",
+    "translation_chunk": "<gap> Save me while I can still be saved. Of the 11 minas of silver from your tablet, 5 minas of silver <gap> the two minas of silver that you promised to pay during the journey and which you have not paid - send the silver. I shall buy good and lapis lazuli for you, and you will see that we shall take 10 minas of silver <gap> when I come up <gap>",
+    "boundary_reason": "緊急の救済訴え・タブレット記載の11マナから5マナ・旅中未払い2マナの送付要求・kutānu/ラピスラズリ購入約束・10マナ回収の見通しがひとまとまりで、gapの後に錫・布の売却命令という新たな段落が始まる。",
+    "confidence": "medium"
+  },
+  {
+    "record_id": "unknown",
+    "split_id": "unknown__02",
+    "status": "ok",
+    "transliteration_chunk": "AN.NA ù TÚG.ḪI.A a-na KÙ.BABBAR dí-na a-na ba-a-ba-tí-a ša nu-a-e i-ḫi-id-ma KÙ.BABBAR ša-áš-qí-il5-ma šé-bi4-lam a-na-kam a-mu-tám SIG5 ḫu-sà-ra-am SIG5 É a-lim{ki} a-mu-ur-ma a-dí KÙ.BABBAR lá iš-qú-lu-ni a-mu-tám ù ḫu-sà-ra-am lá u-šu-ru a-ḫi a-ta i-ḫi-id-ma AN.NA ù TÚG.ḪI.A a-na KÙ.BABBAR ta-e-er-ma ù i-na ba-ab-tí-a KÙ.BABBAR 10 ma-na ša-áš-qí-lá-ma KÙ.BABBAR šé-bi-lam-ma a-mu-tám ù ḫu-sà-ra-am lu-šé-ṣí-a-ma ki-ma i-na ba-ab É.GAL-lim <gap> ma-na ṣú-ba-tám ta-<gap>-tim a-ni-ša-am li-ta-al-ku-nim <gap> ša-ni-ú-tim lá a ga ar <gap> ṣí-ba-tim SIG5 <gap> e bi4-a-am <gap>",
+    "translation_chunk": "Sell the tin and textiles for silver. Pay attention to my outstanding claims with Anatolians, have the silver paid and send it to me. I have seen good iron and good lapis lazuli here in the City Hall, but as long as they have not paid the silver, they will not release the iron and lapis lazuli. My dear brother, take care to convert the tin and textiles to silver and then have some 10 minas of silver from my outstanding claims paid, and send me the silver so I can take out the iron and the lapis lazuli, and since in the palace gate <gap> they should come here. <gap> of others <gap>",
+    "boundary_reason": "錫・布の売却命令から始まり、アナトリア人への債権回収・都市会館での鉄・ラピスラズリ確認・「My dear brother」の呼びかけ・10マナ支払い命令・宮殿門gapまで残りテキスト全体をひとまとまりとして収める。",
+    "confidence": "medium"
+  }
+]
+[
+  {
+    "record_id": "unknown",
+    "split_id": "unknown__01",
+    "status": "ok",
+    "transliteration_chunk": "a-na ša-lim-a-šùr qí-bi-ma um-ma en-um-a-šur-ma i-na me-eḫ-ri-im ša ba-a-ba-tí-kà ša té-zi-ba-ni 5 ma-na KÙ.BABBAR iš-tí ì-lí-dan al-qé 3.83333 ma-na 5 GÍN iš-tí a-mur-{d}UTU 1 0.5 ma-na ša da-dí-a al-qé a-na 4 ma-na KÙ.BABBAR ša en-na-sú-in ḫa-bu-lá-ku-ni 2.5 ma-na ṣí-ib-tám 0.5 ma-na ma-na-aḫ-tám ŠU.NÍGIN 7 ma-na KÙ.BABBAR iš-tí en-na-sú-in al-qé 0.66666 ma-na 8 GÍN iš-tí i-tur4-DINGIR 1.3333300000000001 ma-na iš-tí ku-ku-wa 7 ma-na iš-tí tù-um-li-a-i-im 1 ma-na iš-tí DUMU uš-ḫa-ta ŠU.NÍGIN KÙ.BABBAR-pí-kà 27.5 ma-na 3 GÍN ša i-na ba-áb-tí-kà al-qé-ú",
+    "translation_chunk": "To Šalim-Aššur from Ennam-Aššur: From the copy of your outstanding loans that you left with me I have received 5 minas of silver from Ilī-dan; I received 3.8333 minas 5 shekels from Amur-Šamaš, 10.5 mina from Dādiya; for 4 minas of silver that Enna-Suen owed to you (I got) 2.5 minas as interest and 0.5 mina as expenditures - in all I received 7 minas of silver from Enna-Suen; 0.6666 mina 8? shekels owed by Itūr-ilī, 1.5 mina owed by Kukuwa, 5 minas owed by the man of Tumliya, 1 mina owed by Ušhata's son - total of your silver: 27.5 minas 3 shekels that I received from your outstanding loans.",
+    "boundary_reason": "書簡導入句から始まり、Ilī-dan・Amur-Šamaš・Dādiya・Enna-Suen・Itūr-ilī・Kukuwa・Tumliya人・Ušhata息子からの回収報告が「ŠU.NÍGIN KÙ.BABBAR-pí-kà 27.5 ma-na 3 GÍN ša i-na ba-áb-tí-kà al-qé-ú / total of your silver: 27.5 minas 3 shekels that I received from your outstanding loans.」で総計として明確に締まる。",
+    "confidence": "high"
+  },
+  {
+    "record_id": "unknown",
+    "split_id": "unknown__02",
+    "status": "ok",
+    "transliteration_chunk": "ŠÀ.BA 10.5 ma-na 5 GÍN a-na É a-zu áš-qúl ša 3 ma-na KÙ.BABBAR ší-ma-am áš-am-ma {TÚG}ṣú-ba-tí a-na É kà-ri-im qá-at-kà a-ta-dí-ma 5.5 ma-na 7.5 GÍN É kà-ri-im al-pu-ut-kà 12 ma-na KÙ.BABBAR da-a-tám ša-li-im-tám ú-ša-áš-qí-lu-kà-ma 5.5 ma-na 7.5 GÍN ú-ṣa-ḫi-ir-ma 6.33333 ma-na 2.5 GÍN KÙ.BABBAR ṣa-ru-pá-am ú-ša-áš-qí-lu-ni",
+    "translation_chunk": "Thereof I paid 10.5 minas 5 shekels to Azu's firm; I made purchases for 3 minas of silver, and I have deposited textiles on your account in the colony office, and I have booked you for 5.5 minas 7.5 shekels in the colony; they made you pay 12 minas of silver, the complete fees, and I deducted 5.5 mina 7.5 shekels so they made me pay 6.3333 minas 2.5 shekels of refined silver.",
+    "boundary_reason": "総計27.5マナからの支出内訳（Azu商会への支払い・購入・植民地事務所への布預け・植民地手数料・精製銀での最終支払い）がひとまとまりで「6.33333 ma-na 2.5 GÍN KÙ.BABBAR ṣa-ru-pá-am ú-ša-áš-qí-lu-ni / they made me pay 6.3333 minas 2.5 shekels of refined silver.」で締まる。",
+    "confidence": "high"
+  },
+  {
+    "record_id": "unknown",
+    "split_id": "unknown__03",
+    "status": "ok",
+    "transliteration_chunk": "3 ma-na a-na ili5-ba-ni DUMU i-a-a áš-qú-ul-ma ù ṭup-pá-am ša 5 ma-na ša ni-iš a-lim{ki} ú-šé-ṣí-am 1 ma-na KÙ.BABBAR ša-du-at 1 GÚ KÙ.BABBAR ša šé-ep šu-IŠTAR ú-šé-bi-lá-ku-ni a-dí-in 0.5 ma-na a-na 3 ṣú-ḫa-ri-kà a-dí 0.83333 ma-na a-na 5 {TÚG}ku-ta-ni áš-qúl i-nu-mì ša-ta-na a-dí-nu 0.33333 ma-na 3 GÍN a-na pí-lá-aḫ-a-šur 10 GÍN KÙ.BABBAR a-na ú-ṣú-ur-ša-a-šùr áš-qúl 4 GÍN KÙ.BABBAR ša-du-a-at KÙ.BABBAR ša ik-ri-bi ša i šé-ep dan-a-šur ú-šé-bi-lá-ku-ni a-dí-in ší-tí KÙ.BABBAR-pí-kà 1.5 ma-na 3.5 GÍN KÙ.BABBAR 10 GÍN a-<gap> a-na sà-ḫe-er-tí-šu-nu a-dí-in",
+    "translation_chunk": "I paid 3 minas to Ilī-bāni son of Yaya, and he produced the tablet concerning 5 minas sworn by the City; I gave 1 mina of silver as the transport tariff for 1 talent of silver transported by Šu-Ištar; 0.5 mina I deposited for your 3 servants; I paid 0.8333 mina for 5 -textiles when I gave Šāt-Anna (in marriage); I paid 23 shekels to Pilah-Aššur and 10 shekels of silver to Uṣur-ša-Aššur; I gave 4 shekels of silver as the transport tariff for the votive offerings I sent with Dan-Aššur to you; the rest of your silver: 1 mina 33.5 shekels of silver; I gave that for small goods.",
+    "boundary_reason": "Ilī-bāniへの支払い・Šu-Ištarの運賃・使用人への預け入れ・Šāt-Anna婚姻の布・Pilah-Aššur/Uṣur-ša-Aššurへの支払い・Dan-Aššur運賃・残余銀の小額商品支出まで残りテキスト全体をひとまとまりとして収める。",
+    "confidence": "high"
+  }
+]
+[
+  {
+    "record_id": "unknown",
+    "split_id": "unknown__01",
+    "status": "ok",
+    "transliteration_chunk": "a-na ša-lim-a-šùr qí-bi-ma um-ma en-um-a-šùr-ma ta-áš-pu-ra-am um-ma a-ta-ma KÙ.BABBAR ša iš-tù bu-ru-uš-ḫa-dim tù-šé-ṣí-a-ni i-na ku-nu-ki ša ki-ma i-a-tí-ma li-ni-dí KÙ.BABBAR i-na ku-nu-ki ša ki-ma ku-a-tí i-ba-ší a-šu-mì ba-a-ba-tí-kà ša ta-áš-pu-ra-ni a-na-kam ša ki-ma ku-a-tí i-na 10.5 GÚ URUDU ší-ki-im a-ḫa-ma 40 ma-na ḫa-bu-ra-ta-i-im 7 ANŠE.ḪI.A ṣa-lá-me ù 2 ṣú-ḫa-ri qá-at-kà i-na KÙ.BABBAR ša sá-li-a ù ì-lí-dan ḫa-bu-lu-ni ú-ša-áš-ki-nu-ma lu-qú-tám a-na sà-aḫ-ri-DINGIR ù en-um-a-šur DUMU šu-be-lim ip-qí-du šu-ma lu-qú-tám sá-li-a i-na ma-aḫ-ri-kà lá iš-ta-kán ší-a-ma-at a-lim a-šùr sá-li-a a ša-lim-a-šùr i-da-an",
+    "translation_chunk": "To Šalim-Aššur from Ennam-Aššur: You have written, saying: The silver that you have brought out from Burušhaddum should be deposited under the seals of my representatives." The silver is available under the seals of your representatives. As to your outstanding loans, that you wrote about, here your representatives made you lay claim to the 10.5 talents of -copper, also 40 minas of (copper) from haburat, 8 black donkeys and 2 servants, i.e. the yield in silver that Salliya and Ilī-dan owed, and they have entrusted the goods to Sahri-ilī and Ennam-Aššur son of Šu-Bēlum. If Salliya has not placed the goods before you, Salliya must give purchases in the City of Assur to Šalim-Aššur.",
+    "boundary_reason": "書簡導入句・引用・封印下の銀確認・債権報告（銅・ロバ・使用人）・Sahri-ilīへの商品預け入れ・Salliya条件命令がひとまとまりで「sá-li-a a ša-lim-a-šùr i-da-an / Salliya must give purchases in the City of Assur to Šalim-Aššur.」で節が明確に締まる。",
+    "confidence": "high"
+  },
+  {
+    "record_id": "unknown",
+    "split_id": "unknown__02",
+    "status": "ok",
+    "transliteration_chunk": "a-na-kam ì-lí-dan aṣ-ba-at-ma 2 ma-na KÙ.BABBAR ú-ša-áš-qí-il5-šu 2 ma-na KÙ.BABBAR ša da-tí-a ni-il5-qé 2 ma-na 15 GÍN KÙ.BABBAR KI da-tí-kà ša tù-um-li-a-i-im <gap> a-na-kam i-re-ší ba-áb-tí-kà a-za-az ù sú-in-na-da i-na wa-aḫ-šu-ša-na wa-ša-áb e-ra-ba-ma KÙ.BABBAR ú ṣí-ba-sú ú-ša-áš-qá-al-šu",
+    "translation_chunk": "Here I seized Ilī-dan and made him pay 2 minas of silver. We received 2 minas of silver of my fees. 2 minas 15 shekels of silver with your fees from the man of Tumliya<gap> Here I keep a close watch over your outstanding loans. Also, Suen-nādā is staying in Wahšušana; when he enters here I shall make him pay the silver and its interest.",
+    "boundary_reason": "Ilī-dan拘束・手数料回収・Tumliya人の銀・債権監視報告・Suen-nādāのWahšušana滞在と利子付き支払い強制がひとまとまりで「e-ra-ba-ma KÙ.BABBAR ú ṣí-ba-sú ú-ša-áš-qá-al-šu / I shall make him pay the silver and its interest.」で節が締まる。",
+    "confidence": "high"
+  },
+  {
+    "record_id": "unknown",
+    "split_id": "unknown__03",
+    "status": "ok",
+    "transliteration_chunk": "ma-lá KÙ.BABBAR ša DAM.GÀR-ru ḫa-bu-lu-ni-ma u4-mu-šu-nu ma-al-ú-ni i-ḫi-id-ma KÙ.BABBAR tù-ša-áš-qá-al-šu-nu-ma ù i-na ku-nu-ki ša ki-ma ku-a-tí lá-dí a-dí tí-ir-tí-kà <gap> i ri-iš ba-áb-tí-kà a-za-az-ma li-ba-kà lá i-pá-ri-id",
+    "translation_chunk": "As much silver as the customers owe and for which their terms are up - take care to make them pay the silver and then deposit it under the seals of your representatives. With respect to your instructions <gap>. I keep a close watch over your outstanding loans. Do not be nervous.",
+    "boundary_reason": "代理商人への支払い督促・封印下への預け入れ命令・債権監視の保証・「li-ba-kà lá i-pá-ri-id / Do not be nervous.」で残りテキスト全体をひとまとまりとして締める。",
+    "confidence": "high"
+  }
+]
+[
+  {
+    "record_id": "unknown",
+    "split_id": "unknown__01",
+    "status": "ok",
+    "transliteration_chunk": "a-na ša-lim-a-šùr qí-bi-ma um-ma en-nam-a-šùr-ma i-na lu-qú-tí-kà ša a-na ṣé-ri-a ša ki-ma ku-a-tí ú-ta-e-ru-ni la-ma a-lu-wa a-na ṣé-ri-a ta-áš-pu-ra-ni AN.NA-kà ú ṣú-ba-tù-kà a-na URUDU ma-sí-im ú ší-ki-im iš-tù ITU.3.KAM ta-ú-ru-ma URUDU pá-ni-am-ma e-ma-ru a-na ša-lá-tù-ar i-za-bi-lu ú a-na-ku a-dí mu-ṣí-im pá-al-ḫa-ku-ma a-na qá-qí-dí-a ù na-pá-áš-tí lu-qú-tí-kà a-na bu-ru-uš-ḫa-dim e-ra-ba-am ú-lá a-mu-a",
+    "translation_chunk": "To Šalim-Aššur from Ennam-Aššur: Of your goods that your representatives converted for me - even before you sent Aluwa to me, three months earlier, your tin and textiles had been converted to copper, washed and of -type, and donkeys carried the copper quickly to Šalatuwar. And as for me, I was afraid because of the and because of fear for my own head and the welfare of your goods I will not enter Burušhaddum.",
+    "boundary_reason": "書簡導入句から始まり、3ヶ月前の錫・布の銅への転換・Šalatuwarへの運搬報告・Burušhaddumへの不入城宣言がひとまとまりで「e-ra-ba-am ú-lá a-mu-a / I will not enter Burušhaddum.」で節が明確に締まる。",
+    "confidence": "high"
+  },
+  {
+    "record_id": "unknown",
+    "split_id": "unknown__02",
+    "status": "ok",
+    "transliteration_chunk": "a-dí a-ší-im ša pá-kà a-na mu-ṣí-im ta-dí-nu-ma a-ší-am lá tù-šé-bi4-la-ni-ma li-bi a-we-lìm lá tù-na-e-ḫu a-ta la tí-de8-e ki-ma a-we-lìm a-ba-am lá-am-nu-ma a-na a-bi-šu kà-ša-dí-im i-lu-ku KÙ.BABBAR 1 GÍN ša i-na ša-lá-tù-ar e-du-ku-ma e-pu-šu a-lu-wa na-áš-a-kum",
+    "translation_chunk": "With regard to the iron that you promised to the without sending any iron and thereby not calming the man's heart - don't you know that the man is hostile towards the father and will go to catch his father? Aluwa brings you every shekel of silver that I exhausted myself to make in Šalatuwar.",
+    "boundary_reason": "鉄の未送付によるmūṣi'um問題・父への敵意の警告がひとまとまりで、「a-lu-wa na-áš-a-kum / Aluwa brings you」でŠalatuwarでの銀報告が締まり、次の商人・荷車手配の新段落へ切り替わる。",
+    "confidence": "high"
+  },
+  {
+    "record_id": "unknown",
+    "split_id": "unknown__03",
+    "status": "ok",
+    "transliteration_chunk": "ša ší-tí lu-qú-tí-kà URUDU ší-kam ú URUDU ma-sí-am e-re-qá-tim a-sí-dí-ir-ma a-na DUMU um-me-a-nim ke-nim áp-nu-ma iš-tí e-re-qá-tí-šu-ma IGI a-lu-wa-ma iš-tù 10 u4-me-e i-ta-ṣa-ma KÙ.BABBAR ba-tí-iq ú-tù-ur i-ša-a-ma-ma ma-lá KÙ.BABBAR i-za-ku-a-ni wa-ar-ki a-lu-wa-ma iš-tí a-li-ki ú-šé-ba-lá-ku-ma ší-im lu-qú-tí-kà ša šé-pí-a ú-ga-ma-ra-kum za-ku-sà a-ša-pá-ra-kum",
+    "translation_chunk": "For the rest of your goods, -copper and washed copper, I have outfitted wagons and turned to a trustworthy affiliated trader, who left with his wagons before Aluwa 10 days ago, and he will buy silver, cheap or dear, and I shall send you what silver he clears before Aluwa with travelers, so I can complete the proceeds of the goods I transported for you. I shall send you a final report.",
+    "boundary_reason": "残余商品の銅・荷車手配・信頼できる商人への委託・Aluwa経由の銀送付・最終報告送付約束がひとまとまりで「za-ku-sà a-ša-pá-ra-kum / I shall send you a final report.」で節が締まる。",
+    "confidence": "high"
+  },
+  {
+    "record_id": "unknown",
+    "split_id": "unknown__04",
+    "status": "ok",
+    "transliteration_chunk": "ša ší-tí lu-qú-tí-kà-ma <gap> i-na kà-ni-iš <gap> ša ki-ma ku-a-tí <gap> i-dí-nu-ni KÙ.BABBAR <gap> i-na a-lim{ki} <gap> ší-tí lu-qú-tí-kà ú-za-kà-ma ú a ma-lá tí-ir-tí-kà lu-qú-ut-kà ša tí-me-el-ki-a a-lá-ḫu-um i-pá-qí-da-ma iš-tí KÙ.BABBAR a-lá-ḫa-am a-tá-ra-dá-ma tí-ni-iḫ-tí li-bi-kà lu ša lu-qú-tí-kà ú ba-a-ba-tí-kà a-ša-pá-ra-kum",
+    "translation_chunk": "For the rest of your goods <gap> in Kanesh <gap> your representatives <gap> that they sold, the silver <gap> in the City <gap> I shall clear the rest of your goods and then Ali-ahum will entrust your goods from Timelkiya in accordance with your orders, and I shall send Ali-ahum with the silver and send you a reassuring message about your goods and your outstanding loans.",
+    "boundary_reason": "残余商品のKanesh処理・代理人の銀売却・Timelkiya商品のAli-ahum委託・銀とともにAli-ahum派遣・商品と債権についての安心書送付約束まで残りテキスト全体をひとまとまりとして収める。",
+    "confidence": "medium"
+  }
+]
+[
+  {
+    "record_id": "unknown",
+    "split_id": "unknown__01",
+    "status": "ok",
+    "transliteration_chunk": "ša-lim-a-šùr DUMU i-sú-rik13 ù a-šu-wa-an-zi DUMU ḫa-ar-ša ša dí-nam ru-ba-um ù GAL sí-ki-tim dí-nam i-dí-nu-ni-ma ṣú-ḫa-ra-am ša šál-ma-a-šùr a-na i-id i-dí-nu-ni ša-lim-a-šùr ù a-šu-wa-an i-mì-ig-ru-ma ni-iš a-na ni-iš {d}a-šùr ni-iš ru-ba-im ni-iš GAL sí-ki-tim wa-li-iš-ra ù ni-iš e-ba-ru-tim ša a-wa-tí-šu-nu ig-mu-ru-ni it-mu-ú-ma 1 ma-na KÙ.BABBAR ù 1 {TÚG}ku-ta-nam ša-lim-a-šur a-na a-šu-wa-an i-dí-in-ma a-šu-wa-an ù a-ḫu-šu me-er-ú ḫa-ar-ša-a a-na ša-lim-a-šùr me-er-e-šu ù me-er-e i-dí-a-bi-im a-na mì-ma šu-um-šu ù-lá i-tù-ru šu-ma i-tù-ru lá-am-nu-ut a-na a-šùr ru-ba-im ù GAL sí-ki-tim",
+    "translation_chunk": "Šalim-Aššur son of Issu-arik and Aššuwan(zi) son of Harša, for whom the king and the rabi sikkitim had given a verdict, stating that they should give a servant of Šalim-Aššur to the river ordeal - Šalim-Aššur and Aššuwan reached an agreement and they swore an oath by Anna, Aššur, the king, the rabi sikkitim Wališra and by the colleagues who settled their affair, so that Šalim-Aššur gave 1 min of silver and 1 kutānu-textile to Aššuwan, and Aššuwan and his brothers, sons of Harša, will not raise claim against Šalim-Aššur, his sons and Iddin-abum's sons for anything whatsoever. If they raise claim, it is an evil against Anna, Aššur, the king and the rabi sikkitim.",
+    "boundary_reason": "法的文書の当事者紹介・判決・合意・誓約・支払い・放棄条項・違反時の制裁条項がひとまとまりで「lá-am-nu-ut a-na a-šùr ru-ba-im ù GAL sí-ki-tim / it is an evil against Anna, Aššur, the king and the rabi sikkitim.」で法的本文が締まり、証人封印リストが新たに始まる。",
+    "confidence": "high"
+  },
+  {
+    "record_id": "unknown",
+    "split_id": "unknown__02",
+    "status": "ok",
+    "transliteration_chunk": "KIŠIB ku-ra-áš-mì-iš DUMU GAL-na-pá-ḫi-im KIŠIB bu-li-na DUMU ra-bi4-ša-qí-im KIŠIB šé-zu-ur DUMU kà-zu-ba KIŠIB a-šu-wa-an DUMU ḫa-ar-ša KIŠIB a-zu DUMU kà-zu KIŠIB ú-ra-a KIŠIB {d}MAR.TU-ba-ni me-er-ú ma-na-na KIŠIB zu-ba DUMU IŠTAR-pá-li-il5 KIŠIB a-de8-lá-at DUMU {d}IM-ba-ni",
+    "translation_chunk": "Seal of Kurašmiš son of the chief of smiths, seal of Bulina son of the chief cupbearer, seal of Šezur son of Kazuba, seal of Ašuwan son of Harša, seal of Azu son of Kazu, seal of Uraya and the seal of Amurrum-bāni, sons of Manana, seal of Zuba son of Ištar-pālil, seal of Adad-ellat son of Adad-bāni.",
+    "boundary_reason": "証人封印リストが「KIŠIB…」の定型句で連続し、Adad-ellat DUMU {d}IM-baniで文書末尾まで残りテキスト全体をひとまとまりとして収める。",
+    "confidence": "high"
+  }
+]
+[
+  {
+    "record_id": "unknown",
+    "split_id": "unknown__01",
+    "status": "ok",
+    "transliteration_chunk": "30 ma-na KÙ.BABBAR ni-is-ḫa-sú DIRI ša-du-a-sú ša-bu a-na um-me-a-ni-šu ù a-bi-šu 10 ma-na KÙ.BABBAR a-ḫa-ma ku-nu-ki ša ša-lim-a-šùr 1 ma-na KÙ.BABBAR ša a-ta-a DUMU šu-IŠTAR a-ṣé-er a-šur-i-mì-tí nu-ta-er ŠU.NÍGIN 41 ma-na KÙ.BABBAR ni-is-ḫa-sú DIRI ša-du-a-sú ša-bu a-na a-šur-i-mì-tí DUMU a-mur-DINGIR ku-nu-ki a-na a-lim{ki} a-na ší-a-ma-tim ni-ip-qí-id",
+    "translation_chunk": "30 minas of silver, its import duty added, its tranport tariff paid, for his investors and his father; further, 10 minas of silver sealed by Šalim-Aššur, 1 mina of silver belonging to Ataya son of Šu-Ištar we returned to Aššur-imittī - in all 41 minas of silver, its import duty added, its transport tariff paid, we entrusted to Aššur-imittī son of Amur-ilī, under seal, in order to make purchases in the City.",
+    "boundary_reason": "30マナ・10マナ・1マナの銀が「ŠU.NÍGIN 41 ma-na」で総計として締まり、Aššur-imittīへの封印付き委託・都市での購入目的が「ni-ip-qí-id / we entrusted…in order to make purchases in the City.」で節が明確に完結する。",
+    "confidence": "high"
+  },
+  {
+    "record_id": "unknown",
+    "split_id": "unknown__02",
+    "status": "ok",
+    "transliteration_chunk": "a-ḫa-ma 7 ma-na 13 GÍN KÙ.BABBAR ṣa-ru-pá-am i-na KÙ.BABBAR-áp ša-lim-a-šùr a-šur-i-mì-tí il5-qé ù 50 na-ru-uq ŠE-um ŠÀ.BA mì-iš-lu-um GIG 7.83333 ma-na 2.5 GÍN AN.NA qá-sú ša ILLAT-at a-šùr-ma-lik ta-al-qé 1 ma-na KÙ.BABBAR i-nu-mì ni-ku-ur ú ta-li ub-lá-ku-ni il5-qé 5 GÚ SÍG.ḪI.A ša ba-ri-ni É i-dí-DINGIR i-bi-ší-ma tal-qé 1 ma-na KÙ.BABBAR ší-im-ša 2 GÍN KÙ.GI ša áb-ni-šu 10 e-pá-da-tum ù 3 SÌLA sà-ar-dam ša DUB.SAR",
+    "translation_chunk": "Further, 7 minas 13 shekels of refined silver from Šalim-Aššur's silver Aššur-imittī received, and you received 50 sacks of grain, half thereof wheat, (and) 7.8333 minas 2.5 shekels of tin, his share of Aššur-malik's caravan. He received 1 mina of silver when Nikur and Tali brought (it) to you. 5 talents of wool belonging to us both was available in Iddin-ilī's house, and you received it. 1 mina of silver, its price. 2 shekels of gold ore, 10 -textiles and 3 litres of olives from the scribe.",
+    "boundary_reason": "7マナ13シェケルの精製銀・50袋の穀物・錫・Aššur-malik隊商分・Nikur/Tali持参の1マナ・羊毛5タラント・金鉱石・布・オリーブ油が品目列挙としてひとまとまりで「3 SÌLA sà-ar-dam ša DUB.SAR / 3 litres of olives from the scribe.」で締まる。",
+    "confidence": "high"
+  },
+  {
+    "record_id": "unknown",
+    "split_id": "unknown__03",
+    "status": "ok",
+    "transliteration_chunk": "i-nu-mì iš-tù ma-ma a-tù-ra-ni <gap> ta-áš-pu-ra-ni-ma 11 GÍN KÙ.BABBAR a ṣú-ḫa-ri-im áš-qúl ṣí-ba-at 9.66666 ma-na KÙ.BABBAR ša ITU.2.KAM ú 6 GÍN mu-<gap> ša sú-e-ta-ta i-ḫi-bi-lá-ni iš-tí i-ku-nim DUMU ili5-ba-ni ša qá-ta-tí-šu ta-al-qé a-mì-ma a-wa-tim a-ni-a-tim na-áš-pè-er-tí iš-tù ú-lá-ma a-ṣé-er a-šur-i-mì-tí <gap> {d}MAR.TU-ba-ni a-šur-SIPA ú a-ku-a LUGAL-{d}IM ub-lá-ma iš-ta-qal <gap> a-ṣé-er a-we-li a-ni-ú-tim ú-ra-a <gap> pu-šu-ki-in e-ru-ni-{d}IM i-li-kam-ma ší-bu-tám a-na a-lim{ki} iš-<gap> ša bi i-lá-tí <gap>",
+    "translation_chunk": "When I returned from Mamma you sent me <gap>, and I paid 11 shekels of silver to the servant. You received the interest on 9.6666 minas of silver for two months and 6 shekels <gap> that Suen-dada became indebted for from Ikūnum son of Ilī-bāni, his guarantor. Šar-Adad brought my missive about all these matters from Ulama to Aššur-imittī, Amurrum-bāni, Aššur-rē'ī and Akuwa, and he paid it. <gap> to these men Uraya <gap> Pūšu-kēn, Eruni-Adad came and <gap> testimony to the City <gap>",
+    "boundary_reason": "Mammaからの帰還・使用人への支払い・Suen-dadaの利子債務・Šar-Adadの書簡搬送・Uraya/Pūšu-kēn/Eruni-Adad証言gapまで残りテキスト全体をひとまとまりとして収める。",
+    "confidence": "medium"
+  }
+]
+[
+  {
+    "record_id": "unknown",
+    "split_id": "unknown__01",
+    "status": "ok",
+    "transliteration_chunk": "um-ma i-tur4-DINGIR-ma a-na en-um-a-šùr qí-bi-ma a-dí a-wa-tim ša a-bi-kà ša a-na be-el KÙ.BABBAR ú-ma-li-ú-ma ma-ga-ra-am lá i-mu-ú-ni-ni ú-ma-am a-wi-lu im-ta-ag-ru-ni um-ma šu-nu-ma šu-pu-ur-ma me-er-ú a-we-lim li-li-ku-ni-ma a-li ús-ma-at-ni a-ta-ma mì-li-ik a-pu-tum KÙ.BABBAR 5 ma-na lá ús-ma-sà-a ra-ma-ku-nu za-ki-a-ma al-kà-ni-ma a-wa-at-ku-nu le-qé-a-ni",
+    "translation_chunk": "From Itūr-ilī to Ennam Aššur: As to the matter concerning your father where I paid the balance for the owners of the silver and to which they would not agree, today the men have agreed. They said: Write so that the man's sons come here, and then you yourself decide what is fitting." Urgent, is it not fitting with up to 5 minas of silver? Clear yourselves, come and take up the matter.",
+    "boundary_reason": "書簡導入句から始まり、父の件での銀所有者との合意・引用（男の息子たちへの呼び出し）・5マナ以内での解決と来訪命令がひとまとまりで「al-kà-ni-ma a-wa-at-ku-nu le-qé-a-ni / come and take up the matter.」で節が明確に締まる。",
+    "confidence": "high"
+  },
+  {
+    "record_id": "unknown",
+    "split_id": "unknown__02",
+    "status": "ok",
+    "transliteration_chunk": "1 GÚ URUDU ma-sí-am ša É ša-ni-a-am SIG5 <gap> ša <gap> ù ḫa-ra-ni-a šé-bi4-lam-ma ma mì <gap> ma-na.TA URUDU ú e-li-iš ša 10 ma-na KÙ.BABBAR URUDU ma-as-a-am le-qé-a-ma tí-ir-ta-kà li-li-kam-ma KÙ.BABBAR a-na-kam lá-áš-qú-ul ú ANŠE lu-šé-ri-a-kum",
+    "translation_chunk": "Send 1 talent of washed copper <gap> the other <gap> of good quality <gap> on my journey <gap> and take washed copper for 10 minas of silver at the rate of <gap> minas of copper or higher, and send me word so I may pay the silver here. Also, I shall send a donkey to you.",
+    "boundary_reason": "銅1タラントの送付指示・10マナ相当の洗浄銅取得・銀現地支払い・ロバ送付約束がひとまとまりで「ú ANŠE lu-šé-ri-a-kum / I shall send a donkey to you.」で節が締まる。",
+    "confidence": "medium"
+  },
+  {
+    "record_id": "unknown",
+    "split_id": "unknown__03",
+    "status": "ok",
+    "transliteration_chunk": "1 ma-na 10 GÍN KÙ.BABBAR a-šur-DU10 DUMU a-zu-za-a ḫa-bu-lam ṭup-pu-šu ḫa-ar-ma-am ú-kà-al KÙ.BABBAR ma-lá KÙ.BABBAR i-tù-wa-ar šu-ma a-ma-i lu-qú-sú a KÙ.BABBAR i-da-ma ḫa-ra-an sú-ki-ni-ma i-ta-lá-ak 2.33333 ma-na KÙ.BABBAR a-ta ú šu-ut ku-un-kà-ma a-ṣé-ri-a ú a-ṣé-er ša ki-ma šu-a-tí šé-bi4-lá-nim GAN-lam a šu-mì-šu le-tí-iq KÙ.BABBAR li-iš-qú-lu-ni-ma ṭup-pá-am a-ta ki-ma šu-a-tí šu-ma ir-gu5-ma a bu-ru-uš-ḫa-dim ḫa-ra-šu tí-ir-ta-kà <gap> šu-lá-ba-an ì-lí-<gap> 2.33333 ma-na KÙ.BABBAR <gap>",
+    "translation_chunk": "Aššur-ṭāb son of Azuzaya owes me 1 mina 10 shekels of silver. I have his certified tablet. The silver will come back . If Ama'i will sell his goods for silver and has left on the narrow track, then he and you should seal 2.3333 minas of silver and send it to me and to his representatives. It should pass overland in his name. Have them pay the silver and <gap> the tablet. If he starts a legal complaint, and he is on his way to Burušhaddum <gap> Šu-Laban, Ilī- <gap> 2.3333 minas of silver <gap>",
+    "boundary_reason": "Aššur-ṭābの債務・Ama'iの銀売却条件・2.3333マナの封印と送付・陸路輸送命令・支払い督促・訴訟gapまで残りテキスト全体をひとまとまりとして収める。",
+    "confidence": "medium"
+  }
+]
+[
+  {
+    "record_id": "unknown",
+    "split_id": "unknown__01",
+    "status": "ok",
+    "transliteration_chunk": "a-dí-da ù a-lá-ḫu-um a-šùr-iš-ta-ki-il5 iš-ú-lu-ma 3.33333 ma-na KÙ.GI ša-lim-a-šùr a-na na-ru-qí-kà a-dí-im-ma ša 10 ma-na KÙ.BABBAR na-ru-qá-kà ú-la-pí-tám ša-lim-a-šùr i-na a-lim{ki} a-na li-mì-im ḫa-bu-ul-ma ṭup-pá-am ša ší-ip-kà-tim ša-lim-a-šùr ad-ma-ku-ni ṭup-pá-am šu-wa-tí qá-tí li-mì-im ú-kà-al-ma KÙ.BABBAR ù né-ma-al-šu dí-in-ma a-ṣé-er li-mì-im li-li-ik-ma ù ṭup-pá-am ša ší-ip-kà-tí-kà a-na ša ki-ma ku-wa-tí li-dí-nu",
+    "translation_chunk": "Adida and Ali-ahum questioned Aššuriš-takil as follows: Šalim-Aššur invested 3.3333 minas of gold in your joint-stock capital, and he wrote an amount of 10 minas of silver for your joint-stock capital. Šalim-Aššur is indebted to the eponym in the City, and the tablet of the investment Šalim-Aššur made to you, that very tablet is in the eponym's possession, so pay the silver and the accrued profit, let it go to the eponym and then he can give the tablet concerning your capital to your representatives.",
+    "boundary_reason": "質問者の紹介・金3.33マナ/銀10マナの投資事実・エポニムへの負債・タブレット保管状況・支払い命令・代理人へのタブレット返却要求がひとまとまりで「a-na ša ki-ma ku-wa-tí li-dí-nu / he can give the tablet…to your representatives.」で節が明確に締まる。",
+    "confidence": "high"
+  },
+  {
+    "record_id": "unknown",
+    "split_id": "unknown__02",
+    "status": "ok",
+    "transliteration_chunk": "iš-tù <gap> 3 ša-na-tim iš-tù bu-ru-uš-ḫa-dim lu ta-li-kam ù a-na iš-té-en ù ší-na tap-pá-e-a KÙ.BABBAR ù né-ma-al-šu ta-dí-in a-na-ku ù ša qá-ta-at a-bi-a-a na-al-pu-tù ni-ta-na-lá-kà-ku-um KÙ.BABBAR ù né-ma-al-šu ta-dá-na-am ú-lá ta-mu-a a-ṣé-er ki-a-am-ma KÙ.BABBAR 1 ma-na ù 2 ma-na tù-uš-ta-ag-me-er-šu",
+    "translation_chunk": "Three years ago you came from Burušhaddum and you have given the silver and the accrued profit to one or two of my partners. But I and those who signed as my father's guarantors come to you time and again, but you refuse to give the silver and its accrued profit. On top of this you have caused him to have expenses of one or two minas.",
+    "boundary_reason": "3年前のBurušhaddumからの来訪・一部パートナーへの支払い・父の保証人たちの再三の訪問・支払い拒否・1〜2マナの追加費用発生がひとまとまりで「KÙ.BABBAR 1 ma-na ù 2 ma-na tù-uš-ta-ag-me-er-šu / you have caused him to have expenses of one or two minas.」で節が締まる。",
+    "confidence": "high"
+  },
+  {
+    "record_id": "unknown",
+    "split_id": "unknown__03",
+    "status": "ok",
+    "transliteration_chunk": "KÙ.BABBAR ša li-mì-im a-na ṣí-ib-tim lá i-ma-id-ma É a-bi-a ù ší-ip-kà-tim ša a-bi ad-ma-ku-ni lá i-ta-ba-lá ší-ma-at KÙ.BABBAR dí-na-ma a-na É li-mì-im lu-šé-bi-il5-ma ù a-na né-mì-lam KÙ.BABBAR qá-dí tap-pá-e-a ú-kà-a-kà ù i-na dí-in a-lim{ki} KÙ.BABBAR ša ša-lim-a-šùr ša ší-ip-kà-tí-kà a-na É li-mì-im i-lá-ak lá tù-na-ḫa-ni KÙ.BABBAR dí-nam ù KÙ.BABBAR 1 ma-na ù 2 ma-na lá tù-ša-ag-me-ri ší-bu-tum",
+    "translation_chunk": "The interest on the silver of the eponym must not increase and my father's house and the investments my father made for you must not be lost. Give me the agreed amount in silver, let me send it to the eponym's office, and then I shall confirm you for the profit of the silver together with my partners. Also, in accordance with the verdict of the City Šalim-Aššur's silver from your capital will go to the office of the eponym. Do not obstruct me! Give me the silver and do not bring an extra expense of 1 or 2 minas on me." Witnessed statement.",
+    "boundary_reason": "エポニムの銀利子不増加・父の家と投資保護・合意額の支払い命令・エポニム事務所への送付・都市判決に基づく資本からの銀移転・妨害禁止・追加費用禁止の要求・「ší-bu-tum / Witnessed statement.」で文書全体が締まる。",
+    "confidence": "high"
+  }
+]
+[
+  {
+    "record_id": "unknown",
+    "split_id": "unknown__01",
+    "status": "ok",
+    "transliteration_chunk": "a-na ì-lí-e-mu-qí šu-ta-mu-zi a-bi-a-a e-lá-a ù lá-ma-sí qí-bi-ma um-ma a-dí-da ù a-lá-ḫu-um-ma 3.33333 ma-na KÙ.GI ša-lim-a-šur a-na a-šur-iš-tí-kál DUMU sú-kà-lí-a a-dí-im ša-lim-a-šur i-na ba-áb ḫa-ra-ni-šu um-ma šu-ut-ma a-na šu-ta-mu-zi a-dí-da ù e-lá-a-ma a-ḫu-a-tù-nu KÙ.BABBAR a-na li-mì-im a-mur-a-šur ḫa-bu-lá-ku i-na ṭup-pí-im ša a-šur-iš-tí-kál en-na-nim ù ḫa-na-a qá-tí li-mì-im a-mur-a-šur ú qá-at-ku-nu šu-uk-na KÙ.BABBAR ù né-ma-al-šu li-iš-qú-lu-ma li-ma-am a-mur-a-šur ṭá-i-ba-a ší-tí KÙ.BABBAR-pì-im a-na DAM.GÀR-ri-a li-zi-iz",
+    "translation_chunk": "To Ilī-emūqī, Šu-Tammuzi, Abiya, Elaya and Lamassī from Adida and Ali-ahum: Šalim-Aššur invested 3.3333 minas of gold in Aššuriš-tikal son of Sukkalliya. When Šalim-Aššur was about to leave he said to Šu-Tammuzi, Adida and Elaya: My dear brothers, I owe silver to the eponym Amur-Aššur. Lay claim on behalf of the eponym Amur-Aššur and of yourselves to the tablet concerning Aššuriš-tikal, Ennānum and hannaya; they should pay the silver and the accrued profit and then satisfy the eponym Amur-Aššur. The rest of the silver should stand available for my customers."",
+    "boundary_reason": "書簡導入句から始まり、金3.33マナの投資・出発前の引用（エポニムへの負債・タブレットへの請求指示・支払い命令・残余銀の顧客向け確保）がひとまとまりで「ší-tí KÙ.BABBAR-pì-im a-na DAM.GÀR-ri-a li-zi-iz / The rest of the silver should stand available for my customers.」で引用が締まる。",
+    "confidence": "high"
+  },
+  {
+    "record_id": "unknown",
+    "split_id": "unknown__02",
+    "status": "ok",
+    "transliteration_chunk": "a-na-kam a-šur-iš-tí-kál ú ì-lí-e-mu-qí ni-ṣa-na-ba-at-ma um-ma né-nu-ma 3.33333 ma-na KÙ.GI ša-lim-a-šur <gap> um-me-a-<gap> wa-bi-<gap> a-na <gap> en-na-sú-in DUMU ku-ra-ra <gap> ù <gap> a-wa-tí-ni <gap> at KÙ.BABBAR a-dí-da ù a-lá-ḫu-um i-ša-<gap> en-na-sú-in DUMU ku-ra-ra <gap> a-na ṣé-er <gap> na-pu-uš ni wa <gap> ma <gap> KÙ.BABBAR a-na li-mì-im a-mur-a-šur KÙ.BABBAR i-ša-qal-ma ṭup-pá-am ša 3.33333 ma-na KÙ.GI ša šál-ma-a-šur a-na a-šur-iš-tí-kál ša-áp-ku li-mu-um ù <gap> ša šál-ma-a-šur a-na ša <gap> ma a-šur bi ú ma ki ni",
+    "translation_chunk": "We keep seizing Aššuriš-tikal and Ilī-emūqī here, saying: \"Šalim-Aššur has invested 3.3333 minas of gold <gap>\" <gap> our words <gap> Adida and Ali-ahum <gap> Enna-Suen son of Kurara <gap> the silver. He will pay the silver to the eponym Amur-Aššur and the tablet concerning 3.3333 minas of gold that Šalim-Aššur invested in Aššuriš-tikal the eponym and <gap> Šalim-Aššur to <gap>",
+    "boundary_reason": "Aššuriš-tikal/Ilī-emūqīの現地拘束・彼らの引用（金3.33マナ投資）・Enna-Suen/Adida/Ali-ahumへのgap参照・エポニムAmur-Aššurへの支払い約束・タブレット言及・末尾gapまで残りテキスト全体をひとまとまりとして収める。",
+    "confidence": "medium"
+  }
+]
+[
+  {
+    "record_id": "unknown",
+    "split_id": "unknown__01",
+    "status": "ok",
+    "transliteration_chunk": "en-um-a-šùr a-na a-šùr-iš-tí-kál DUMU šu-a-nim iṣ-ba-at-ni-a-tí-ma um-ma en-um-a-šur-ma iš-tù ITU.1.KAM ša sá-ra-tim šu-ma a-dí ITU.5.KAM a-na kà-ni-iš lá ta-li-kam-ma a-wa-tám lá ta-dí-nam a-na 15 ma-na lu-la-im ù 2 DUG a-lá-ni ša i-na li-bi-kà a-bi i-šu-ú ba-lu-um dí-ni-im ṣa-al-tim ú ma-mì-tim ma-na-um 1 ma-na a-na lu-li-i-a ù a-lá-ni-a ta-ša-qá-lam um-ma a-šùr-iš-tí-kál-ma a-ša-qá-lá-kum IGI pí-lá-aḫ-IŠTAR DUMU ki-li-a IGI a-gu-a DUMU PUZUR4-a-šur",
+    "translation_chunk": "Ennam-Aššur seized us against Aššuriš-tikal son of Šu-Anum, and Ennam-Aššur said: If you have not come to Kanesh within 5 months, after the month Ša-sarrātim and answered me in court, then with respect to the 15 minas of antimony and 2 jars of acorns which you owe to my father, you must pay me mina for mina for my antimony and my acorns without a verdict, quarrel or oath." Aššuriš-tikal answered: "I shall pay you." Witnessed by Pilah-Ištar son of Kiliya, by Aguwa son of Puzur-Aššur.",
+    "boundary_reason": "Ennam-AššurによるAššuriš-tikal拘束・5ヶ月以内のKanesh来訪条件・アンチモン15マナ・壺2個の支払い要求・Aššuriš-tikal の承諾応答・証人2名（Pilah-Ištar・Aguwa）がひとまとまりで、次のŠu-Laban件という別の法的事案が始まる前で締まる。",
+    "confidence": "high"
+  },
+  {
+    "record_id": "unknown",
+    "split_id": "unknown__02",
+    "status": "ok",
+    "transliteration_chunk": "a-ḫa-ma a-na ri-ik-sí-im ša šu-lá-ba-an i-na bu-ru-uš-ḫa-dim IGI {d}IM-ba-ni DUMU kà-na-ni IGI šu-ku-bi4-im ip-qí-da-ni i-na ú-lá-ma IGI ma-nu-um-ba-lu-a-šùr DUMU e-na-ma-nim ù IGI pí-lá-aḫ-IŠTAR šu-lá-ba-an iṣ-ba-tí-ma um-ma šu-ut-ma ri-ik-sà-am ša áp-qí-da-ku-ni a-šu-ku-bi-im dí-in a-ḫa-ma ṭup-pá-am ḫa-ar-ma-am ša 50 ma-na URUDU SIG5 ša tám-kà-ri-im a-na en-na-nim DUMU a-bi-a áp-qí-id 50 ma-na URUDU ší-kam tám-kà-ri ú-ša-da-an ú-šé-ba-lam IGI pí-lá-aḫ-IŠTAR IGI a-mur-a-šur",
+    "translation_chunk": "\"Further, with respect to the package that Šu-Laban entrusted to me in Burušhaddum before the witnesses Adad-bāni son of Kanani and Šu-Kūbum, Šu-Laban seized me in Ulama before the witnesses Mannum-balum-Aššur son of Ennam-Anum and Pilah-Ištar, and he said: 'Give the package that I entrusted to you to Šu-Kūbum.' Further, I entrusted a certified tablet concerning 50 minas of good copper belonging to the merchant to Ennānum son of Abiya; he will make my merchant pay 50 minas of -copper and send it to me.\" Witnessed by Pilah-Ištar, by Amur-Aššur.",
+    "boundary_reason": "Šu-LabanのBurušhaddum委託品件・Ulama拘束・Šu-Kūbumへの引き渡し命令・50マナ銅のEnnanim委託・šikku銅50マナの支払い命令・証人2名（Pilah-Ištar・Amur-Aššur）まで残りテキスト全体をひとまとまりとして収める。",
+    "confidence": "high"
+  }
+]
+[
+  {
+    "record_id": "unknown",
+    "split_id": "unknown__01",
+    "status": "ok",
+    "transliteration_chunk": "a-na ma-ma-ḫi-ir lá-qé-ep a-lá-ḫi-im ù šu-IŠTAR qí-bi-ma um-ma en-um-a-šur-ma ta-áš-pu-ra-nim um-ma a-tù-nu-ma um-me-a-nu a-bi-kà ma-lá i-na pá-ni-tim tù-<gap>-um ma-ag-ru-kà a-ḫu-a-tù-nu 4 a-tù-nu a-na ṣé-er um-me-a-ni a-bi-ni pu-nu-a-ma a-wa-tí-ni ga-me-ra-ma URUDU-um ša ú-ṣú-ur-ša-a-šur il5-qé-ú i-na KÙ.BABBAR-pí-šu li-iṣ-ḫi-ir a-<gap> ki-ma ra-mì-ni <gap> ki-ma i-<gap>-a-ma <gap>-ta-a a-na-ku ù a-lá-ḫu-um lu ni-iš-qú-ul",
+    "translation_chunk": "To Man-mahir, Lā-qēp, Ali-ahum and Šu-Ištar from Ennam-Aššur: You have written, saying: \"Your father's inverstors have agreed with you as much as you suggested earlier.\" My dear brothers, you four must turn to our father's investors, and conclude our entire case and as to the copper that Uṣur-ša-Aššur has taken, let it be deducted from his silver. <gap> I and Ali-ahum should pay.",
+    "boundary_reason": "書簡導入句・引用・父の投資家への交渉命令・Uṣur-ša-Aššurの銅の差し引き命令・gapを経た「a-na-ku ù a-lá-ḫu-um lu ni-iš-qú-ul / I and Ali-ahum should pay.」で節が締まる。",
+    "confidence": "medium"
+  },
+  {
+    "record_id": "unknown",
+    "split_id": "unknown__02",
+    "status": "ok",
+    "transliteration_chunk": "šu-ma um-me-a-nu a-bi-ni i-pá-lu-ḫu-ma ni-iš a-lim{ki} lá i-ta-mu-ú ma-lá a-wa-tim i-na pá-ni-tim ú-kà-i-lu a-wa-tum lu-up-ta a-wa-tim ga-me-ra-ma ik-ri-bu-um i-na ba-ri-ku-nu li-qí-bi-ma i-na a-lá-ki-a a-na-ku ù a-lá-ḫu-um mu-ta-a KÙ.BABBAR lu ni-iš-qú-ul",
+    "translation_chunk": "If our father's inverstors are afraid and do not swear the oath by the City, then write the words I earlier suggested. Conclude the case and let an oath be sworn among you, so I and Ali-ahum may pay half the silver each.",
+    "boundary_reason": "投資家が都市の誓いを拒否した場合の条件命令・以前の提案書を書く指示・内部での宣誓・Ali-ahumとの折半支払い約束がひとまとまりで「a-na-ku ù a-lá-ḫu-um mu-ta-a KÙ.BABBAR lu ni-iš-qú-ul / I and Ali-ahum may pay half the silver each.」で節が締まる。",
+    "confidence": "high"
+  },
+  {
+    "record_id": "unknown",
+    "split_id": "unknown__03",
+    "status": "ok",
+    "transliteration_chunk": "a-ḫu-a a-tù-nu a-na pá-ni-a tí-ir-ta-ku-nu iš-tí ṣú-ḫa-ri-a a-ni-tum lá a-ni-tum li-li-kam-ma ṭé-mì-i lu ṣa-áb-ta-am a ba-ri-ku-nu i-na e-ra-bi4-a a-wa-tí i-na a-ma-ri-a e i-ba-al-ku-ta-a-nim šu-ma a-tù-nu a-na ta-<gap> ta-ša-ḫu-ṭá a-dí a-lá-ki-a i ba-ri-ku-nu a-na lá na-ba-al-ku-tim li-qí-bi",
+    "translation_chunk": "My dear brothers, send me word with my servant whether it is one or the other, so I can make up my mind. Between you, when I arrive and consider the case, it must not be overturned for me. If you yourselves fear <gap> then let it be said between you so as not to transgress until I arrive.",
+    "boundary_reason": "「a-ḫu-a / My dear brothers」で始まる結びの挨拶・使用人経由の返信要請・到着後の案件覆し禁止・帰還まで内部で合意保持の命令まで残りテキスト全体をひとまとまりとして収める。",
+    "confidence": "high"
+  }
+]
+[
+  {
+    "record_id": "unknown",
+    "split_id": "unknown__01",
+    "status": "ok",
+    "transliteration_chunk": "a-na ku-zi-zi-a lá-qé-ep ù a-na-a-na qí-bi-ma um-ma en-um-a-šùr-ma a-na a-na-a-na qí-bi-ma lá-ma a-na kà-tí-lá a-li-ku 5 na-ru-uq GIG ú 2 na-ru-uq ŠE-am e-lá-nu-ma e-zi-ba-ki-im a-ḫa-ma 17 na-ru-uq 2 DUG GIG ú 17 na-ru-uq 2 DUG ŠE-am iš-tù tù-um-li-a iš-du-du-nim mì-ma ú-ṭí-tim ú KÙ.BABBAR ša nu-a-e a-bi i-a-tí-ma e-ta-aṣ-ra-am",
+    "translation_chunk": "To Kuziziya, Lā-qēp and Anna-anna from Ennam-Aššur; to Anna-anna: Before I went to Katila I left you 5 sacks of wheat and 2 sacks of barley in addition. Further, they carted 17 sacks 2 jars of wheat and 17 sacks 2 jars of barley from Tumliya. All the grain plus the silver from the natives my father had designated for me.",
+    "boundary_reason": "書簡導入句から始まり、Katila出発前の5袋穀物・Tumliya産17袋2壺の穀物・父が指定した穀物と銀の報告がひとまとまりで「e-ta-aṣ-ra-am / my father had designated for me.」で節が締まる。",
+    "confidence": "high"
+  },
+  {
+    "record_id": "unknown",
+    "split_id": "unknown__02",
+    "status": "ok",
+    "transliteration_chunk": "a-pu-tum a-na a-wi-il5-tim lá ta-pá-ṭí-ri ú mì-ma lá ta-dí-ni-ší-im ú iš-tí e-wa-ri-mu-ša ta-ḫi-tám áš-pu-ur-ší-im a-ḫu-a a-tù-nu a-ma-kam na-ḫi-da-ší-ma i-na ḫu-ur-ší-a ší-lá-tum lá i-ba-ší-ma li-bi lá i-ma-ra-aṣ ṭup-pí-a ú ú-tù-up-tí lu tù-ša-ṣí-ir ma-lá ú-ṭù-tum a-bi-ki-tim i-gi5-im-ru úz-ni pí-té-a a-dí bu-lá-tí ša a-bi-a a-ḫi ú-pá-ta-a-ni-ni a-sà-ḫu-ur lá-ma a-li-kà-ni ma-ṣa-ar-tám a-lá-ḫu-um ip-té-té-e ú bu-lá-tí uš-té-ṣí-i",
+    "translation_chunk": "Urgent, do not open it up for the lady and give her nothing. Also, I sent her directions with Ewarimuša. My dear brothers, instruct her there so that there will be no wrongdoing in my storeroom to make me unhappy. Do place my tablets and furniture under guard. Inform me how much grain was spent for the mourning-ritual. Until my brother reveals to me my father's assets I shall be delayed. Before I came Ali-ahum had opened the strong-room and even taken out the assets.",
+    "boundary_reason": "女性への禁止命令・Ewarimuša経由の指示・「My dear brothers」の呼びかけ・貯蔵室管理・タブレット保管・喪の儀式穀物報告要求・Ali-ahumの金庫破りまでがひとまとまりで「ú bu-lá-tí uš-té-ṣí-i / even taken out the assets.」で節が締まる。",
+    "confidence": "high"
+  },
+  {
+    "record_id": "unknown",
+    "split_id": "unknown__03",
+    "status": "ok",
+    "transliteration_chunk": "lu KÙ.BABBAR i ba-áb-tí-a lá-qé-ep im-ḫu-ur lu ša šé-ep e-wa-ru-mu-ša i-ri-iḫ lu 1.5 ma-na KÙ.BABBAR ú 3.16666 GÍN KÙ.GI ša iš-tí am-tí-a i-ba-ší-ú ší-ma-am ma-aḫ-ra-am ša ba-lá-ṭí-a ša-ma-ma iš-tí e-wa-ri-mu-ša šé-bi4-lá",
+    "translation_chunk": "Whether Lā-qēp has received silver from my outstanding claims or anything remains from Ewarimuša's transport, or the 1.5 mina of silver and 3.1666 shekels of gold that is with my maid - make first a profitable purchase for me and send it with Ewarimuša.",
+    "boundary_reason": "Lā-qēpの債権受取・Ewarimuša輸送残余・女中管理の銀1.5マナ・金3.16シェケルを使った有利な購入命令・Ewarimuša経由の送付指示まで残りテキスト全体をひとまとまりとして収める。",
+    "confidence": "high"
+  }
+]
+[
+  {
+    "record_id": "unknown",
+    "split_id": "unknown__01",
+    "status": "ok",
+    "transliteration_chunk": "en-um-a-šùr ra-bi4-ṣa-am ù a-lá-ḫa-am e-pu-ul um-ma en-um-a-šur-ma a-na a-lá-ḫi-im-ma me-er-ú me-tim né-nu lá ni-ip-ta-ar i-nu-mì a-bu-ni i-na a-lim{ki} lu-qú-tám ip-qí-da-ku-ni-ma <gap> a-na ṣé-er ša-zu-za-tí-šu i-dí-a-bi-im DUMU a-šur-GAL i-tur4-DINGIR DUMU a-mur-IŠTAR en-na-nim DUMU am-ri-a e-na-aḫ-DINGIR DUMU šu-a-šur i-a-tí ù ku-a-tí qá-dí-šu-nu-ma ù né-nu ša-zu-úz-tum ša šál-ma-a-šur a-bi-ni ù a-lá-an lu-qú-tim a-ni-tim ša šé-pì-kà mì-ma lu-qú-tám šál-ma-a-šùr ú-lá ú-šé-bi4-lam",
+    "translation_chunk": "Ennam-Aššur answered the attorney and Ali-ahum, and Ennam-Aššur said to Ali-ahum: We are inheritors. We have not (finished) checking. When our father in the City entrusted merchandise to you and (sent it) to his representatives - Iddin-abum son of Aššur-rabi, Itūr-ilī son of Amur-Ištar, Ennānum son of Amriya, Enah-ilī son of Šu-Aššur, myself and you together with them, in fact, we were the representation of Šalim-Aššur, our father - then apart from this merchandise transported by you, Šalim-Aššur did not send any other merchandise.",
+    "boundary_reason": "冒頭の応答・相続人宣言・父の商品委託と代理人リスト・Šalim-Aššurが他に商品を送らなかった事実の確認がひとまとまりで「mì-ma lu-qú-tám šál-ma-a-šùr ú-lá ú-šé-bi4-lam / Šalim-Aššur did not send any other merchandise.」で節が締まる。",
+    "confidence": "high"
+  },
+  {
+    "record_id": "unknown",
+    "split_id": "unknown__02",
+    "status": "ok",
+    "transliteration_chunk": "ma-lá lu-qú-tum a-ni-tám <gap> ša a-ta tù-šé-li-a-ni-ma lu-qú-tum ší-it i-na É-šu-nu iz-ku-a-ni li-bi ša-zu-úz-tí a-bi-ni ù li-bi-ni i-de8 ù me-ḫe-er-ni a-na a-lim{ki} a-na ṣé-er a-bi-ni iš-tù u4-mì-im ša lu-qú-tám tù-šé-li-a-ni i-li-ik-šu-ma i-na a-lim{ki} i-ba-ší i-na lu-qú-tim a-ni-tim qá-tí ša-zu-za-at a-bi-ni i-ta-dí-nu ni-a-tí-ma ma-lá lu-qú-tám i-a-tí i-šu-ru-ni-ni a-na KÙ.BABBAR ú-ta-er-ma KÙ.BABBAR ší-im lu-qú-tim a-na ša ki-ma a-bi-ni ù ku-a-tí áš-qú-ul-ma KÙ.BABBAR ku-nu-ki-šu-nu a-ṣé-er a-bi-ni a-na a-lim{ki} uš-té-bi4-lu-ma li-ba-kà i-de8 ù a-na ṣé-ri-ku-nu a-na wa-bi-il5 KÙ.BABBAR ší-bi a-ḫi-ú-tim i-šu ú-lá tù-na-ḫa-ni",
+    "translation_chunk": "Our father's agents and we knew how these goods - that you yourself brought up here - that these goods were cleared in their house. Also our answer went to the City, to our father, the very day you brought the goods up here, and it is in the City. A claim to these goods has been made by our father's agents. As you well know, it was for our sake that I converted to silver the goods they took care of for me, and I paid the silver, the proceeds from the goods, to our father's representatives and to you, and they have sent the silver under their seals to the City to our father. Also, I have impartial witnesses against you (plur.) as to who transported the silver. Do not obstruct me!",
+    "boundary_reason": "商品清算の認識・都市への返答・父の代理人による請求・銀への転換と支払い・封印付き送付・公正証人の存在・「ú-lá tù-na-ḫa-ni / Do not obstruct me!」で論述の主要部が締まる。",
+    "confidence": "high"
+  },
+  {
+    "record_id": "unknown",
+    "split_id": "unknown__03",
+    "status": "ok",
+    "transliteration_chunk": "ú iš-tù MU.1.ŠÈ lá-ma-ma ra-bi4-ṣú e-li-ú-ni-ni ú-sà-la-a-kum um-ma a-na-ku-ma al-kam 5 um-me-a-ni a-ḫi-ú-tim a-ṣé-er ša-zu-úz-tí a-bi-ni lu nu-ṭa-ḫi-ma a-na KÙ.BABBAR 1 GÍN ša ša-zu-úz-tí a-bi-ni i-ša na-áš-pé-er-tí a-bi-ni ša id-na-a ub-lá-ni-ma a-na KÙ.BABBAR ša ší-im lu-qú-tim ù ba-a-ba-tí-šu is-ni-qú-ni-a-tí-ni-ma ma-aḫ-ri-šu-nu-ma i-na bu-lu-uṭ a-bi-ni ni-iz-ku-ma ma-lá KÙ.BABBAR i-na li-bi4-a ù li-bi-kà i-dí-ú-ni na-áš-pé-er-tum ša ša-zu-za-tí-šu ù ni-a-tum iš-tí id-na-a ší-ip-ri-šu a-na a-lim{ki} i-tù-ur-šum a-ta a-dí u4-mì-im a-nim qá-tí ta-am-ta-ḫa-aṣ-ma šé-šu-ba-am ú-lá ta-mu-a-ma a-na ra-bi4-ṣí-im ù ṭup-pí-im ša a-lim{ki} li-ta-qú-im ta-áš-ta-na-pá-ar uš-kà-in a-na ṭup-pì-im ša a-lim{ki} ù ra-bi4-ṣí-im ša be-lí-a al-kam ša ma-áš-a-ni-kà i-na IGI ra-bi4-ṣí-im a-ni-im 5 um-me-a-ni a-ṣé-er 4 ša ki-ma a-bi-ni lu nu-šé-ší-ib-ma KÙ.BABBAR ší-im lu-qú-tim ù ba-a-ba-tum i-na ma-aḫ-ri-šu-nu li-ib-lá-aṭ-ma ma-lá KÙ.BABBAR maš-kà-na-tum a-ṣé-er a-bi-ni i-ta-lá-kà-ni ù zi-i-ma ša ú-ša-qí-lu li-iṣ-ḫi-ir-ma ší-tí KÙ.BABBAR ma-lá i-na li-bi4-ni i-na-dí-ú-ni lu ni-iš-qú-ul-ma iš-tí MAŠKIM lu ni-li-ik-ma",
+    "translation_chunk": "Also, one year ago, even before the attorneys came up here, I pleaded with you, saying: \"Come! Let us confront 5 impartial investors with our father's agents to prove that for every shekel of silver that our father's agents checked us for in response to the missive from our father that Idnaya brought, for the silver, the proceeds from the goods and his outstanding claims, that we cleared with them while our father was alive, and a message from his agents and one from us went back to him in the City with his messenger Idnaya concerning how much silver was deposited with me and with you.\" As for you, until this day you have refused a deal with me, and you are unwilling to arrange a meeting, and instead you keep writing to procure an attorney and a tablet of the City. I submit to the tablet of the City and the attorney of my lord. Come! It concerns your ... Let us arrange a meeting witnessed by this attorney with 5 investors in addition to the 4 who represent our father, and let the silver, the proceeds from the goods and the outstanding claims be recognized with them as witnesses, and let him deduct the silver deposits that will come to our father plus the expenses that he has paid, and let us pay the rest of the silver, as much as they will set down as owed by us, and let us go with the attorney and ...",
+    "boundary_reason": "1年前の提案（5人の公正投資家との対決）・引用内容（Idnaya書簡・存命中の清算・銀の報告）・Ali-ahumの拒否・都市タブレットへの服従・最終的な会合提案・残余銀支払い・代理人との行動まで残りテキスト全体をひとまとまりとして収める。",
+    "confidence": "medium"
+  }
+]
