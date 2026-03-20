@@ -1,6 +1,6 @@
 # EDA notebooks
 
-最終更新: 2026-03-19
+最終更新: 2026-03-20
 
 ## `notebooks/EDA/train.curated.v002_バイト長分布.ipynb`
 
@@ -39,6 +39,19 @@
   - `notebooks/EDA/PROCESS-DATA/train.curated.v002-4-2_バイト長分布.csv` / `…縮約.csv` に **`アッカド語転写_英訳文`** 列を含む（セル内は `"アッカド語転写": {transliteration}` と `"英訳文": {translation}` を改行で連結した1フィールド）。
 - 運用メモ:
   - 元ノートは `train.curated.v002-4-2_バイト長分布.ipynb`（v002-3 系のデータ差し替え版）。
+
+## `notebooks/EDA/train.curated.v002-6_長文分割結合.ipynb`
+
+- 目的: `train.curated.v002-4-2.xlsx` から **指定した `oare_id` を除外**し、`PROCESS-DATA/v002-5-split-long.json`（confidence が **high/medium** のみ）を結合して、新しい学習データ（v002-6）を作成する。
+- 対象データ:
+  - `data/curated/deep-past-initiative-machine-translation/train/train.curated.v002-4-2.xlsx`
+  - `notebooks/EDA/PROCESS-DATA/v002-5-split-long.json`
+- 出力:
+  - `data/curated/deep-past-initiative-machine-translation/train/train.curated.v002-6.xlsx`
+  - `data/curated/deep-past-initiative-machine-translation/train/train.curated.v002-6.csv`
+- 運用メモ:
+  - `v002-5-split-long.json` に元 `oare_id` が含まれない場合、結合後の split 行は `oare_id=split_id`（学習行ID）として保存される。
+  - 元 `oare_id` に紐付けたい場合は、ノートブック冒頭の `RECORD_ID_TO_OARE_ID` または `RECORD_INDEX_TO_OARE_ID` を埋めてから実行する。
 
 ## `notebooks/EDA/英訳冒頭脱落点検.ipynb`
 
