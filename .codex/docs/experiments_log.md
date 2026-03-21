@@ -46,6 +46,9 @@
 | 2-6-2 | [2-6-2]dpc-starter-train-v3 | 1 | 0.3251 | 20 | 4 | 2 | LB:28.3([4-6-2]submit-notebook-v3 ver1) |
 | 2-7 | [2-7]dpc-starter-train-v3 | 1 | 0.3317| 20 | 4 | 2 | LB:28.3([4-7]submit-notebook-v3 ver1) |
 | 2-7-2 | [2-7-2]dpc-starter-train-v3 | 1 | 0.346| 20 | 4 | 2 | LB:29.4([4-7-2]submit-notebook-v3 ver1) |
+| 2-8 | [2-8]dpc-starter-train-v1 | 1 | 0.2769 | 20 | 4 | 2 | LB:32.0([4-8]submit-notebook-v1 ver1), MAX_LENGTH=1024 |
+| 2-8-2 | [2-8-2]dpc-starter-train-v1 | 1 | 0.2765 | 20 | 4 | 2 | LB:31.4([4-8-2]submit-notebook-v1 ver1), MAX_LENGTH=512 |
+| 2-8-3 | [2-8]dpc-starter-train-v2-colab | 1 | 0.3588 | 19.807339449541285 | 16 | 1 | LB:30.5([4-8-3]submit-notebook-v1 ver1), MAX_LENGTH=1024 |
 
 
 ### ByT5-base
