@@ -92,6 +92,19 @@
 
 ## ローカル派生ノート（ablation）
 
+### `[2-9]dpc-starter-train-v2-colab.ipynb`（`notebooks/002/[2-9]dpc-starter-train-v2-colab.ipynb`）
+
+- 目的: ByT5-base の「どれだけ学習すべきか」を手動で決めずに済むよう、**検証 split（hold-out）で学習量を見積もってから full train** する。
+- 骨格: `notebooks/002/[2-9]dpc-starter-train-v1-colab.ipynb` をベースに、train の一部を `oare_id` グループ単位で hold-out して `eval_loss` を監視し、`EarlyStoppingCallback`（patience 既定 `2`）で停止。
+- 学習量の決め方: 推定フェーズの `best_step / steps_per_epoch` を `best_epoch_equiv` として算出し、full train の `steps_per_epoch_full` に掛けて `max_steps` を決定（= full train は epoch ではなく step で止める）。
+- 出力: 推定用チェックポイントは `Config.OUTPUT_DIR_ESTIMATE`、最終 full-train は `Config.OUTPUT_DIR_FULL` に保存。
+
+### `[2-10]dpc-starter-train-v3-colab.ipynb`（`notebooks/002/[2-10]dpc-starter-train-v3-colab.ipynb`）
+
+- 目的: `notebooks/002/[2-10]dpc-starter-train-v2-colab.ipynb` で得た early-stopping の推定学習量を、**通常の full-train ノートへ固定値として反映**する。
+- 反映内容: `v2` 実行結果の `best_step=3000`、`best_epoch_equiv≈9.585`、full-train 換算 `max_steps=3134` を `Config` に転記し、学習は `max_steps=3134` で終了するように変更。
+- 意図: early-stopping 用の hold-out / checkpoint 管理を本番学習ノートへ持ち込まず、`v1` 系の単純な full-data 学習を維持したまま学習量だけ最適化する。
+
 ### `[3-6]dpc-starter-train-cv5-v2-colab.ipynb`（`notebooks/002/[3-6]dpc-starter-train-cv5-v2-colab.ipynb`）
 
 - 目的: `generation_num_beams` を 1点だけ動かして、**CV の `geo_mean`（BLEU×chrF の幾何平均）**と計算量のトレードオフを見る（評価時に `predict_with_generate=True` を使うため、beam は CV に直撃する）。
