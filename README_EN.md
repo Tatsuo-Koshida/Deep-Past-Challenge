@@ -11,6 +11,7 @@ I also fixed issues like the following in `train.csv`:
 
 - PDF OCR mistakes (cases where either the transliteration or the translation was completely wrong)
 - I restored records where the transliteration text was truncated in the host-provided `train.csv` (this was relatively easy to recover by comparing with `published_texts.csv`).
+- I excluded some long records with so many `<gap>` tokens that splitting the transliteration and translation was not feasible, since they were likely harmful for model training (surprisingly, I found only 3 such records).
 
 I also found issues like the following in many places, but since the volume was too large and I suspected that similar issues existed in `test.csv` used for the final evaluation, I intentionally left them as-is:
 
