@@ -10,6 +10,7 @@ The original `train.csv` had 1,561 records, but after doing the following work I
 I also fixed issues like the following in `train.csv`:
 
 - PDF OCR mistakes (cases where either the transliteration or the translation was completely wrong)
+- I restored records where the transliteration text was truncated in the host-provided `train.csv` (this was relatively easy to recover by comparing with `published_texts.csv`).
 
 I also found issues like the following in many places, but since the volume was too large and I suspected that similar issues existed in `test.csv` used for the final evaluation, I intentionally left them as-is:
 
@@ -286,7 +287,7 @@ At first I tried to clean up `train.csv` using Codex agents and the skills featu
 
 # Final submission pipeline
 I started from the public notebook “LB 35.9 Ensembling & Post Processing Baseline”, then increased the number of models and made small changes to preprocessing and postprocessing.
-The last two submissions differed only in the number of training epochs; the one with more epochs achieved a higher Private LB score.
+The last two submissions differed only in the number of training epochs; despite concerns about overfitting, the one trained for more epochs achieved a higher Private LB score.
 
 ## Preprocessing / Postprocessing
 ### Preprocessing
