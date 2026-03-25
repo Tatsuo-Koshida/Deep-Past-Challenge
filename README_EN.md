@@ -1,3 +1,5 @@
+In the Kaggle competition "Deep Past Challenge - Translate Akkadian to English" documented in this repository, I ultimately placed 75th and earned a silver medal.
+
 I joined this competition late, and up until three days before the submission deadline I was mostly focused on cleaning up and curating `train.csv`.
 Because of that, I didn’t have enough time to properly verify local CV, and in the end I had to rely on LB score and gut feeling, which is something I regret.
 
