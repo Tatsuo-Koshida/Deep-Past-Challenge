@@ -14,6 +14,7 @@
 - 3位 writeup「Synthetic Data to Teach OA Fundamentals」を確認。中核は **ByT5-Large + ByT5-XL の2本立て**で、各モデルを **CPT（継続事前学習）→ FT（高品質 scholar data で微調整）** の2段で学習し、最終的に **Qwen3-8B の pairwise Reward Model** で文単位に良い方の翻訳を選ぶ構成だった。
 - 改善の主因は「モデル変更」より **データ設計**にある。特に synthetic drills で **OA の語彙・文法・テンプレ式の定型文・人名/一般語の曖昧性**を先に教え、その後 scholar translation だけで訳文スタイルを寄せる役割分担が明確。
 - 追加データ源は広く、`train.csv` + `Sentences_Oare` の再構成、PDF からの Gemini 抽出、`publications.csv` OCR 抽出、`published_texts.csv` への synthetic translation、pseudo labeling まで使っている。上位では **「公開データをどう並列化・整形・品質選別するか」** が勝負になっていることを再確認。
+- 反省メモ: `.codex/docs/retrospective.md` に、3位解法から得た「データ設計の観点不足」を含む反省を整理して追記していく。
 - 学習上の示唆として、CPT は最後まで回すのでなく **14k step 付近で止めて FT に移る**判断をしている。writeup では、それ以降は rare name が frequent neighbor に引っ張られ、hallucinated names が増えたと述べている。
 - 推論は beam search (`num_beams=8`) を使い、最終提出は reward model 選択。単純平均 ensemble ではなく **文ごとの pick-best** にしている点が重要。
 - CPT の明示条件は、**effective batch size 128 / 3 epochs / 18k gradient steps / warmup 3.6k / constant LR / grad clip 0.3 / AWP**。初期 1k step は勾配がかなり荒く、warmup と clipping で安定化したとしている。
